@@ -1,0 +1,1173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+button{
+    color: #fff;
+    background: none;
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    
+}
+button:hover{
+    background: white;
+    color: black;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{  
+  padding: 0 120px;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('imagenes/pianoofic.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+
+/*SECTION LIBRERIAS 1*/
+#Nuestros-programas{
+background-color: rgb(30,30,30);
+text-align: center;
+color: white;
+}
+#Nuestros-programas .container{
+    padding: 10px 12px;
+}
+
+#Nuestros-programas h2{
+    margin-top: 0%;
+    font-size: 3.2em;
+}
+#Nuestros-programas p{
+    display: none;
+}
+#Nuestros-programas .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("imagenes/NordPiano.jpeg");
+    
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("imagenes/Strings.jpeg");
+    
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("imagenes/saxo.jpeg");
+}
+
+/*SECTION librerias 2*/
+#LIBRERIAS1{
+    background-color: rgb(30,30,30);
+    text-align: center;
+    color: white;
+    }
+    #LIBRERIAS1 .container{
+        padding: 10px 12px;
+    }
+    #LIBRERIAS1 p{
+        display: none;
+    }
+    #LIBRERIAS1 .carta1{
+      background-position: center center;
+      background-size: cover;
+      padding: 50px;
+      margin: 20px;
+      border-radius: 15px;
+    }
+    
+    .carta1:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/CINEMA.jpeg");
+        
+    }
+    .carta1:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/AMBIENT.jpeg");
+        
+    }
+    .carta1:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/GOLDPIANOS.jpeg");
+    }
+    /*SECTION LIBRERIAS 3*/
+    #LIBRERIAS2{
+        background-color: rgb(30,30,30);
+        text-align: center;
+        color: white;
+        }
+        #LIBRERIAS2 .container{
+            padding: 10px 12px;
+        }
+        #LIBRERIAS2 p{
+            display: none;
+        }
+        #LIBRERIAS2 .carta2{
+          background-position: center center;
+          background-size: cover;
+          padding: 50px;
+          margin: 20px;
+          border-radius: 15px;
+        }
+        
+        .carta2:first-child{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)
+        
+            )
+            ,url("imagenes/yamahapiar.jpeg");
+            
+        }
+        .carta2:nth-child(2){
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)
+        
+            )
+            ,url("imagenes/redpianos.jpeg");
+            
+        }
+        .carta2:nth-child(3){
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)
+        
+            )
+            ,url("imagenes/yamas90.jpeg");
+        }
+        /*SECTION LIBRERIAS 4*/
+        #LIBRERIAS3{
+            background-color: rgb(30,30,30);
+            text-align: center;
+            color: white;
+            }
+            #LIBRERIAS3 .container{
+                padding: 10px 12px;
+            }
+            #LIBRERIAS3 p{
+                display: none;
+            }
+            #LIBRERIAS3 .carta3{
+              background-position: center center;
+              background-size: cover;
+              padding: 50px;
+              margin: 20px;
+              border-radius: 15px;
+            }
+            
+            .carta3:first-child{
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.5), 
+                    rgba(0,0,0,0.5)
+            
+                )
+                ,url("imagenes/kawao.jpeg");
+                
+            }
+            .carta3:nth-child(2){
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.5), 
+                    rgba(0,0,0,0.5)
+            
+                )
+                ,url("imagenes/keyscape.jpeg");
+                
+            }
+            .carta3:nth-child(3){
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.5), 
+                    rgba(0,0,0,0.5)
+            
+                )
+                ,url("imagenes/moxf8.jpeg");
+            }
+            /*SECTION LIBRERIAS 5*/
+            #LIBRERIAS4{
+                background-color: rgb(30,30,30);
+                text-align: center;
+                color: white;
+                }
+                #LIBRERIAS4 .container{
+                    padding: 10px 12px;
+                }
+                #LIBRERIAS4 p{
+                    display: none;
+                }
+                #LIBRERIAS4 .carta4{
+                  background-position: center center;
+                  background-size: cover;
+                  padding: 50px;
+                  margin: 20px;
+                  border-radius: 15px;
+                }
+                
+                .carta4:first-child{
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.5), 
+                        rgba(0,0,0,0.5)
+                
+                    )
+                    ,url("imagenes/korg.jpeg");
+                    
+                }
+                .carta4:nth-child(2){
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.5), 
+                        rgba(0,0,0,0.5)
+                
+                    )
+                    ,url("imagenes/xpiano.jpeg");
+                    
+                }
+                .carta4:nth-child(3){
+                    background-image: linear-gradient(
+                        0deg,
+                        rgba(0,0,0,0.5), 
+                        rgba(0,0,0,0.5)
+                
+                    )
+                    ,url("imagenes/motif.jpeg");
+                }
+                /*SECTION LIBRERIAS 6*/
+                #LIBRERIAS5{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS5 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS5 p{
+                        display: none;
+                    }
+                    #LIBRERIAS5 .carta5{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta5:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/Korgoas.jpeg");
+                        
+                    }
+                    .carta5:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/emoyionalp.jpeg");
+                        
+                    }
+                    .carta5:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/MK20piano.jpeg");
+                    }
+                    /*SECTION LIBRERIAS 7*/
+                #LIBRERIAS7{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS7 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS7 p{
+                        display: none;
+                    }
+                    #LIBRERIAS7 .carta7{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta7:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/Mk20p.jpeg");
+                        
+                    }
+                    .carta7:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/tonali.jpeg");
+                        
+                    }
+                    .carta7:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/hillsongp.jpeg");
+                    }
+                    /*SECTION LIBRERIAS 8*/
+                #LIBRERIAS8{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS8 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS8 p{
+                        display: none;
+                    }
+                    #LIBRERIAS8 .carta8{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta8:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/pelicupad.jpeg");
+                        
+                    }
+                    .carta8:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/guitar.jpeg");
+                        
+                    }
+                    .carta8:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/denver.jpeg");
+                    }
+                    /*SECTION LIBRERIAS 9*/
+                #LIBRERIAS9{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS9 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS9 p{
+                        display: none;
+                    }
+                    #LIBRERIAS9 .carta9{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta9:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/Piano+bajo.jpeg");
+                        
+                    }
+                    .carta9:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/Rhodes2.jpeg");
+                        
+                    }
+                    .carta9:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/pad+piano.jpeg");
+                    }
+                    /*SECTION LIBRERIAS 10*/
+                #LIBRERIAS10{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS10 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS10 p{
+                        display: none;
+                    }
+                    #LIBRERIAS10 .carta10{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta10:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/Drumsli.jpeg");
+                        
+                    }
+                    .carta10:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/feñpiano.jpeg");
+                        
+                    }
+                    .carta10:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/GiantPiano.jpeg");
+                    }
+                    /*SECTION LIBRERIAS 11*/
+                #LIBRERIAS11{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS11 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS11 p{
+                        display: none;
+                    }
+                    #LIBRERIAS11 .carta11{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta11:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/Strings.jpeg");
+                        
+                    }
+                    .carta11:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/nord3.jpeg");
+                        
+                    }
+                    .carta11:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/bateria1.jpeg");
+                    }
+                    /*SECTION LIBRERIAS 12*/
+                #LIBRERIAS12{
+                    background-color: rgb(30,30,30);
+                    text-align: center;
+                    color: white;
+                    }
+                    #LIBRERIAS12 .container{
+                        padding: 10px 12px;
+                    }
+                    #LIBRERIAS12 p{
+                        display: none;
+                    }
+                    #LIBRERIAS12 .carta12{
+                      background-position: center center;
+                      background-size: cover;
+                      padding: 50px;
+                      margin: 20px;
+                      border-radius: 15px;
+                    }
+                    
+                    .carta12:first-child{
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/bateria2.jpeg");
+                        
+                    }
+                    .carta12:nth-child(2){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/montage.jpeg");
+                        
+                    }
+                    .carta12:nth-child(3){
+                        background-image: linear-gradient(
+                            0deg,
+                            rgba(0,0,0,0.5), 
+                            rgba(0,0,0,0.5)
+                    
+                        )
+                        ,url("imagenes/alterro.jpeg");
+                    }
+
+/*SECTION VSTS 1*/
+#VST{
+    background-color: rgb(62, 66, 66);
+    text-align: center;
+    color: aliceblue;
+}
+#VST h2{
+    margin-top: 0;
+}
+#VST .container{
+    padding: 10px 12px;
+}
+#VST h4{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#VST p{
+    display: block;
+    margin: 10px;
+}
+#VST .vst1{
+    background-position: center center;
+      background-size: cover;
+      padding: 50px;
+      margin: 20px;
+      border-radius: 15px;
+}
+.vst1:first-child{
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5)
+
+)
+,url("imagenes/Space-Lite.jpg");
+
+
+}
+.vst1:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5)
+
+)
+,url("imagenes/atmos3lite.jpg");
+
+
+}
+.vst1:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5)
+
+)
+,url("imagenes/electronico.jpg");
+}
+/*SECTION PATCHS 1*/
+#patch{
+    background-color: rgb(49, 43, 43);
+    text-align: center;
+    color: white;
+    }
+    #patch .container{
+        padding: 10px 12px;
+    }
+    
+    #patch h2{
+        margin-top: 0%;
+        font-size: 3.2em;
+    }
+    #patch p{
+        display: none;
+    }
+    #patch .patch1{
+      background-position: center center;
+      background-size: cover;
+      padding: 50px;
+      margin: 20px;
+      border-radius: 15px;
+    }
+    
+    .patch1:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/mas\ de\ ti.jpg");
+        
+    }
+    .patch1:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/desciende.jpg");
+        
+    }
+    .patch1:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/oceans.jpg");
+    }
+    
+/*SECTION FINAL MAS PROGRAMAS*/
+#final{
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(22, 16, 16);
+color: rgb(227, 227, 233);
+}
+#final{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)
+    
+        )
+        ,url("imagenes/produ2.jpg");
+}
+
+#final button{
+    color: rgb(255, 244, 244);
+    background: none;
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid rgb(255, 252, 252);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    }
+  
+#final button:hover{
+    background: white;
+    color: black;
+}
+#final h2{
+    font-size: 9vw;
+   
+}
+/*SECTION COPYRIGHT ARMUSIC*/
+footer{
+    background-color:rgb(230, 230, 230)
+}
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+footer .container{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+/*SECTION MEDIA VERSION PC*/
+@media (min-width:720px){  
+    nav{
+        position: fixed;
+        background: #1b1b1b;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 12;
+      }
+      nav .menu{
+        max-width: 1250px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+      .menu .logo a{
+        padding: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+      }    
+
+      /*SECTION LIBRERIAS 1*/
+#Nuestros-programas .programas{
+    display: flex;
+    justify-content: center;
+}
+#Nuestros-programas p{
+    display: block;
+
+}
+#Nuestros-programas h3{
+    margin-top: 0;
+}
+#Nuestros-programas .carta{
+    padding: 15px;
+
+}
+
+/*SECTION LIBRERIAS 2*/
+#LIBRERIAS1 .programa1{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS1 p{
+    display: block;
+
+}
+#LIBRERIAS1 h3{
+    margin-top: 0;
+}
+#LIBRERIAS1 .carta1{
+    padding: 15px;
+
+}
+/*SECTION librerias 3*/
+#LIBRERIAS2 .programa2{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS2 p{
+    display: block;
+
+}
+#LIBRERIAS2 h3{
+    margin-top: 0;
+}
+#LIBRERIAS2 .carta2{
+    padding: 15px;
+
+}
+
+/*SECTION LIBRERIAS 4*/
+#LIBRERIAS3 .programa3{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS3 p{
+    display: block;
+
+}
+#LIBRERIAS3 h3{
+    margin-top: 0;
+}
+#LIBRERIAS3 .carta3{
+    padding: 15px;
+
+}
+/*SECTION LIBRERIAS 5*/ 
+#LIBRERIAS4 .programa4{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS4 p{
+    display: block;
+
+}
+#LIBRERIAS4 h3{
+    margin-top: 0;
+}
+#LIBRERIAS4 .carta4{
+    padding: 15px;
+
+}
+/*SECTION LIBRERIAS 6*/
+#LIBRERIAS5 .programa5{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS5 p{
+    display: block;
+
+}
+#LIBRERIAS5 h3{
+    margin-top: 0;
+}
+#LIBRERIAS5 .carta5{
+    padding: 15px;}
+
+/*SECTION LIBRERIAS 7*/
+#LIBRERIAS7 .programa7{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS7 p{
+    display: block;
+
+}
+#LIBRERIAS7 h3{
+    margin-top: 0;
+}
+#LIBRERIAS7 .carta7{
+    padding: 15px;}
+
+/*SECTION LIBRERIAS 8*/
+#LIBRERIAS8 .programa8{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS8 p{
+    display: block;
+
+}
+#LIBRERIAS8 h3{
+    margin-top: 0;
+}
+#LIBRERIAS8 .carta8{
+    padding: 15px;}
+
+/*SECTION LIBRERIAS 9*/
+#LIBRERIAS9 .programa9{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS9 p{
+    display: block;
+
+}
+#LIBRERIAS9 h3{
+    margin-top: 0;
+}
+#LIBRERIAS9 .carta9{
+    padding: 15px;}
+
+/*SECTION LIBRERIAS 10*/
+#LIBRERIAS10 .programa10{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS10 p{
+    display: block;
+
+}
+#LIBRERIAS10 h3{
+    margin-top: 0;
+}
+#LIBRERIAS10 .carta10{
+    padding: 15px;}
+
+/*SECTION LIBRERIAS 11*/
+#LIBRERIAS11 .programa11{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS11 p{
+    display: block;
+
+}
+#LIBRERIAS11 h3{
+    margin-top: 0;
+}
+#LIBRERIAS11 .carta11{
+    padding: 15px;}
+
+/*SECTION LIBRERIAS 12*/
+#LIBRERIAS12 .programa12{
+    display: flex;
+    justify-content: center;
+}
+#LIBRERIAS12 p{
+    display: block;
+
+}
+#LIBRERIAS12 h3{
+    margin-top: 0;
+}
+#LIBRERIAS12 .carta12{
+    padding: 15px;}
+
+/*SECTION VSTS 1*/
+#VST .VST11{
+    display: flex;
+    justify-content: center;
+}
+#VST P{
+    display: block;
+}
+#VST h4{
+    margin-top: 0;
+}
+#VST .vst1{
+    padding: 15px;
+}
+
+/*SECTION PATCH 1*/
+#patch .patchs{
+    display: flex;
+    justify-content: center;
+}
+#patch p{
+    display: block;
+
+}
+#patch h3{
+    margin-top: 0;
+}
+#patch .patch1{
+    padding: 15px;
+
+}
+/*SECTION FINAL MAS PROGRAMAS*/
+#final h2{
+    font-size: 5em;
+
+}
+#final button{
+    font-size: 2em;
+
+}
+/*COPYRIGHT*/
+footer .container{
+    justify-content: flex-end;
+}
+}
