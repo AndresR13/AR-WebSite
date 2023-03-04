@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+nav{
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  background: rgb(0, 0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.logo{
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.menuu{
+  display: flex;
+}
+.menuu li{
+  list-style: none;
+  margin: 0 15px;
+}
+.menuu .menu-i{
+  text-decoration: none;
+  color: rgb(255, 253, 253) ;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.menuu .menu-i:hover{
+  color: rgb(202, 24, 24);
+  background: white;
+
+}
+.fondo{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url(imagenes/imgg1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.fondo .center{
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.fondo .title{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  font-weight: 800;
+}
+.fondo .subtitle{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 800;
+}
+.fondo .center .btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  color: white;
+  width: 150px;
+  height: 60px;
+  background: none;
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: 10px;
+  font-weight: 400;
+  transition: .3s ease-in-out;
+}
+.donate{
+  color: black;
+  background: rgb(255, 255, 255);
+  transition: .3s ease-in-out;
+}
+.donate:hover{
+  color: white;
+  background: none;
+}
+button:hover{
+  color: black;
+  background: white;
+  font-weight: 500;
+}
+.menu-btn{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.nav__input{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .menu-btn{
+    display: block;
+  }
+  .menuu{
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    background: rgb(14, 182, 194);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100px;
+    transform: translateX(-100%);
+    transition: .5s ease ;
+  }
+  .menuu .menu-i:hover{
+    background: none;
+    color: black;
+
+  }
+
+  .nav__input:checked + .menuu{
+    transform: translateX(0);
+   
+  }
+  .fondo .center{
+    display: flex;
+    text-align: center;
+  
+  }
+}

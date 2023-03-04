@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+body{
+  background: linear-gradient(to right, rgb(202, 67, 67), rgb(29, 194, 139));
+}
+.border{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 400px;
+height: 400px;
+background: linear-gradient(to right, aquamarine, brown, aquamarine,brown);
+border-radius: 30px;
+background-size: 500%;
+animation: animar 10s infinite;
+}
+@keyframes animar{
+  0%{
+    background-position: 0 50%;
+  
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
+  height: 380px;
+  padding: 0 15px 0 15px;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+  border-radius: 30px;
+}
+span{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 900;
+  
+}
+header{
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 3px 0 3px;
+  
+}
+.headers{
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 0 10px 0;
+}
+
+.sesion #Usuario{
+  display: flex;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+  padding: 0 0 0 45px;
+  justify-content: center;
+  align-items: center;
+}
+.sesion #email{
+  display: flex;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+  padding: 0 0 0 45px;
+  justify-content: center;
+  align-items: center;
+}
+.sesion #password{
+  display: flex;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+  padding: 0 0 0 45px;
+  justify-content: center;
+  align-items: center;
+} 
+#submit{
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+  transition: .10s ease-in-out;
+  background: linear-gradient(to right, brown, aquamarine,brown);
+  
+} 
+i{
+  position: relative;
+  top: -33px;
+  left: 17px;
+  color: black;
+}
+::-webkit-input-placeholder{
+  color: black;
+}
+#submit:hover{
+  color: black;
+  background: aquamarine;
+  
+}
+.two-col{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: 15px;
+}
+label a{
+  color: white;
+  text-decoration: none;
+}
+.tree p a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(252, 235, 235);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+.warnings{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
