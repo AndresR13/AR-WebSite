@@ -85,9 +85,6 @@ header{
   border-radius: 30px;
   background: linear-gradient(to right, aquamarine, aquamarine);
 }
-.submit:hover{
-  background: linear-gradient(to right, brown , aquamarine, aquamarine, brown);
-}
 ::-webkit-input-placeholder{
   color: black;
 }
