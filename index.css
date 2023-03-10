@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
+             /*menu de navegación*/
 nav{
   display: flex;
   position: fixed;
@@ -24,11 +25,13 @@ nav{
 .menu-btn{
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 .nav__input{
   font-size: 20px;
   color: white;
   display: none ;
+  cursor: pointer;
 }
 .nav{
   display: flex;
@@ -53,7 +56,90 @@ nav{
   font-weight: 800;
   transition: .3s ease-in-out;
 }
+        /*MENU DEL BOTTON ISQUIERDO*/
+.menuuu{
+  position: fixed;
+  width: 8%;
+  top: 8vh;
+  left: 0;
+  background: black;
+  transform: translateX(-100%);
+}
+.menuuu li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+.menuuu li:hover{
+  background: gray;
+  
+}
+.menuuu li a{
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+}
+.nav_input:checked + .menuuu{
+  transform: translateX(0);
+}
+.menuu-btn{
+  color: white;
+  display: block;
+  font-size: 20px;
+}
+.menu-btn{
+  display: none;
+}
+.nav_input{
+  display: none;
+}
+         /*Centro de la pagina inicial*/
+.center{
+  background: linear-gradient(to right, green, gray, green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.center .title{
+  color: white;
+  font-size: 55px;
+  font-weight: 800;
+}
+.center .subtitle{
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+.center .btns{
+  display: flex;
+}
+.center .btns button{
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 3px solid white;
+  width: 145px;
+  height: 50px;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+  border-radius: 20px;
+}
+.center .btns button:hover{
+  color: black;
+  background: white;
+  
+}
+         /*ADAPTACIÓN AL TELEFONO*/
 @media screen and (max-width:800px){
+  /*MENU DE NAVEGACIÓN*/
   .menu-btn{
     display: block;
   }
@@ -89,5 +175,14 @@ nav{
   }
   .nav__input:checked + .menuu{
     transform: translatex(0);
+  }
+  .menuuu{
+    display: none;
+  }
+  .menuu-btn{
+    display: none;
+  }
+  .nav_input{
+    display:none
   }
 }
