@@ -96,14 +96,38 @@ nav{
   display: none;
 }
          /*Centro de la pagina inicial*/
+.wave{
+  width: 100%;
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .center{
-  background: linear-gradient(to right, green, gray, green);
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 78vh;
+}
+.center .center-b{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.titles{
+  text-align: center;
+}
+.center .img{
+  width: 400px;
+  height: 400px;
+  margin: 20px;
 }
 .center .title{
   color: white;
@@ -114,9 +138,12 @@ nav{
   color: white;
   font-size: 50px;
   font-weight: 800;
+  padding-bottom: 10px;
 }
 .center .btns{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .center .btns button{
   color: white;
@@ -135,7 +162,10 @@ nav{
 .center .btns button:hover{
   color: black;
   background: white;
-  
+}
+.center .btns .btn2{
+  background: rgb(182, 182, 182);
+  border: none;
 }
          /*ADAPTACIÓN AL TELEFONO*/
 @media screen and (max-width:800px){
@@ -147,13 +177,13 @@ nav{
     position: fixed;
     display: block;
     top: 8vh;
-    left: 0;
+    left: 76%;
     line-height: 70px;
     background: black;
     align-items: center;
     justify-content: center;
-    border-end-end-radius: 15px;
-    transform: translateX(-100%);
+    border-bottom-left-radius: 15px;
+    transform: translateX(100%);
     transition: .3s ease-in-out;
   }
   .menuu li{
@@ -184,5 +214,34 @@ nav{
   }
   .nav_input{
     display:none
+  }
+  /*CENTER*/
+  .center .title{
+    padding: 65px 0 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  .center .subtitle{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 0 ;
+
+  }
+  .center .btns button{
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+  }
+  .center .btns{
+    transform: translateY(360%);
+  }
+  .center .img{
+    width: 200px;
+    height: 200px;
+    transform: translateY(-20%);
+  }
+  .center .center-b{
+    display: flex;
+    flex-direction: column;
   }
 }
