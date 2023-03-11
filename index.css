@@ -43,16 +43,21 @@ nav{
   justify-content: space-between;
   display: flex;
 }
-.menuu li a:hover{
-  color: yellow;
+.menuu li button:hover{
+  color: white;
+  background: gray;
+  border-radius: 30px;
 }
 .menuu li{
   list-style: none;
   margin: 0 15px;
 }
-.menuu li a{
+.menuu li button{
+  border: none;
+  width: 110px;
+  height: 35px;
   color: white;
-  text-decoration: none;
+  background: transparent;
   font-weight: 800;
   transition: .3s ease-in-out;
 }
@@ -63,7 +68,7 @@ nav{
   top: 8vh;
   left: 0;
   background: black;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
 }
 .menuuu li{
   list-style: none;
@@ -72,14 +77,18 @@ nav{
   align-items: center;
   font-weight: 800;
 }
-.menuuu li:hover{
+.menuuu li button:hover{
   background: gray;
   
 }
-.menuuu li a{
+.menuuu li button{
   color: white;
   text-decoration: none;
   line-height: 70px;
+  width: 130px;
+  background: black;
+  border: none;
+  outline: none;
 }
 .nav_input:checked + .menuuu{
   transform: translateX(0);
@@ -167,6 +176,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   background: rgb(182, 182, 182);
   border: none;
 }
+
          /*ADAPTACIÓN AL TELEFONO*/
 @media screen and (max-width:800px){
   /*MENU DE NAVEGACIÓN*/
@@ -177,7 +187,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     position: fixed;
     display: block;
     top: 8vh;
-    left: 76%;
+    left: 70%;
     line-height: 70px;
     background: black;
     align-items: center;
@@ -189,12 +199,10 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   .menuu li{
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: flex;
     transition: .3s ease-in-out;
     margin: 0 20px;
-  }
-  .menuu li a:hover{
-    color: white;
   }
   .menuu li:hover{
     background: gray;
