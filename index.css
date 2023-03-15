@@ -225,10 +225,24 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.present2{
+  display: flex;
+  margin: -9%;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.present2 .top h2{
+  color: white;
+  font-size: 40px;
+}
 .present .top h2{
   color: white;
   font-size: 40px;
-  margin: 20px 0 0;
+  margin:20px 0 0;
 }
 .pelis__1{
   outline: 1px solid white;
@@ -293,7 +307,19 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   overflow: hidden;
   scroll-behavior: smooth;
 }
+.pelis_1 .pelis--1{
+  display: flex;
+  background: rgb(31, 29, 29);
+  padding: 2px;
+  width: 1250px;
+  height: 430px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
 .pelis_1 .pelis___1 .pelis__1{
+  margin: 3px;
+}
+.pelis_1 .pelis--1 .pelis__1{
   margin: 3px;
 }
 .pelis_1 .control{
@@ -312,6 +338,16 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   transform: translate(-50%, -50%);
 }
 .pelis_1 .next{
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.pelis_1 .preve{
+  left: -1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pelis_1 .nexte{
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
@@ -456,16 +492,28 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.present2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.present2 .top h2{
+  color: white;
+  font-size: 40px;
+}
 .present .top h2{
   color: white;
   font-size: 40px;
-  margin: 20px 0 0;
+  margin:20px 0 0;
 }
 .pelis__1{
   outline: 1px solid white;
@@ -531,7 +579,19 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   overflow: hidden;
   scroll-behavior: smooth;
 }
+.pelis_1 .pelis--1{
+  display: flex;
+  background: rgb(31, 29, 29);
+  padding: 2px;
+  width: 340px;
+  height: 430px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
 .pelis_1 .pelis___1 .pelis__1{
+  margin: 3px;
+}
+.pelis_1 .pelis--1 .pelis__1{
   margin: 3px;
 }
 .pelis_1 .control{
@@ -550,6 +610,16 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   transform: translate(-50%, -50%);
 }
 .pelis_1 .next{
+  right: 3%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.pelis_1 .preve{
+  left: -3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pelis_1 .nexte{
   right: 3%;
   top: 50%;
   transform: translate(50%, -50%);

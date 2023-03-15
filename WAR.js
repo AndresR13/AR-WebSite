@@ -7,3 +7,13 @@ prev.addEventListener('click', () =>{
 next.addEventListener('click', () =>{
   slider.scrollLeft += 320
 })
+
+const preve = document.querySelector('.preve');
+const nexte = document.querySelector('.nexte');
+const sliders = document.querySelector('.pelis--1');
+preve.addEventListener('click', () =>{
+  sliders.scrollLeft -= 320
+})
+nexte.addEventListener('click', () =>{
+  sliders.scrollLeft += 320
+})
