@@ -473,6 +473,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 }
 .pelis_1{
   position: relative;
+  padding-left: 10px;
 }
 .pelis_1 figure{
   position: relative;
@@ -525,7 +526,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   display: flex;
   background: rgb(31, 29, 29);
   padding: 2px;
-  width: 350px;
+  width: 340px;
   height: 430px;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -544,12 +545,12 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   padding: 10px;
 }
 .pelis_1 .prev{
-  left: -5%;
+  left: -3%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .pelis_1 .next{
-  right: 2%;
+  right: 3%;
   top: 50%;
   transform: translate(50%, -50%);
 }
@@ -558,7 +559,6 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   height: 100%;
   border-radius: 3px;
   transition: all 500ms ease-in-out;
-  background-attachment: fixed;
 }
 .pelis_1 figure .capa{
   position: absolute;
