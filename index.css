@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
 }
              /*menu de navegación*/
 nav{
@@ -214,6 +215,134 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   color: black;
 }
 
+/*SECCION DE PELICULAS DESPUES DEL INICIO*/
+.present{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.present .top h2{
+  color: white;
+  font-size: 40px;
+  margin: 20px 0 0;
+}
+.pelis__1{
+  outline: 1px solid white;
+  flex-wrap: wrap;
+}
+.pelis_1{
+  position: relative;
+}
+.pelis_1 figure{
+  position: relative;
+  height: 350px;
+  width: 330px;
+  overflow: hidden ;
+  border-radius: 6px;
+  box-shadow: 6px 15px 25px rgba(0,0,0,0.50);
+  cursor: pointer;
+}
+
+.pelis_1 h2{
+  color: white;
+  text-align: center;
+  font-weight: 400px;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.pelis_1 p{
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+.pbtns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pbtns button{
+  width: 120px;
+  height: 45px;
+  margin: 10px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 400ms ease-in-out;
+}
+.pbtns button:hover{
+  color: black;
+  background: white;
+  border: 5px solid white;
+
+}
+.pelis_1 .pelis___1{
+  display: flex;
+  background: rgb(31, 29, 29);
+  padding: 2px;
+  width: 1250px;
+  height: 430px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.pelis_1 .pelis___1 .pelis__1{
+  margin: 3px;
+}
+.pelis_1 .control{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  object-fit: contain;
+  padding: 10px;
+}
+.pelis_1 .prev{
+  left: -1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pelis_1 .next{
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.pelis__1 img{
+  width: 100%;
+  height: 100%px;
+  border-radius: 3px;
+  transition: all 500ms ease-in-out;
+  background-attachment: fixed;
+}
+.pelis_1 figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,103,123,0.7);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+} 
+.pelis_1 figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+
+}
+.pelis_1 figure:hover > .capa h2{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
 
          /*ADAPTACIÓN AL TELEFONO*/
 @media screen and (max-width:800px){
@@ -310,8 +439,6 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   outline: none;
   border: none;
   text-align: center;
-  
-  
 }
 .nav_buscador{
   display: none;
@@ -323,4 +450,133 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 }
 .nav_buscador:checked + .buscadoor{
   display: block;
+}
+/*SECCION DE PELICULAS DESPUES DEL INICIO*/
+.present{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.present .top h2{
+  color: white;
+  font-size: 40px;
+  margin: 20px 0 0;
+}
+.pelis__1{
+  outline: 1px solid white;
+  flex-wrap: wrap;
+}
+.pelis_1{
+  position: relative;
+}
+.pelis_1 figure{
+  position: relative;
+  height: 340px;
+  width: 320px;
+  overflow: hidden ;
+  border-radius: 6px;
+  box-shadow: 6px 15px 25px rgba(0,0,0,0.50);
+  cursor: pointer;
+}
+
+.pelis_1 h2{
+  color: white;
+  text-align: center;
+  font-weight: 400px;
+  margin-bottom: 120px;
+  transition: all 500ms ease-in-out;
+}
+.pelis_1 p{
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+.pbtns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pbtns button{
+  width: 120px;
+  height: 45px;
+  margin: 10px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 400ms ease-in-out;
+}
+.pbtns button:hover{
+  color: black;
+  background: white;
+  border: 5px solid white;
+
+}
+.pelis_1 .pelis___1{
+  display: flex;
+  background: rgb(31, 29, 29);
+  padding: 2px;
+  width: 350px;
+  height: 430px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.pelis_1 .pelis___1 .pelis__1{
+  margin: 3px;
+}
+.pelis_1 .control{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  object-fit: contain;
+  padding: 10px;
+}
+.pelis_1 .prev{
+  left: -5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pelis_1 .next{
+  right: 2%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.pelis__1 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  transition: all 500ms ease-in-out;
+  background-attachment: fixed;
+}
+.pelis_1 figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,103,123,0.7);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+} 
+.pelis_1 figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+
+}
+.pelis_1 figure:hover > .capa h2{
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
 }
