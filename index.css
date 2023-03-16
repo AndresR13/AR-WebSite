@@ -83,6 +83,61 @@
   width: 190px;
 
 }
+/*personalizacion de la pagina principal*/
+.center{
+  width: 100%;
+  height: 100vh;
+  background-image: url(imagenes/bak.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+.center .center-b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+}
+.titles .title{
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+.titles .subtitle{
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+.btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns .btn2{
+  margin: 10px;
+}
+.btns .btn{
+  width: 145px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+}
+.btn:hover{
+  color: black;
+  background: white;
+}
+.center .img{
+  width: 300px;
+  height: 300px;
+}
 
 
 
@@ -216,8 +271,22 @@
     width: 190px;
   
   }
-  
-  
+  /*Centro de pagina*/
+  .center-b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+   .titles .title{
+    font-size: 45px;
+   }
+   .titles .subtitle{
+    font-size: 25px;
+   }
+   .center .img{
+    display: none;
+   }
 }
       
 /* Adaptación a tablet*/
@@ -318,7 +387,16 @@
     width: 190px;
   
   }
- 
+  /*centro de pagina inicial*/
+  .center-b{
+    text-align: center;
+  }
+  .titles .title{
+    font-size: 45px;
+  }
+  .titles .subtitle{
+    font-size: 35px;
+  }
  
  
  
