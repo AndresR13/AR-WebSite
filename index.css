@@ -87,11 +87,10 @@
 .center{
   width: 100%;
   height: 100vh;
-  background-image: url(imagenes/bak.jpg);
+  background-image: url(imagenes/bay.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   
 }
 .center .center-b{
