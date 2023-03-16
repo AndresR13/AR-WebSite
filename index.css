@@ -142,8 +142,7 @@
     left: 70%;
     width: 30%;
     height: 32%;
-    background: black;
-    line-height: 45px; 
+    background: black; 
     transition: .3s ease-in-out;
     transform: translateX(100%);
   }
