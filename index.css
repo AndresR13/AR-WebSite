@@ -6,647 +6,108 @@
   font-family: 'poppins', sans-serif;
   scroll-behavior: smooth;
 }
-             /*menu de navegación*/
-nav{
-  display: flex;
+.nav{
   position: fixed;
+  display: flex;
   align-items: center;
-  background: black;
+  justify-content: space-between;
   width: 100%;
   height: 8vh;
-  padding: 0 30px;
+  background: black;
+  padding: 0 40px;
+}
+.nav_input{
+  display: none;
 }
 .logo{
   color: white;
-  padding: 15px;
-  font-size: 20px;
   font-weight: 900;
-  
-}
-.menu-btn{
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-.nav__input{
-  font-size: 20px;
-  color: white;
-  display: none ;
-  cursor: pointer;
-}
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 .menuu{
-  justify-content: space-between;
-  display: flex;
-  padding: 0 0 0 500px;
+  position: fixed;
+  flex-direction: column;
+  top: 8vh;
+  left: 70%;
+  width: 30%;
+  height: 33%;
+  background: black;
+  line-height: 45px; 
+  transition: .3s ease-in-out;
+  transform: translateX(100%);
+}
+.nav_input:checked + .menuu{
+  transform: translateX(0);
+}
+.menuu li button{
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: none;
+  color: white;
+  background: black;
 }
 .menuu li button:hover{
-  color: white;
-  background: gray;
-  border-radius: 30px;
+  color: black;
+  background: white;
 }
 .menuu li{
   list-style: none;
   margin: 0 15px;
 }
-.menuu li button{
-  border: none;
-  width: 110px;
-  height: 35px;
-  color: white;
-  background: transparent;
-  font-weight: 800;
-  transition: .3s ease-in-out;
-}
-        /*MENU DEL BOTTON ISQUIERDO*/
-.menuuu{
-  position: fixed;
-  width: 8%;
-  top: 8vh;
-  left: 0;
-  background: black;
-  transform: translateX(-110%);
-}
-.menuuu li{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-}
-.menuuu li button:hover{
-  background: gray;
-  
-}
-.menuuu li button{
-  color: white;
-  text-decoration: none;
-  line-height: 70px;
-  width: 130px;
-  background: black;
-  border: none;
-  outline: none;
-}
-.nav_input:checked + .menuuu{
-  transform: translateX(0);
-}
-.menuu-btn{
-  color: white;
-  display: block;
-  font-size: 20px;
-}
 .menu-btn{
-  display: none;
-}
-.nav_input{
-  display: none;
-}
-         /*Centro de la pagina inicial*/
-.wave{
-  width: 100%;
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-.center{
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 78vh;
-}
-.center .center-b{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
-.titles{
-  text-align: center;
-  margin-top: 110px;
-}
-.center .img{
-  width: 400px;
-  height: 400px;
-  margin: 20px;
-}
-.center .title{
   color: white;
-  font-size: 55px;
-  font-weight: 800;
-}
-.center .subtitle{
-  color: white;
-  font-size: 50px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.center .btns{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-.center .btns button{
-  color: white;
-  font-size: 18px;
-  margin: 10px;
-  background: transparent;
-  outline: none;
-  border: none;
-  border: 3px solid white;
-  width: 145px;
-  height: 50px;
-  font-weight: 600;
-  transition: .3s ease-in-out;
-  border-radius: 20px;
-}
-.center .btns button:hover{
-  color: black;
-  background: white;
-}
-.center .btns .btn2{
-  background: rgb(182, 182, 182);
-  border: none;
-}
-/*BUSCADOR*/
-.buscadoor{
-  display:none;
-  
-}
-.buscadoor li{
- position: fixed;
- display: block;
- top: 1vh;
- left: 15%;
- 
-  
-}
-.buscadoor input{
-  width: 500px;
-  height: 39px;
-  border-radius: 30px;
-  outline: none;
-  border: none;
-  text-align: center;
-}
-.nav_buscador{
-  display: none;
-}
-.buscador-btn i{
-  color: white;
-  font-size: 20px;
-}
-.nav_buscador:checked + .buscadoor{
-  display: block;
-}
-::-webkit-input-placeholder{
-  color: black;
-}
-
-/*SECCION DE PELICULAS DESPUES DEL INICIO*/
-.present{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 100vh;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.present2{
-  display: flex;
-  margin: -9%;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 100vh;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.present2 .top h2{
-  color: white;
-  font-size: 40px;
-}
-.present .top h2{
-  color: white;
-  font-size: 40px;
-  margin:20px 0 0;
-}
-.pelis__1{
-  outline: 1px solid white;
-  flex-wrap: wrap;
-}
-.pelis_1{
-  position: relative;
-}
-.pelis_1 figure{
-  position: relative;
-  height: 350px;
-  width: 330px;
-  overflow: hidden ;
-  border-radius: 6px;
-  box-shadow: 6px 15px 25px rgba(0,0,0,0.50);
-  cursor: pointer;
-}
-
-.pelis_1 h2{
-  color: white;
-  text-align: center;
-  font-weight: 400px;
-  margin-bottom: 120px;
-  transition: all 500ms ease-in-out;
-}
-.pelis_1 p{
-  color: white;
-  text-align: center;
-  font-style: italic;
-}
-.pbtns{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pbtns button{
-  width: 120px;
-  height: 45px;
-  margin: 10px;
-  color: white;
-  background: none;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-  border: 1px solid white;
-  font-size: 15px;
-  font-weight: 600;
-  transition: all 400ms ease-in-out;
-}
-.pbtns button:hover{
-  color: black;
-  background: white;
-  border: 5px solid white;
-
-}
-.pelis_1 .pelis___1{
-  display: flex;
-  background: rgb(31, 29, 29);
-  padding: 2px;
-  width: 1250px;
-  height: 430px;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.pelis_1 .pelis--1{
-  display: flex;
-  background: rgb(31, 29, 29);
-  padding: 2px;
-  width: 1250px;
-  height: 430px;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.pelis_1 .pelis___1 .pelis__1{
-  margin: 3px;
-}
-.pelis_1 .pelis--1 .pelis__1{
-  margin: 3px;
-}
-.pelis_1 .control{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  object-fit: contain;
-  padding: 10px;
-}
-.pelis_1 .prev{
-  left: -1%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.pelis_1 .next{
-  right: 0;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-.pelis_1 .preve{
-  left: -1%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.pelis_1 .nexte{
-  right: 0;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-.pelis__1 img{
-  width: 100%;
-  height: 100%px;
-  border-radius: 3px;
-  transition: all 500ms ease-in-out;
-  background-attachment: fixed;
-}
-.pelis_1 figure .capa{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,103,123,0.7);
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-} 
-.pelis_1 figure:hover > .capa{
-  opacity: 1;
-  visibility: visible;
-
-}
-.pelis_1 figure:hover > .capa h2{
-  margin-top: 70px;
-  margin-bottom: 15px;
 }
 
 
-         /*ADAPTACIÓN AL TELEFONO*/
-@media screen and (max-width:800px){
-  /*MENU DE NAVEGACIÓN*/
-  .menu-btn{
-    display: block;
-  }
-  .menuu{
-    position: fixed;
-    display: block;
-    top: 8vh;
-    left: 70%;
-    line-height: 70px;
-    background: black;
-    align-items: center;
-    justify-content: center;
-    border-bottom-left-radius: 15px;
-    transform: translateX(100%);
-    transition: .3s ease-in-out;
-    padding: 0;
-  }
-  .menuu li{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    transition: .3s ease-in-out;
-    margin: 0 20px;
-  }
-  .menuu li:hover{
-    background: gray;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav__input:checked + .menuu{
-    transform: translatex(0);
-  }
-  .menuuu{
-    display: none;
-  }
-  .menuu-btn{
-    display: none;
-  }
-  .nav_input{
-    display:none
-  }
-  /*CENTER*/
-  .center .title{
-    padding: 65px 0 0;
-    font-size: 40px;
-    text-align: center;
-  }
-  .center .subtitle{
-    font-size: 35px;
-    text-align: center;
-    padding-bottom: 0 ;
 
-  }
-  .center .btns button{
-    width: 140px;
-    height: 45px;
-    font-size: 15px;
-  }
-  .center .btns{
-    transform: translateY(300%);
-  }
-  .center .img{
-    width: 200px;
-    height: 200px;
-    transform: translateY(-40%);
-  }
-  .center .center-b{
-    display: flex;
-    flex-direction: column;
+
+
+          /*MENU DE NAVEGACIÓN*/
+         
+        /*SECCION DE PELICULAS DESPUES DEL INICIO*/
+        .gallery--container{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          padding: 20px;
+          gap: 10px;
+        }
+        .gallery--img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .gallery--item{
+          position: relative;
+        }
+        .gallery--title{
+          position: absolute;
+          bottom: 0;
+          color: white;
+          background: linear-gradient(rgba(255,255,255.0), rgba(0,0,0,0.1));
+          width: 100%;
+          margin: 0;
+          padding: 10px;
+        }
+        
+      
+/* Adaptación a tablet*/
+@media screen and (min-width: 768px){
+  .gallery--container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 10px;
   }
 
-/*BUSCADOR*/
-.buscadoor{
-  display:none;
 }
-.buscadoor li{
- display: flex;
- top: -70vh;
- left: 34%;
- margin: 10px;
-  
-}
-.buscadoor input{
-  width: 210px;
-  height: 35px;
-  border-radius: 30px;
-  outline: none;
-  border: none;
-  text-align: center;
-}
-.nav_buscador{
-  display: none;
-}
-.buscador-btn i{
-  padding: 0 0 0 230px;
-  color: white;
-  font-size: 20px;
-}
-.nav_buscador:checked + .buscadoor{
-  display: block;
-}
-/*SECCION DE PELICULAS DESPUES DEL INICIO*/
-.present{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 100vh;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.present2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 100vh;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.present2 .top h2{
-  color: white;
-  font-size: 40px;
-}
-.present .top h2{
-  color: white;
-  font-size: 40px;
-  margin:20px 0 0;
-}
-.pelis__1{
-  outline: 1px solid white;
-  flex-wrap: wrap;
-}
-.pelis_1{
-  position: relative;
-  padding-left: 10px;
-}
-.pelis_1 figure{
-  position: relative;
-  height: 340px;
-  width: 320px;
-  overflow: hidden ;
-  border-radius: 6px;
-  box-shadow: 6px 15px 25px rgba(0,0,0,0.50);
-  cursor: pointer;
-}
+/* Adaptación a web*/
+@media screen and (min-width: 1024px){
+  .gallery--container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px;
+    gap: 10px;
+  }
+  /*menu de navegación*/
 
-.pelis_1 h2{
-  color: white;
-  text-align: center;
-  font-weight: 400px;
-  margin-bottom: 120px;
-  transition: all 500ms ease-in-out;
-}
-.pelis_1 p{
-  color: white;
-  text-align: center;
-  font-style: italic;
-}
-.pbtns{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pbtns button{
-  width: 120px;
-  height: 45px;
-  margin: 10px;
-  color: white;
-  background: none;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-  border: 1px solid white;
-  font-size: 15px;
-  font-weight: 600;
-  transition: all 400ms ease-in-out;
-}
-.pbtns button:hover{
-  color: black;
-  background: white;
-  border: 5px solid white;
-
-}
-.pelis_1 .pelis___1{
-  display: flex;
-  background: rgb(31, 29, 29);
-  padding: 2px;
-  width: 340px;
-  height: 430px;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.pelis_1 .pelis--1{
-  display: flex;
-  background: rgb(31, 29, 29);
-  padding: 2px;
-  width: 340px;
-  height: 430px;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-.pelis_1 .pelis___1 .pelis__1{
-  margin: 3px;
-}
-.pelis_1 .pelis--1 .pelis__1{
-  margin: 3px;
-}
-.pelis_1 .control{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  object-fit: contain;
-  padding: 10px;
-}
-.pelis_1 .prev{
-  left: -3%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.pelis_1 .next{
-  right: 3%;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-.pelis_1 .preve{
-  left: -3%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.pelis_1 .nexte{
-  right: 3%;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-.pelis__1 img{
-  width: 100%;
-  height: 100%;
-  border-radius: 3px;
-  transition: all 500ms ease-in-out;
-}
-.pelis_1 figure .capa{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,103,123,0.7);
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-} 
-.pelis_1 figure:hover > .capa{
-  opacity: 1;
-  visibility: visible;
-
-}
-.pelis_1 figure:hover > .capa h2{
-  margin-top: 70px;
-  margin-bottom: 15px;
-}
 }
