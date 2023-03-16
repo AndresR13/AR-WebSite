@@ -31,12 +31,15 @@
   display: flex;
 }
 .menuu li button{
-  width: 100%;
+  border-radius: 10px;
+  width: 60px;
   height: 45px;
   outline: none;
   border: none;
   color: white;
   background: black;
+  font-weight: 600;
+  transition: .2s ease-in-out;
 }
 .menuu li button:hover{
   color: black;
@@ -52,10 +55,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  height: 40px;
-  border-radius: 40px;
- 
+}
+.none{
+  display: none;
 }
 .buscar_texto{
   border: none;
@@ -63,7 +65,7 @@
   color: black;
   font-size: 14px;
   float: left;
-  line-height: 45px;
+  line-height: 40px;
   transition: .3s;
   width: 0;
   border-radius: 10px;
@@ -168,15 +170,27 @@
   .menu-btn{
     color: white;
     display: block;
+    font-size: 23px;
   }
   /* personalización del buscador*/
   .buscar{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    transform: translateX(-50%);
     padding: 10px;
     height: 40px;
     border-radius: 40px;
+  }
+  .none{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buscars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .buscar_texto{
     border: none;
@@ -193,12 +207,12 @@
     width: 40px;
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
   }
   ::-webkit-input-placeholder{
     color: black;
   }
-  .buscar:hover > .buscar_texto{
+  .buscars:hover > .buscar_texto{
     width: 190px;
   
   }
@@ -207,7 +221,103 @@
 }
       
 /* Adaptación a tablet*/
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
+  .nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    background: black;
+    padding: 0 40px;
+  }
+  .nav_input{
+    display: none;
+  }
+  .logo{
+    color: white;
+    font-weight: 900;
+  }
+  .menuu{
+    position: fixed;
+    flex-direction: column;
+    top: 8vh;
+    left: 70%;
+    width: 30%;
+    height: 32%;
+    background: black; 
+    transition: .3s ease-in-out;
+    transform: translateX(100%);
+  }
+  .nav_input:checked + .menuu{
+    transform: translateX(0);
+  }
+  .menuu li button{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    color: white;
+    background: black;
+  }
+  .menuu li button:hover{
+    color: black;
+    background: white;
+  }
+  .menuu li{
+    list-style: none;
+    margin: 0 15px;
+  }
+  .menu-btn{
+    color: white;
+    display: block;
+    font-size: 23px;
+  }
+  /* personalización del buscador*/
+  .buscar{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    padding: 10px;
+    height: 40px;
+    border-radius: 40px;
+  }
+  .none{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buscars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .buscar_texto{
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    float: left;
+    line-height: 45px;
+    transition: .3s;
+    width: 0;
+    border-radius: 10px;
+  }
+  .boton{
+    width: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+  }
+  ::-webkit-input-placeholder{
+    color: black;
+  }
+  .buscars:hover > .buscar_texto{
+    width: 190px;
+  
+  }
  
  
  
@@ -215,7 +325,10 @@
  
  
  
- 
+
+
+
+
  
   .gallery--container{
     display: grid;
