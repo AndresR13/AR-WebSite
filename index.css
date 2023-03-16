@@ -55,6 +55,7 @@
   padding: 10px;
   height: 40px;
   border-radius: 40px;
+ 
 }
 .buscar_texto{
   border: none;
@@ -140,7 +141,7 @@
     top: 8vh;
     left: 70%;
     width: 30%;
-    height: 33%;
+    height: 32%;
     background: black;
     line-height: 45px; 
     transition: .3s ease-in-out;
