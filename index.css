@@ -23,9 +23,10 @@
 .menu-btn{
   display: none;
 }
-.logo{
+.logo a{
   color: white;
   font-weight: 900;
+  text-decoration: none;
 }
 .menuu{
   display: flex;
@@ -128,6 +129,7 @@
   background: transparent;
   color: white;
   font-weight: 700;
+  transition: .2s ease-in-out;
 }
 .btn:hover{
   color: black;
@@ -136,39 +138,106 @@
 .center .img{
   width: 300px;
   height: 300px;
+} 
+/*SECCION DE PELICULAS DESPUES DEL INICIO*/
+.section{
+  background: linear-gradient(to right, rgb(29, 26, 26) , rgb(36, 33, 33));
+}
+.section .topi{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.section .topi i{
+  color: white ;
+  padding: 10px;
+}
+.section .topi .sec--title{
+  color: white;
+  font-size: 20px;
+}
+.section .topi .topi--b{
+  margin: 10px;
+  color: white;
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.gallery--container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px;
+  gap: 10px;
+}
+.gallery--img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery--item{
+  position: relative;
 }
 
+.gallery--center{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  opacity: 0;
+  background: linear-gradient(to right, #00000070, black);
+ transition: .5s ease-in-out;
+}
 
-
-
-
-       /*MENU DE NAVEGACIÓN*/
-         
-        /*SECCION DE PELICULAS DESPUES DEL INICIO*/
-        .gallery--container{
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          padding: 20px;
-          gap: 10px;
-        }
-        .gallery--img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .gallery--item{
-          position: relative;
-        }
-        .gallery--title{
-          position: absolute;
-          bottom: 0;
-          color: white;
-          background: linear-gradient(rgba(255,255,255.0), rgba(0,0,0,0.1));
-          width: 100%;
-          margin: 0;
-          padding: 10px;
-        }
-
+.gallery--center .g1title{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.gallery--center .g2title{
+  color: #ffffff86;
+  font-size: 10px;
+  text-align: center;
+}
+.gallery--center .g3title{
+  color: #ffffff86;
+  font-size: 10px;
+  text-align: center;
+}
+.gallery--center .gdescripcion{
+  color: #ffffff86;
+  font-size: 10px;
+  text-align: center;
+}
+.gallery--center .gbtns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery--center .gbtn{
+  width: 80px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  transition: .2s ease-in-out;
+}
+.gallery--center .gbtn:hover{
+  color: black;
+  background: white;
+}
+.gallery--item:hover > .gallery--center{
+  opacity: 1;
+}
 
 
 
@@ -286,6 +355,11 @@
    .center .img{
     display: none;
    }
+   /*pelis adaptable*/
+   .gallery--container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
 }
       
 /* Adaptación a tablet*/
@@ -396,26 +470,9 @@
   .titles .subtitle{
     font-size: 35px;
   }
- 
- 
- 
- 
- 
- 
-
-
-
-
- 
-  .gallery--container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-    gap: 10px;
-  }
 
 }
-/* Adaptación a web*/
+/* Adaptación a web
 @media screen and (min-width: 1024px){
   .gallery--container{
     display: grid;
@@ -423,6 +480,5 @@
     padding: 20px;
     gap: 10px;
   }
-  /*menu de navegación*/
 
 }
