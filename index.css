@@ -6,6 +6,7 @@
   font-family: 'poppins', sans-serif;
   scroll-behavior: smooth;
 }
+/*personalizacion del header*/
 .nav{
   position: fixed;
   display: flex;
@@ -19,24 +20,15 @@
 .nav_input{
   display: none;
 }
+.menu-btn{
+  display: none;
+}
 .logo{
   color: white;
   font-weight: 900;
 }
 .menuu{
-  position: fixed;
-  flex-direction: column;
-  top: 8vh;
-  left: 70%;
-  width: 30%;
-  height: 33%;
-  background: black;
-  line-height: 45px; 
-  transition: .3s ease-in-out;
-  transform: translateX(100%);
-}
-.nav_input:checked + .menuu{
-  transform: translateX(0);
+  display: flex;
 }
 .menuu li button{
   width: 100%;
@@ -54,15 +46,46 @@
   list-style: none;
   margin: 0 15px;
 }
-.menu-btn{
+
+/* personalización del buscador*/
+.buscar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  border-radius: 40px;
+}
+.buscar_texto{
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 14px;
+  float: left;
+  line-height: 45px;
+  transition: .3s;
+  width: 0;
+  border-radius: 10px;
+}
+.boton{
+  width: 40px;
+  text-decoration: none;
   color: white;
+  font-size: 25px;
+}
+::-webkit-input-placeholder{
+  color: black;
+}
+.buscar:hover > .buscar_texto{
+  width: 190px;
+
 }
 
 
 
 
 
-          /*MENU DE NAVEGACIÓN*/
+       /*MENU DE NAVEGACIÓN*/
          
         /*SECCION DE PELICULAS DESPUES DEL INICIO*/
         .gallery--container{
@@ -88,10 +111,112 @@
           margin: 0;
           padding: 10px;
         }
-        
+
+
+
+
+        /*adaptación a telefono*/
+@media screen and (max-width: 480px){
+  .nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    background: black;
+    padding: 0 40px;
+  }
+  .nav_input{
+    display: none;
+  }
+  .logo{
+    color: white;
+    font-weight: 900;
+  }
+  .menuu{
+    position: fixed;
+    flex-direction: column;
+    top: 8vh;
+    left: 70%;
+    width: 30%;
+    height: 33%;
+    background: black;
+    line-height: 45px; 
+    transition: .3s ease-in-out;
+    transform: translateX(100%);
+  }
+  .nav_input:checked + .menuu{
+    transform: translateX(0);
+  }
+  .menuu li button{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    color: white;
+    background: black;
+  }
+  .menuu li button:hover{
+    color: black;
+    background: white;
+  }
+  .menuu li{
+    list-style: none;
+    margin: 0 15px;
+  }
+  .menu-btn{
+    color: white;
+    display: block;
+  }
+  /* personalización del buscador*/
+  .buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 40px;
+    border-radius: 40px;
+  }
+  .buscar_texto{
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    float: left;
+    line-height: 45px;
+    transition: .3s;
+    width: 0;
+    border-radius: 10px;
+  }
+  .boton{
+    width: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+  ::-webkit-input-placeholder{
+    color: black;
+  }
+  .buscar:hover > .buscar_texto{
+    width: 190px;
+  
+  }
+  
+  
+}
       
 /* Adaptación a tablet*/
 @media screen and (min-width: 768px){
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   .gallery--container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
