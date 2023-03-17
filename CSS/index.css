@@ -270,7 +270,7 @@ body{
   align-items: center;
   padding: 10px;
 }
-.category_list a{
+.category_list button{
   display: block;
   width: 100%;
   padding: 15px 0;
@@ -443,7 +443,7 @@ body{
     border-radius: 10px;
     
   }
-  .category_list a{
+  .category_list button{
     width: 100px;
     height: 45px;
     text-align: center;
