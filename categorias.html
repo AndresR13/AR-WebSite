@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cineflix | Peliculas</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="JS/WAR.js"></script>
+	<link rel="icon" href="imagenes/LOGO CINEFLIX.png">
+</head>
+<body>
+  <!--Header-->
+	<header>
+		<nav>
+			<div class="nav">
+				<div class="logo">
+					<a href="#">CINEFLIX</a>
+				</div>
+				<input type="checkbox"  id="menu" class="nav_input">
+				<ul class="menuu">
+					<div class="buscar">
+						<input type="search" class="buscar_texto" placeholder="Escribe lo que buscas">
+						<a href="#" class="boton">
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+					<li><form action=""><button>Inicio</button></form></li>
+					<li><form action=""><button>Peliculas</button></form></li>
+					<li><form action=""><button>Series</button></form></li>
+					<li><form action=""><button>Estrenos</button></form></li>	
+				</ul>
+				<div class="none">
+					<div class="buscars">
+						<input type="search" class="buscar_texto" placeholder="Escribe lo que buscas">
+						<a href="#" class="boton">
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+					<label for="menu" class="menu-btn">
+						<i class="fas fa-bars"></i>
+					</label>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="wrap">
+		<h1>Peliculas Onnline</h1>
+		<hr>
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="all">Todo</a>
+				<a href="#" class="category_item" category="Acción">Accion</a>
+				<a href="#" class="category_item" category="Aventura">Aventura</a>
+				<a href="#" class="category_item" category="Animadas">Animadas</a>
+				<a href="#" class="category_item" category="Terror">Terror</a>
+				<a href="#" class="category_item" category="Drama/Suspenso">Drama/suspenso</a>
+			</div>
+			<section class="products-list">
+				<div class="gallery--container">
+					<div class="gallery--item" category="Drama/Suspenso">
+						<img src="imagenes/LF.jpeg" alt="" class="gallery--img">
+						<div class="gallery--center">
+							<h2 class="g1title">Lobo Feroz</h2>
+							<h2 class="g2title">1hr 45min  2023</h2>
+							<h2 class="g3title">Genero: Drama, Suspenso</h2><br>
+							<p class="gdescripcion">Un policía al borde de la ley y una mujer en busca de venganza, cruzan sus caminos obsesionados con descubrir al asesino que se esconde tras los brutales crímenes de varias niñas. Ambos están dispuestos a hacer lo que sea necesario para lograr su confesión, aunque para ello tengan que tomarse la justicia por su mano.</p>
+							<div class="gbtns">
+								<form action=""><button class="gbtn">Ver Ahora</button></form>
+								<form action=""><button class="gbtn">Trailer</button></form>
+							</div>
+							</div>
+						
+						</div>
+						<div class="gallery--item" category="Acción">
+							<img src="imagenes/antman.jpeg" alt="" class="gallery--img">
+							<div class="gallery--center">
+							<h2 class="g1title">Ant-man Quantumania</h2>
+							<h2 class="g2title">1hr 30min  2023</h2>
+							<h2 class="g3title">Genero: Accion</h2><br>
+							<p class="gdescripcion">Los superhéroes Scott y Cassie Lang, Hope van Dyne y sus padres, se encuentran accidentalmente atrapados en el reino cuántico y deben enfrentarse a un nuevo enemigo, Kang el Conquistador.</p>
+							<div class="gbtns">
+								<form action=""><button class="gbtn">Ver Ahora</button></form>
+								<form action=""><button class="gbtn">Trailer</button></form>
+							</div>
+							</div>
+					</div>
+					<div class="gallery--item" Category="Acción">
+						<img src="imagenes/black.jpg" alt="" class="gallery--img">
+						<div class="gallery--center">
+						<h2 class="g1title">Black Adam</h2>
+						<h2 class="g2title">1hr 24min  2023</h2>
+						<h2 class="g3title">Genero: Accion</h2><br>
+						<p class="gdescripcion">Unos arqueólogos liberan de su tumba a Black Adam, quien llevaba 5000 años preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despertó.</p>
+						<div class="gbtns">
+							<form action=""><button class="gbtn">Ver Ahora</button></form>
+							<form action=""><button class="gbtn">Trailer</button></form>
+						</div>
+						</div>
+				</div>
+				<div class="gallery--item" category="Acción">
+					<img src="imagenes/65.jpeg" alt="" class="gallery--img">
+					<div class="gallery--center">
+					<h2 class="g1title">65</h2>
+					<h2 class="g2title">1hr 33min  2023</h2>
+					<h2 class="g3title">Genero: Accion, ficcion, estrenos, suspense</h2><br>
+					<p class="gdescripcion"> Después de un catastrófico accidente en un planeta desconocido, el piloto Mills descubre rápidamente que realmente está varado en la Tierra… Ahora, con solo una oportunidad de rescate, deberán abrirse camino a través del desconocido territorio en una épica lucha por sobrevivir</p>
+					<div class="gbtns">
+						<form action=""><button class="gbtn">Ver Ahora</button></form>
+						<form action=""><button class="gbtn">Trailer</button></form>
+					</div>
+					</div>
+			</div>
+			<div class="gallery--item" category="Acción">
+				<img src="imagenes/AT.jpg" alt="" class="gallery--img">
+				<div class="gallery--center">
+				<h2 class="g1title">Attack on Titan</h2>
+				<h2 class="g2title">1hr 33min  2023</h2>
+				<h2 class="g3title">Genero: Accion, c.ficcion</h2><br>
+				<p class="gdescripcion">A medida que se agota el agua viable en la Tierra, se envía una misión a la luna Titán de Saturno para recuperar reservas sostenibles de H2O de sus habitantes alienígenas. Pero justo cuando los humanos adquieren el preciado recurso, son atacados por los titanes rebeldes. </p>
+				<div class="gbtns">
+					<form action=""><button class="gbtn">Ver Ahora</button></form>
+					<form action=""><button class="gbtn">Trailer</button></form>
+				</div>
+				</div>
+			</div>
+			<div class="gallery--item" Category="Comedia">
+				<img src="imagenes/NP.jpg" alt="" class="gallery--img">
+				<div class="gallery--center">
+				<h2 class="g1title">Noche de paz</h2>
+				<h2 class="g2title">1hr 41min  2022</h2>
+				<h2 class="g3title">Genero: Accion, comedia, crimen</h2><br>
+				<p class="gdescripcion">Cuando un equipo de mercenarios irrumpe en Nochebuena dentro de un complejo familiar adinerado y toma como rehenes a todos los que están dentro, no estaban preparados para un defensor sorpresa: Santa Claus (David Harbour) está en el edificio y a punto de demostrar por qué este Santa Claus, no es ningún santo.</p>
+				<div class="gbtns">
+					<form action=""><button class="gbtn">Ver Ahora</button></form>
+					<form action=""><button class="gbtn">Trailer</button></form>
+				</div>
+				</div>
+		</div>
+		<div class="gallery--item" category="Drama">
+			<img src="imagenes/Baby.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+			<h2 class="g1title">Babylon</h2>
+			<h2 class="g2title">3hr 8min  2022</h2>
+			<h2 class="g3title">Genero: Comedia, Drama, Estrenos</h2><br>
+			<p class="gdescripcion">Ambientada en Los Angeles durante los años 20, cuenta una historia de ambición y excesos desmesurados que recorre la ascensión y caída de múltiples personajes durante una época de desenfrenada decadencia y depravación en los albores de Hollywood.</p>
+			<div class="gbtns">
+				<form action=""><button class="gbtn">Ver Ahora</button></form>
+				<form action=""><button class="gbtn">Trailer</button></form>
+			</div>
+			</div>
+		</div>
+		<div class="gallery--item" Category="Acción">
+			<img src="imagenes/OP.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+			<h2 class="g1title">Operación Fortuna</h2>
+			<h2 class="g2title">1hr 54min  2023</h2>
+			<h2 class="g3title">Genero: Accion, comedia, Suspense</h2><br>
+			<p class="gdescripcion"> La historia de un agente que es reclutado por una alianza de inteligencia global para rastrear y detener la venta de nuevas tecnologías de armas mortales. </p>
+			<div class="gbtns">
+				<form action=""><button class="gbtn">Ver Ahora</button></form>
+				<form action=""><button class="gbtn">Trailer</button></form>
+			</div>
+			</div>
+		</div>
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/CN.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+			<h2 class="g1title">Luther: Cae la noche</h2>
+			<h2 class="g2title">2hr 9min  2023</h2>
+			<h2 class="g3title">Genero: Accion, crimen, Drama</h2><br>
+			<p class="gdescripcion">Atormentado por un caso sin resolver, el brillante pero caído en desgracia inspector londinense John Luther se fuga de la cárcel para intentar atrapar a un sádico asesino en serie...</p>
+			<div class="gbtns">
+				<form action=""><button class="gbtn">Ver Ahora</button></form>
+				<form action=""><button class="gbtn">Trailer</button></form>
+			</div>
+			</div>
+		</div>
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/SC.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+			<h2 class="g1title">Marlowe</h2>
+			<h2 class="g2title">1hr 49min  2023</h2>
+			<h2 class="g3title">Genero: Accion, crimen, Drama</h2><br>
+			<p class="gdescripcion">A finales de los años 30, en los bajos fondos de Los Ángeles, una rica y bella heredera encarga a Marlowe que busque a su antiguo amante, que ha desaparecido. Pronto descubre que tras la desaparición de ese hombre hay una red corrupta que le pone en el punto de mira de algunos de los mandatarios más acomodados y peligrosos de la ciudad.</p>
+			<div class="gbtns">
+				<form action=""><button class="gbtn">Ver Ahora</button></form>
+				<form action=""><button class="gbtn">Trailer</button></form>
+			</div>
+			</div>
+		</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+  
+</body>
+</html>
