@@ -285,6 +285,11 @@ body{
   border-radius: 4px;
   font-weight: 600;
   font-size: 13px;
+  transition: all .3s ease-in-out;
+}
+.category_list a:hover{
+  color: white;
+  background: black;
 }
 .category_list .ct_item-active{
   background: rgb(31, 31, 31);
