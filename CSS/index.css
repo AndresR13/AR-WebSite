@@ -287,10 +287,6 @@ body{
   font-size: 13px;
   transition: all .3s ease-in-out;
 }
-.category_list a:hover{
-  color: white;
-  background: black;
-}
 .category_list .ct_item-active{
   background: rgb(31, 31, 31);
   color: white;
@@ -419,7 +415,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    }
-   /*Peliculas filtro*/
+   /*Peliculas filtro----------------------------*/
    .wrap{
     width: 100%;
     margin: auto;
