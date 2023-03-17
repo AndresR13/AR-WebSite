@@ -17,6 +17,7 @@
   height: 8vh;
   background: black;
   padding: 0 40px;
+  z-index: 10;
 }
 .nav_input{
   display: none;
@@ -242,11 +243,10 @@
 }
 /*PROBANDO JQUERY*/
 body{
-  background: linear-gradient(to right, black, black);
+  
 }
 .wrap{
-  max-width: 1100px;
-  width: 90%;
+  width: 100%;
   margin: auto;
   background: linear-gradient(to right, black, black);
 }
@@ -260,35 +260,41 @@ body{
 }
 .store-wrapper{
   display: flex;
+  flex-direction: column;
 }
 .category_list{
   display: flex;
-  flex-direction: column;
-  width: 18%;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
-  padding: 20px 0 0 0;
+  padding: 10px;
 }
 .category_list a{
-	display: block;
-	width: 90%;
-	padding: 15px 0;
-	margin-bottom: 20px;
-	background: transparent;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin: 10px;
+  margin-bottom: 20px;
+  background: transparent;
   border: 1px solid white;
-	text-align: center;
-	text-decoration: none;
-	color: black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
   background: white;
   border-radius: 4px;
   font-weight: 600;
   font-size: 13px;
 }
 .category_list .ct_item-active{
-  background: rgb(1, 54, 85);
+  background: rgb(31, 31, 31);
+  color: white;
+  border: 3px solid white;
 }
 
 
 
+/* RESPONSIVE ================================*
         /*adaptación a telefono*/
 @media screen and (max-width: 480px){
   .nav{
@@ -408,6 +414,53 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    }
+   /*Peliculas filtro*/
+   .wrap{
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to right, black, black);
+  }
+  .wrap h1{
+    color: white;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .store-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .category_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+  .category_list a{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    margin: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .category_list .ct_item-active{
+    background: rgb(31, 31, 31);
+    color: white;
+    border: 3px solid white;
+  }
 }
       
 /* Adaptación a tablet*/
