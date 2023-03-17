@@ -249,6 +249,7 @@ body{
   width: 100%;
   margin: auto;
   background: linear-gradient(to right, black, black);
+  padding: 60px 0 0 0;
 }
 .wrap h1{
   color: white;
@@ -256,7 +257,6 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 60px 0 0 0;
 }
 .store-wrapper{
   display: flex;
@@ -270,7 +270,7 @@ body{
   align-items: center;
   padding: 10px;
 }
-.category_list button{
+.category_list butt{
   display: block;
   width: 100%;
   padding: 15px 0;
