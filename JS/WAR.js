@@ -14,15 +14,15 @@ $(document).ready(function(){
 		$(this).addClass('ct_item-active');
 
 		// OCULTANDO PRODUCTOS =========================
-		$('.product-item').css('transform', 'scale(0)');
+		$('.gallery--item').css('transform', 'scale(0)');
 		function hideProduct(){
-			$('.product-item').hide();
+			$('.gallery--item').hide();
 		} setTimeout(hideProduct,400);
 
 		// MOSTRANDO PRODUCTOS =========================
 		function showProduct(){
-			$('.product-item[category="'+catProduct+'"]').show();
-			$('.product-item[category="'+catProduct+'"]').css('transform', 'scale(1)');
+			$('.gallery--item[category="'+catProduct+'"]').show();
+			$('.gallery--item[category="'+catProduct+'"]').css('transform', 'scale(1)');
 		} setTimeout(showProduct,400);
 	});
 
@@ -30,8 +30,9 @@ $(document).ready(function(){
 
 	$('.category_item[category="all"]').click(function(){
 		function showAll(){
-			$('.product-item').show();
-			$('.product-item').css('transform', 'scale(1)');
+			$('.gallery--item').show();
+			$('.gallery--item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
 });
+

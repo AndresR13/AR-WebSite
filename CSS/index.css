@@ -242,149 +242,56 @@
   opacity: 1;
 }
 /*PROBANDO JQUERY*/
+body{
+  
+}
 .wrap{
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(to right, black, black);
   padding: 60px 0 0 0;
-	max-width: 1100px;
-	width: 90%;
-	margin: auto;
 }
-
-.wrap > h1{
-	color: #494B4D;
-	font-weight: 400;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin: 15px 0px;
-}
-
-.wrap > h1:after{
-	content: '';
-	width: 100%;
-	height: 1px;
-	background: #C7C7C7;
-	margin: 20px 0;
-}
-
-.store-wrapper{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.category_list{
-	display: flex;
-	flex-direction: column;
-	width: 18%;
-}
-
-.category_list .category_item{
-	display: block;
-	width: 90%;
-	padding: 15px 0;
-	margin-bottom: 20px;
-	background: #E84C3D;
-
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-
-.category_list .ct_item-active{
-	background: #2D3E50;
-}
-
-/* PRODUCTOS ============*/
-
-.products-list{
-	width: 82%;
-	display: flex;
-
-}
-
-
-.products-list .product-item{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	
-	align-self: flex-start;
-	transition: all .4s;
-}
-.product--container{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  padding: 20px;
-  gap: 10px;
-}
-.product--img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.product-item{
-  position: relative;
-  transition: all .5s ease-in-out;
-}
-
-.product--center{
-  position: absolute;
-  bottom: 0;
+.wrap h1{
   color: white;
-  width: 100%;
-  height: 80%;
-  margin: 0;
-  opacity: 0;
-  background: linear-gradient(to right, #00000070, black);
- transition: .5s ease-in-out;
-}
-
-.product--center .g1title{
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-.product--center .g2title{
-  color: #ffffff86;
-  font-size: 10px;
-  text-align: center;
-}
-.product--center .g3title{
-  color: #ffffff86;
-  font-size: 10px;
-  text-align: center;
-}
-.product--center .gdescripcion{
-  color: #ffffff86;
-  font-size: 10px;
-  text-align: center;
-}
-.product--center .gbtns{
+  font-weight: 700;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.store-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.category_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
-  justify-content: center;
+  padding: 10px;
 }
-.product--center .gbtn{
-  width: 80px;
-  height: 40px;
-  margin: 5px;
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  border: 2px solid white;
-  background: none;
+.category_list .category_item{
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin: 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(31, 31, 31);
   color: white;
-  font-size: 12px;
+  border: 3px solid white;
+  border-radius: 4px;
   font-weight: 600;
-  transition: .2s ease-in-out;
+  font-size: 13px;
+  transition: all .3s ease-in-out;
 }
-.product--center .gbtn:hover{
+.category_list .ct_item-active{
+  background: rgb(255, 249, 249);
   color: black;
-  background: white;
+  border: 3px solid white;
 }
-.product-item:hover > .product--center{
-  opacity: 1;
-}
-
 /*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 
 
@@ -511,7 +418,46 @@
     grid-template-columns: repeat(2, 1fr);
    }
    /*Peliculas filtro----------------------------*/
-   
+   .wrap{
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to right, black, black);
+  }
+  .wrap h1{
+    color: white;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .store-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .category_list{
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    border: none;
+    border-radius: 10px;
+    
+  }
+  .category_list .category_item{
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+    outline: 1px solid white;
+    background: none;
+    color: white;
+  }
+  .category_list .ct_item-active{
+    background: rgb(253, 253, 253);
+    color: black;
+  }
 }
       
 /* Adaptación a tablet*/
