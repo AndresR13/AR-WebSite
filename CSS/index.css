@@ -277,19 +277,19 @@ body{
   margin: 10px;
   margin-bottom: 20px;
   background: transparent;
-  border: 1px solid white;
   text-align: center;
   text-decoration: none;
-  color: black;
-  background: white;
+  background: rgb(31, 31, 31);
+  color: white;
+  border: 3px solid white;
   border-radius: 4px;
   font-weight: 600;
   font-size: 13px;
   transition: all .3s ease-in-out;
 }
 .category_list .ct_item-active{
-  background: rgb(31, 31, 31);
-  color: white;
+  background: rgb(255, 249, 249);
+  color: black;
   border: 3px solid white;
 }
 
@@ -431,41 +431,37 @@ body{
   .store-wrapper{
     display: flex;
     flex-direction: column;
+    padding: 10px 0 0 0;
   }
   .category_list{
+    background: rgb(0, 0, 0);
+    color: white;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 10px;
+    border: 1px solid white;
+    border: none;
+    border-radius: 10px;
+    
   }
   .category_list a{
-    display: block;
-    width: 100%;
-    padding: 15px 0;
-    margin: 10px;
-    margin-bottom: 20px;
-    background: transparent;
-    border: 1px solid white;
+    width: 100px;
+    height: 45px;
     text-align: center;
-    text-decoration: none;
-    color: black;
-    background: white;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 13px;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+    outline: 1px solid white;
+    background: none;
+    color: white;
   }
   .category_list .ct_item-active{
-    background: rgb(31, 31, 31);
-    color: white;
+    background: rgb(253, 253, 253);
+    color: black;
     border: 3px solid white;
   }
 }
       
 /* Adaptación a tablet*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 760px){
   .nav{
     position: fixed;
     display: flex;
@@ -573,16 +569,4 @@ body{
     font-size: 35px;
   }
    /*pelis adaptable*/
-   
-
-}
-/* Adaptación a web
-@media screen and (min-width: 1024px){
-  .gallery--container{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 20px;
-    gap: 10px;
-  }
-
 }
