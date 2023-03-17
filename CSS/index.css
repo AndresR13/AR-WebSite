@@ -270,7 +270,7 @@ body{
   align-items: center;
   padding: 10px;
 }
-.category_list button{
+.category_list .category_item{
   display: block;
   width: 100%;
   padding: 15px 0;
@@ -444,7 +444,7 @@ body{
     border-radius: 10px;
     
   }
-  .category_list button{
+  .category_list .category_item{
     width: 100px;
     height: 45px;
     text-align: center;
@@ -457,7 +457,6 @@ body{
   .category_list .ct_item-active{
     background: rgb(253, 253, 253);
     color: black;
-    border: 3px solid white;
   }
 }
       
