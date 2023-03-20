@@ -288,9 +288,8 @@ body{
   transition: all .3s ease-in-out;
 }
 .category_list .ct_item-active{
-  background: rgb(255, 249, 249);
+  background: rgb(253, 253, 253);
   color: black;
-  border: 3px solid white;
 }
 /*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 
