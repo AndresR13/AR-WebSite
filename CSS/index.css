@@ -180,7 +180,7 @@
 }
 .gallery--item{
   position: relative;
-  transition: all .5s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .gallery--center{
