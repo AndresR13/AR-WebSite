@@ -17,7 +17,7 @@
   height: 8vh;
   background: black;
   padding: 0 40px;
-  z-index: 10;
+  z-index: 120;
 }
 .nav_input{
   display: none;
@@ -29,6 +29,21 @@
   color: white;
   font-weight: 900;
   text-decoration: none;
+}
+.logoo{
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 10px;
+  padding-left: 30px;
+}
+.logoo a{
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+}
+.logoo a:hover{
+  text-decoration: none;
+  color: white;
 }
 .menuu{
   display: flex;
@@ -54,43 +69,18 @@
 }
 
 /* personalización del buscador*/
-.buscar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .none{
   display: none;
-}
-.buscar_texto{
-  border: none;
-  outline: none;
-  color: black;
-  font-size: 14px;
-  float: left;
-  line-height: 40px;
-  transition: .3s;
-  width: 0;
-  border-radius: 10px;
-}
-.boton{
-  width: 40px;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-}
-::-webkit-input-placeholder{
-  color: black;
-}
-.buscar:hover > .buscar_texto{
-  width: 190px;
-
 }
 /*personalizacion de la pagina principal*/
 .center{
   width: 100%;
   height: 100vh;
-  background-image: url(/imagenes/bay.jpg);
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1)
+  ), url(/imagenes/fondo.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,6 +183,10 @@
   opacity: 0;
   background: linear-gradient(to right, #00000070, black);
  transition: .5s ease-in-out;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 }
 
 .gallery--center .g1title{
@@ -245,18 +239,19 @@
 body{
   
 }
-.wrap{
+#wrap{
   width: 100%;
   margin: auto;
   background: linear-gradient(to right, black, black);
   padding: 60px 0 0 0;
 }
-.wrap h1{
+#wrap h1{
   color: white;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
 .store-wrapper{
   display: flex;
@@ -291,10 +286,793 @@ body{
   background: rgb(253, 253, 253);
   color: black;
 }
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+/* Seccion del buscador interno*/
+.menu {
+  float: left;
+  width: 15%;
+  height: 55vh;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  background: transparent;
+}
+.menu h2{
+  color: #04267A;
+}
+.menu p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.contenido{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 30px;
+  background: rgb(255, 255, 255);
+}
 
+.contenido .principal {
+  width: 100%;
+  height: 400px;
+   background: transparent;
+}
+.contenido .principal .img{
+  padding-top: 25px;
+  text-align: center;
+  justify-content: center;    
+}
+.contenido .principal h3 span{
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.contenido ,.principal h3{
+  text-align: center;
+}
+/*Search*/
+#target {
+  background:#0099cc;
+  width:300px;
+  height:300px;
+  padding:5px;
+  display:none;
+}
+.Hide
+{
+  display:none;
+}
+.Hide a{
+  text-decoration: none;
+  color: white;
+}
+/*MODAL*/
+.contenido{
+  padding-top: 90px;
+  height: 300px;
+  background: transparent;
+}
+ .modal-title{
+  color: black;
+  font-weight: 800;
+ }
+.modal-dialog{
+  width: 100%;
+  align-items: initial;
+  justify-content: initial;
+  display: flex;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.gallery{
+  border: 2px solid white;
+  list-style: none;
+}
+#directory{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 10px;
+  background: black;
+}
+.modal-confirm {		
+	color: #636363;
+	width: 100%;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	font-size: 14px;
+  background: black;
 
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 30px;
+	margin: 30px 0 -10px;
+  text-transform: uppercase;
+  color: white;
+}
+.modal-confirm .close {
+  color: white;
+  font-size: 35px;
+	position: absolute;
+	top: -5px;
+	right: -2px;
+}
+.modal-confirm .modal-body {
+	color: #999;
+}
+.modal-confirm .modal-body i{
+  color:red;
+}
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;		
+	border-radius: 5px;
+	font-size: 13px;
+	padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+	color: #999;
+}		
+.modal-confirm .btn-secondary {
+	background:gray;
+}
+.modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+	background: #a8a8a8;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
 
+@media  screen and (max-width: 480px){
+  /*MODAL*/
+   .modal-dialog{
+     width: 100%;
+     align-items: initial;
+     justify-content: initial;
+   }
+   .modal-content{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+   background: black;
+   height: auto;
+   }
+   #directory{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 20px;
+     gap: 10px;
+   }
+   .modal-confirm {		
+     color: #636363;
+     width: 100%;
+   }
+   .modal-confirm .modal-content {
+     padding: 20px;
+     border-radius: 5px;
+     border: none;
+     text-align: center;
+     font-size: 14px;
+   }
+   .modal-confirm .modal-header {
+     border-bottom: none;   
+     position: relative;
+   }
+   .modal-confirm h4 {
+     text-align: center;
+     font-size: 26px;
+     margin: 30px 0 -10px;
+   }
+   .modal-confirm .close {
+    color: white;
+    font-size: 35px;
+     position: absolute;
+     top: -5px;
+     right: -2px;
+   }
+   .modal-confirm .modal-body {
+     color: #999;
+   }
+   .modal-confirm .modal-body i{
+     color:red;
+   }
+   .modal-confirm .modal-footer {
+     border: none;
+     text-align: center;		
+     border-radius: 5px;
+     font-size: 13px;
+     padding: 10px 15px 25px;
+   }
+   .modal-confirm .modal-footer a {
+     color: #999;
+   }		
+   .modal-confirm .btn-secondary {
+     background:gray;
+   }
+   .modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+     background: #a8a8a8;
+   }
+   .trigger-btn {
+     display: inline-block;
+     margin: 100px auto;
+   }
+   
+  
+}
+/*sections peliculas para reporudcirlas*/
+.p-center0{
+  width: 100%;
+  height: 600px;
+	background-image: linear-gradient(
+    0deg, 
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url(/imagenes/avatar1.jpg);
+	display: flex;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+  align-items: center;
+}
+.p-center{
+	width: 100%;
+  height: 600px;
+  background: black;
+	display: flex;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 100;
+  align-items: center;
+}
+.titulos{
+  color: white;
+  flex-direction: column;
+  display: flex;
+  width: 800px;
+  padding: 0 0 0 30px;
+}
+.titulos .pe{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.titulos .re{
+  font-size: 20px;
+  color: rgb(161, 149, 149);
+  margin-bottom: 10px;
+}
+.titulos .h2{
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.titulos .but button{
+  border: none;
+  width: 134px;
+  height: 45px;
+  outline: none;
+  border: 3px solid white;
+  font-weight: 700;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  transition: .3s ease-in-out;
+}
+.titulos .but button:hover{
+  color: black;
+  background: white;
+}
+.p-center .title{
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/*avatar 2 el camino del agua numero 1 */
+#p-center1{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+.p-center .btns{
+  display: flex;
+  justify-content: Initial;
+  align-items: center;
+}
+.btns button{
+  margin: 10px;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 134px;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+.btns button:hover{
+  color: black;
+  background: white;
+}
+.p-center .btnss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.btnss button{
+  margin: 5px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  width: 134px;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+.btnss button:hover{
+  color: white;
+  background: black;
+}
+.pelicula iframe{
+  width: 93%;
+  height: 500px;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+.center-b .setion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: initial;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+  padding-left: 30px;
+}
+.center-b .setion .title{
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.center-b .setion .genero{
+  color: violet;
+  margin-bottom: 15px;
+}
+.center-b .setion .descrip{
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 0;
+}
+.center-b .setion .ayuda{
+  color: white;
+  margin-bottom: 15px;
+}
+.center-b .setion .generos{
+  color: rgb(207, 204, 204);
+  font-size: 12px;
+  margin-bottom: 60px;
+}
+.center-b .setion .copy{
+  color: rgb(128, 115, 115);
+  text-align: center;
+}
+/*Lobo Feroz pelicula*/
+#p-center2{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+/*65 borde de la extinción pelicula*/
+#p-center3{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+
+/*Black Adam pelicula*/
+#p-center4{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+/*Attack on titan pelicula*/
+#p-center5{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+/*Noche de ´paz pelicula*/
+#p-center6{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+
+/*shazam pelicula*/
+#p-center7{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+/*john wick 4*/
+#p-center8{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+/*Operación Fortune*/
+#p-center9{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+}
+/*Cae la noche lutter*/
+#p-center10{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*CSobras de un crimen*/
+#p-center11{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*SCREAM VL*/
+#p-center12{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+
+/*Credd lll*/
+#p-center13{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*el peor vecino*/
+#p-center14{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*llaman a la puerta*/
+#p-center15{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Antman*/
+#p-center16{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Gato con botas*/
+#p-center17{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*el piloto*/
+#p-center18{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*jurassic world dominion*/
+#p-center19{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Thor Love and Thunder*/
+#p-center20{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*top gun*/
+#p-center21{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Wakanda POR SIEMPRE*/
+#p-center22{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Titanes del pacifico 2*/
+#p-center23{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
 
 /* RESPONSIVE ================================*
         /*adaptación a telefono*/
@@ -351,50 +1129,6 @@ body{
     display: block;
     font-size: 23px;
   }
-  /* personalización del buscador*/
-  .buscar{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-50%);
-    padding: 10px;
-    height: 40px;
-    border-radius: 40px;
-  }
-  .none{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .buscars{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .buscar_texto{
-    border: none;
-    outline: none;
-    color: black;
-    font-size: 14px;
-    float: left;
-    line-height: 45px;
-    transition: .3s;
-    width: 0;
-    border-radius: 10px;
-  }
-  .boton{
-    width: 40px;
-    text-decoration: none;
-    color: white;
-    font-size: 23px;
-  }
-  ::-webkit-input-placeholder{
-    color: black;
-  }
-  .buscars:hover > .buscar_texto{
-    width: 190px;
-  
-  }
   /*Centro de pagina*/
   .center-b{
     display: flex;
@@ -417,12 +1151,12 @@ body{
     grid-template-columns: repeat(2, 1fr);
    }
    /*Peliculas filtro----------------------------*/
-   .wrap{
+   #wrap{
     width: 100%;
     margin: auto;
     background: linear-gradient(to right, black, black);
   }
-  .wrap h1{
+  #wrap h1{
     color: white;
     font-weight: 700;
     display: flex;
@@ -457,6 +1191,416 @@ body{
     background: rgb(253, 253, 253);
     color: black;
   }
+  /*avatar 2 el camino del agua numero 1 */
+#p-center1{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+.pelicula iframe{
+  margin-left: -15%;
+  width: 130%;
+  height: 200px;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url(/imagenes/);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+  
+  
+}
+.btns button{
+  margin: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border:  solid white;
+  width: 134px;
+  height: 45px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.btns button:hover{
+  color: black;
+  background: white;
+}
+.center-b .setion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+  padding-left: 0px;
+}
+/*LOBO FEROZ */
+#p-center2{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*65 La era de la extinción */
+#p-center3{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Black Adam */
+#p-center4{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Attaack on titan*/
+#p-center5{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Noche de paz*/
+#p-center6{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*shazam*/
+#p-center7{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*john wick 4*/
+#p-center8{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+
+/*Operación Fortune*/
+#p-center9{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Luther Cae la noche*/
+#p-center10{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Sombras de un crimen*/
+#p-center11{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Operación scream vl*/
+#p-center12{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Credlll*/
+#p-center13{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*El peor vecino del mundo*/
+#p-center14{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Llaman a la puerta*/
+#p-center15{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*ant-man*/
+#p-center16{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Gato con botas*/
+#p-center17{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*El piloto*/
+#p-center18{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Jurassic world dominion*/
+#p-center19{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Thor Love and thunder*/
+#p-center20{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Top gun maverik*/
+#p-center21{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Wakanda forever*/
+#p-center22{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Titanes del pacifico 2*/
+#p-center23{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
 }
       
 /* Adaptación a tablet*/
