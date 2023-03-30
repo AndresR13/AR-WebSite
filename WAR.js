@@ -247,3 +247,18 @@ function Geminis(){
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center30').style.display = 'block';
 }
+function wick3(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center31').style.display = 'block';
+}
+function wick2(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center32').style.display = 'block';
+}
+function wick1(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center33').style.display = 'block';
+}
