@@ -242,3 +242,8 @@ function Pchang(){
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center29').style.display = 'block';
 }
+function Geminis(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center30').style.display = 'block';
+}
