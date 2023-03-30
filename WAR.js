@@ -212,3 +212,23 @@ function TitanesP(){
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center23').style.display = 'block';
 }
+function ElefantaM(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center24').style.display = 'block';
+}
+function Babylon(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center25').style.display = 'block';
+}
+function Tsystem(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center26').style.display = 'block';
+}
+function BatP(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center27').style.display = 'block';
+}

@@ -1102,6 +1102,74 @@ body{
 	z-index: 101;
   top: 50px;
 }
+/*TElefanta del mago*/
+#p-center24{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Babylon*/
+#p-center25{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*The system*/
+#p-center26{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
+/*Batman la Perdición*/
+#p-center27{
+	position: fixed;
+	display: none;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 101;
+  top: 50px;
+}
 
 /* RESPONSIVE ================================*
         /*adaptación a telefono*/
@@ -1228,6 +1296,7 @@ body{
     width: 100%;
     margin: auto;
     background: linear-gradient(to right, black, black);
+    position: relative;
   }
   #wrap h1{
     color: white;
@@ -1660,6 +1729,70 @@ body{
 }
 /*Titanes del pacifico 2*/
 #p-center23{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Elefanta del mago*/
+#p-center24{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Babylon*/
+#p-center25{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*The system*/
+#p-center26{
+	position: fixed;
+	display: none;
+	text-align: center;
+  background: linear-gradient(to right, rgb(20, 19, 19), rgb(27, 25, 25), rgb(22, 20, 20), rgb(39, 37, 37));
+	width: 100%;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 100;
+  top: 50px;
+  padding-top: 12%;
+}
+/*Batman la perdición*/
+#p-center27{
 	position: fixed;
 	display: none;
 	text-align: center;
