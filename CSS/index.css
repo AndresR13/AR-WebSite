@@ -265,9 +265,7 @@
   opacity: 1;
 }
 /*PROBANDO JQUERY*/
-body{
-  
-}
+
 #wrap{
   width: 100%;
   margin: auto;
@@ -280,7 +278,6 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
-  
 }
 .store-wrapper{
   display: flex;
