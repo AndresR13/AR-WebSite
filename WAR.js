@@ -232,3 +232,13 @@ function BatP(){
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center27').style.display = 'block';
 }
+function InspectorA(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center28').style.display = 'block';
+}
+function Pchang(){
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-center29').style.display = 'block';
+}
