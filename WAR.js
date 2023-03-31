@@ -262,3 +262,40 @@ function wick1(){
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center33').style.display = 'block';
 }
+//Funciones añadiddas para las series cada una y ocultar el wrapp/
+function OcultarP(){
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('p-centerro').style.height = '700px';
+}
+function SuperL(){
+	document.getElementById('serie1').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
+function 	Temporada1(){
+	document.getElementById('temp1').style.display = 'grid';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+}
+function 	Temporada2(){
+	document.getElementById('temp1').style.display = 'none';
+	document.getElementById('temp2').style.display = 'grid';
+	document.getElementById('temp3').style.display = 'none';
+}
+function 	Temporada3(){
+	document.getElementById('temp1').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'grid';
+}
+function Flash(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie2').style.display = 'flex'
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
