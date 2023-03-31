@@ -543,7 +543,11 @@
 .p-center0{
   width: 100%;
   height: 600px;
-	background-image: url(/avatar1.jpg);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),url(/imagenes/avatar3.jpg);
 	display: flex;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -622,6 +626,21 @@
 	z-index: 100;
   top: 50px;
 }
+.peliculas .center-b .btns{
+  display: flex;
+  justify-content: initial;
+  padding-left: 10px;
+}
+.peliculas .center-b .btns button{
+  border: 1px solid white;
+  border-radius: 1px;
+  background: black;
+}
+.peliculas .center-b .btns button:hover{
+  background: white;
+  color: black;
+  border-radius: 20px;
+}
 .p-center .btns{
   display: flex;
   justify-content: Initial;
@@ -634,7 +653,7 @@
   outline: none;
   color: white;
   background-color: transparent;
-  border: 2px solid white;
+  border: 1px solid white;
   width: 134px;
   height: 45px;
   border-radius: 10px;
@@ -713,7 +732,7 @@
   margin-bottom: 60px;
 }
 .center-b .setion .copy{
-  color: rgb(128, 115, 115);
+  color: rgb(206, 192, 192);
   text-align: center;
 }
 /*Configuracion para todas las series de una sola vez por todas*/
