@@ -339,3 +339,57 @@ function Flash(){
 	document.getElementById('temp3').style.display = 'none';
 	document.getElementById('p-centerro').style.display = 'none'
 }
+function TrueL(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie3').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
+function GoK(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie4').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
+function TheLOF(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie5').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
+function LaEsca(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie6').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
+function LLTP(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie7').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
+function TulsaK(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie8').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none'
+}
