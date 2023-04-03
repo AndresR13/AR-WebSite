@@ -313,7 +313,7 @@ function SuperL(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function 	Temporada1(){
 	document.getElementById('temp1').style.display = 'grid';
@@ -337,7 +337,7 @@ function Flash(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function TrueL(){
 	document.getElementById('serie1').style.display = 'none';
@@ -346,7 +346,7 @@ function TrueL(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function GoK(){
 	document.getElementById('serie1').style.display = 'none';
@@ -355,7 +355,7 @@ function GoK(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function TheLOF(){
 	document.getElementById('serie1').style.display = 'none';
@@ -364,7 +364,7 @@ function TheLOF(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function LaEsca(){
 	document.getElementById('serie1').style.display = 'none';
@@ -373,7 +373,7 @@ function LaEsca(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function LLTP(){
 	document.getElementById('serie1').style.display = 'none';
@@ -382,7 +382,7 @@ function LLTP(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
 }
 function TulsaK(){
 	document.getElementById('serie1').style.display = 'none';
@@ -391,5 +391,31 @@ function TulsaK(){
 	document.getElementById('CONTENT').style.display = 'none';
 	document.getElementById('temp2').style.display = 'none';
 	document.getElementById('temp3').style.display = 'none';
-	document.getElementById('p-centerro').style.display = 'none'
+	document.getElementById('p-centerro').style.display = 'none';
+}
+function StartrekP(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie9').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('temp2').style.display = 'none';
+	document.getElementById('temp3').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+}
+function ShadowP(){
+	document.getElementById('serie1').style.display = 'none';
+	document.getElementById('serie10').style.display = 'flex';
+	document.getElementById('wrap').style.display = 'none';
+	document.getElementById('CONTENT').style.display = 'none';
+	document.getElementById('p-centerro').style.display = 'none';
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
+function Tempo1(){
+	document.getElementById('tempo1').style.display = 'grid';
+	document.getElementById('tempo2').style.display = 'none';
+}
+function Tempo2(){
+	document.getElementById('tempo1').style.display = 'none';
+	document.getElementById('tempo2').style.display = 'grid';
 }
