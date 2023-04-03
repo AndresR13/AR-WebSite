@@ -262,6 +262,46 @@ function wick1(){
 	document.getElementById('wrap').style.display = 'none';
 	document.getElementById('p-center33').style.display = 'block';
 }
+function TFormers1(){
+	document.getElementById('p-center34').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function TFormers2(){
+	document.getElementById('p-center35').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function TFormers3(){
+	document.getElementById('p-center36').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function TFormers4(){
+	document.getElementById('p-center37').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function TFormers5(){
+	document.getElementById('p-center38').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function DG23(){
+	document.getElementById('p-center39').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function Thelake(){
+	document.getElementById('p-center40').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
+function Asasins(){
+	document.getElementById('p-center41').style.display = 'block';
+	document.getElementById('p-center1').style.display = 'none';
+	document.getElementById('wrap').style.display = 'none';
+}
 //Funciones añadiddas para las series cada una y ocultar el wrapp/
 function OcultarP(){
 	document.getElementById('wrap').style.display = 'none';
