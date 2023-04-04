@@ -425,7 +425,7 @@ function login(){
   user= document.getElementById("Usuario").value;
   password= document.getElementById("password").value;
   if( user == "cineflix13@play.com" && password == "1234"){
-    window.location = "cineflix.html";
+    window.location = "cine.html";
   } else{
     alert("Usuario o contraseña no validos")
   }
