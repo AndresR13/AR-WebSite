@@ -270,9 +270,7 @@
   width: 100%;
   margin: auto;
   background: linear-gradient(to right, black, black);
-  position: relative;
-  top: -150px;
-  z-index: 100;
+  padding: 20px 0 0 0;
 }
 #wrap h1{
   color: white;
