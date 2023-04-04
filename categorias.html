@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/74488e447e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEFLIX | Website</title>
+		<link rel="icon" href="imagenes/LOGO CINEFLIX.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="icon" href="imagenes/LOGO CINEFLIX.png">
+		<script src="[YOUR_KIT_CODE]" crossorigin="anonymous"></script>
+    <script src="jquery-3.2.1.js"></script>	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="jquery.liveFilter.js" type="text/javascript"></script>
+		<script src="WAR.js"></script>
+</head>
+<body>
+<!--Header-->
+<header>
+	<nav>
+		<div class="nav">
+			<div class="logoo">
+				<a href="cine.html">CINEFLIX</a>
+			</div>
+			<input type="checkbox"  id="menu" class="nav_input">
+			<ul class="menuu">
+				<li><form action="cine.html"><button>Inicio</button></form></li>
+				<li><form action="categorias.html"><button>Peliculas</button></form></li>
+				<li><button onclick="OcultarP();">Series</button></li>
+				<li><form action="#wrap"><button>Estrenos</button></form></li>
+				<li><form action="index.html"><button>Salir</button></form></li>
+			</ul>
+			<div class="none">
+				<label for="menu" class="menu-btn">
+					<i class="fas fa-bars"></i>
+				</label>
+			</div>
+		</div>
+	</nav>
+</header>
+	<!--Center peliculas js-->
+	<div class="p-center" id="p-centerro">
+			<div class="contenido" id="CONTENT" >
+				<div class="principal">
+					<h3><span >Search Movies</span></h3>
+						<div class="container">
+							<div class="input-group">
+
+								<input id="search-box" class="form-control" type="text" name="search" value="Buscar">
+
+								<div class="input-group-append">
+										<input type="submit" class="Show btn btn-primary"  value="search" data-toggle="modal" href="#myModal">
+										<button class="Hide btn btn-danger">
+											 <a href="categorias.html"><i class="fas fa-sync-alt"></i> Refresh</a>
+										</button>
+								</div>
+							</div>
+						</div>
+						<div id="wrap">
+							<div class="store-wrapper">
+								<div class="category_list">
+									<a href="#" class="category_item" category="all">Todo</a>
+									<a href="#" class="category_item" category="Acción">Acción</a>
+									<a href="#" class="category_item" category="Comedia">Comedia</a>
+									<a href="#" class="category_item" category="Terror">Terror</a>
+									<a href="#" class="category_item" category="C.Ficción">C.Ficción</a>
+									<a href="#" class="category_item" category="Animadas">Animadas</a>
+									<a href="#" class="category_item" category="Drama/Suspenso">Drama/suspenso</a>
+								</div>
+								<section class="products-list">
+									<div class="gallery--container">
+										<div class="gallery--item" category="Comedia">
+											<img src="https://images.squarespace-cdn.com/content/v1/615bfcf8e37bd223285f0bc0/058880ac-e27b-4fd1-a7ac-c94d425a5323/a4-1+%281%29.jpg" alt="" class="gallery--img">
+											<div class="gallery--center">
+												<h2 class="g1title">Calabozos & Dragones</h2>
+												<h2 class="g2title">2hr 14min  2023</h2>
+												<h2 class="g3title">Genero: Aventura, Fantasia</h2><br>
+												<div class="gbtns">
+													<button onclick="DG23();" class="gbtn">Ver Ahora</button>
+												</div>
+												</div>
+											</div>
+										<div class="gallery--item" category="Acción">
+											<img src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12638194696.jpg" alt="" class="gallery--img">
+											<div class="gallery--center">
+											<h2 class="g1title">Assassin</h2>
+											<h2 class="g2title">1hr 27min  2022</h2>
+											<h2 class="g3title">Genero: Acción, Ciencia ficción</h2><br>
+											<div class="gbtns">
+												<button onclick="Asasins();" class="gbtn">Ver Ahora</button>
+											</div>
+											</div>
+									</div>
+									<div class="gallery--item" category="Animadas">
+										<img src="imagenes/Inspect.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Inspector araña</h2>
+										<h2 class="g2title">1hr 30min  2022</h2>
+										<h2 class="g3title">Genero: Animación, Familia</h2><br>
+										<div class="gbtns">
+											<button onclick="InspectorA();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+									<div class="gallery--item" category="Acción">
+										<img src="imagenes/thesy.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">The system</h2>
+										<h2 class="g2title">1hr 37min  2023</h2>
+										<h2 class="g3title">Genero: Acción, Crimen, Suspenso</h2><br>
+										<div class="gbtns">
+											<button onclick="Tsystem();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+								<div class="gallery--item" category="Terror">
+									<img src="imagenes/geminis.jpg" alt="" class="gallery--img">
+									<div class="gallery--center">
+									<h2 class="g1title">Géminis: El planeta oscuro</h2>
+									<h2 class="g2title">1hr 38min  2022</h2>
+									<h2 class="g3title">Genero: Ciencia ficción, Terror</h2><br>
+									<div class="gbtns">
+										<button onclick="Geminis();" class="gbtn">Ver Ahora</button>
+									</div>
+									</div>
+							</div>
+							<div class="gallery--item" category="Comedia">
+								<img src="imagenes/chang.jpg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Puedes hacerlo Chang</h2>
+								<h2 class="g2title">1hr 48min  2023</h2>
+								<h2 class="g3title">Genero: Familia, Comedia, Drama</h2><br>
+								<div class="gbtns">
+									<button onclick="Pchang();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+						</div>
+									<div class="gallery--item" category="Terror">
+										<img src="imagenes/batmant.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Batman: La Perdición</h2>
+										<h2 class="g2title">1hr 26min  2023</h2>
+										<h2 class="g3title">Genero: Animación, Fantasía, Terror</h2><br>
+										<div class="gbtns">
+											<button onclick="BatP();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+									<div class="gallery--item" category="Acción">
+										<img src="imagenes/black.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Black Adam</h2>
+										<h2 class="g2title">1hr 24min  2023</h2>
+										<h2 class="g3title">Genero: Acción, Fantasia</h2><br>
+										<div class="gbtns">
+											<button onclick="Black();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+									<div class="gallery--item" category="Comedia">
+										<img src="imagenes/Baby.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Babylon</h2>
+										<h2 class="g2title">3hr 09min  2022</h2>
+										<h2 class="g3title">Genero: Acción, Comedia</h2><br>
+										<div class="gbtns">
+											<button onclick="Babylon();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+									<div class="gallery--item" category="Acción">
+										<img src="imagenes/65.jpeg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">65</h2>
+										<h2 class="g2title">1hr 33min  2023</h2>
+										<h2 class="g3title">Genero: Acción, Estrenos</h2><br>
+										<div class="gbtns">
+											<button onclick="S5();" class="gbtn">Ver Ahora</button>
+										</div>
+										</div>
+								</div>
+								<div class="gallery--item" category="Acción">
+									<img src="imagenes/AT.jpg" alt="" class="gallery--img">
+									<div class="gallery--center">
+									<h2 class="g1title">Attack on Titan</h2>
+									<h2 class="g2title">1hr 33min  2023</h2>
+									<h2 class="g3title">Genero: Acción, Fantasia</h2><br>
+									<div class="gbtns">
+										<button onclick="Titan();" class="gbtn">Ver Ahora</button>
+									</div>
+									</div>
+								</div>
+								<div class="gallery--item" category="Comedia">
+									<img src="imagenes/NP.jpg" alt="" class="gallery--img">
+									<div class="gallery--center">
+									<h2 class="g1title">Noche de paz</h2>
+									<h2 class="g2title">1hr 41min  2022</h2>
+									<h2 class="g3title">Genero: Comedia, Crimen</h2><br>
+									<div class="gbtns">
+										<button onclick="NP();" class="gbtn">Ver Ahora</button>
+									</div>
+									</div>
+							</div>
+							<div class="gallery--item" category="Drama/Suspenso">
+								<img src="imagenes/shazam.jpeg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">¡Shazam!</h2>
+								<h2 class="g2title">2hr 10min  2023</h2>
+								<h2 class="g3title">Genero: Drama, Suspenso</h2><br>
+								<div class="gbtns">
+									<button onclick="Zam();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+							</div>
+							<div class="gallery--item" category="Acción">
+								<img src="imagenes/wick4.jpg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">John Wick 4</h2>
+								<h2 class="g2title">2hr 49min  2023</h2>
+								<h2 class="g3title">Genero: Acción, Crimen</h2><br>
+								<div class="gbtns">
+									<button onclick="JW();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+							</div>
+							<div class="gallery--item" category="Acción">
+								<img src="imagenes/OP.jpg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Operación Fortuna</h2>
+								<h2 class="g2title">1hr 54min  2023</h2>
+								<h2 class="g3title">Genero: Acción, Comedia</h2><br>
+								<div class="gbtns">
+									<button onclick="OP();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+							</div>
+							<div class="gallery--item" category="Acción">
+								<img src="imagenes/CN.jpg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Luther: Cae la noche</h2>
+								<h2 class="g2title">2hr 9min  2023</h2>
+								<h2 class="g3title">Genero: Terror, Suspenso</h2><br>
+								<div class="gbtns">
+									<button onclick="LC();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+							</div>
+							<div class="gallery--item" category="Acción">
+								<img src="imagenes/SC.jpg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Marlowe</h2>
+								<h2 class="g2title">1hr 49min  2023</h2>
+								<h2 class="g3title">Genero: Acción, Crimen</h2><br>
+								<div class="gbtns">
+									<button onclick="Marlove();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+							</div>
+							<div class="gallery--item" category="Terror">
+								<img src="imagenes/scre.jpeg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Scream Vl</h2>
+								<h2 class="g2title">2hr 03min  2023</h2>
+								<h2 class="g3title">Genero: Terror, Suspenso</h2><br>
+								<div class="gbtns">
+									<button onclick="S6();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+						</div>
+						<div class="gallery--item" category="Acción">
+							<img src="imagenes/credlll.jpg" alt="" class="gallery--img">
+							<div class="gallery--center">
+							<h2 class="g1title">Creed lll</h2>
+							<h2 class="g2title">1hr 46min 2023</h2>
+							<h2 class="g3title">Genero: Acción, Ciencia ficción</h2><br>
+							<div class="gbtns">
+								<button onclick="Credlll();" class="gbtn">Ver Ahora</button>
+							</div>
+							</div>
+					</div>
+					<div class="gallery--item" category="Comedia">
+						<img src="imagenes/peorv.jpg" alt="" class="gallery--img">
+						<div class="gallery--center">
+						<h2 class="g1title">El peor vecino del mundo</h2>
+						<h2 class="g2title">2hr 6min 2022</h2>
+						<h2 class="g3title">Genero: Comedia</h2><br>
+						<div class="gbtns">
+							<button onclick="PeorV();" class="gbtn">Ver Ahora</button>
+						</div>
+						</div>
+					</div>
+					<div class="gallery--item" category="Terror">
+						<img src="imagenes/ll.jpg" alt="" class="gallery--img">
+						<div class="gallery--center">
+						<h2 class="g1title">Llaman a la Puerta</h2>
+						<h2 class="g2title">1hr 40min  202</h2>
+						<h2 class="g3title">Genero: Suspenso, Terror</h2><br>
+						<div class="gbtns">
+							<button onclick="LLamana();" class="gbtn">Ver Ahora</button>
+						</div>
+						</div>
+					</div>
+					<div class="gallery--item" category="Acción">
+					<img src="imagenes/antmen.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+					<h2 class="g1title">Ant-man Quantumania</h2>
+					<h2 class="g2title">38min  2023</h2>
+					<h2 class="g3title">Genero: Acción</h2><br>
+					<div class="gbtns">
+						<button onclick="Antman();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+					</div>
+					<div class="gallery--item" category="Aventura">
+					<img src="imagenes/gtb.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+					<h2 class="g1title">Gatos con botas: El ultimo deseo</h2>
+					<h2 class="g2title">1hr 44min  2023</h2>
+					<h2 class="g3title">Genero: Aventura, Estrenos</h2><br>
+					<div class="gbtns">
+						<button onclick="GatoB();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+					</div>
+					<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/pilo.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+					<h2 class="g1title">El piloto</h2>
+					<h2 class="g2title">1hr 47min 2023</h2>
+					<h2 class="g3title">Genero: Drama,Suspenso</h2><br>
+					<div class="gbtns">
+						<button onclick="Piloto();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+					</div>
+					<div class="gallery--item" category="C.Ficción">
+					<img src="imagenes/domini.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+					<h2 class="g1title">Jurassic World Dominion</h2>
+					<h2 class="g2title">2hr 17min  2022</h2>
+					<h2 class="g3title">Genero: C.ficción, Estrenos</h2><br>
+					<div class="gbtns">
+						<button onclick="JurassicD();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+					</div>
+					<div class="gallery--item" category="Acción">
+						<img src="imagenes/tlv.jpg" alt="" class="gallery--img">
+						<div class="gallery--center">
+						<h2 class="g1title">Thor Love And Thunder</h2>
+						<h2 class="g2title">1hr 59min  2022</h2>
+						<h2 class="g3title">Genero: Accion, Aventura, Comedia</h2><br>
+						<div class="gbtns">
+						<button onclick="Loveand();" class="gbtn">Ver Ahora</button>
+						</div>
+						</div>
+						</div>
+							<div class="gallery--item" category="Acción">
+								<img src="imagenes/tg.jpg" alt="" class="gallery--img">
+								<div class="gallery--center">
+								<h2 class="g1title">Top Gun Maverick</h2>
+								<h2 class="g2title">2hr 11min  2022</h2>
+								<h2 class="g3title">Genero: Acción, Drama</h2><br>
+								<div class="gbtns">
+									<button onclick="TopG();" class="gbtn">Ver Ahora</button>
+								</div>
+								</div>
+								</div>
+								<div class="gallery--item" category="C.Ficción">
+									<img src="imagenes/waka.jpg" alt="" class="gallery--img">
+									<div class="gallery--center">
+									<h2 class="g1title">Black Panther: Wakanda Forever</h2>
+									<h2 class="g2title">2hr 42min  2022</h2>
+									<h2 class="g3title">Genero: C.ficción, Estrenos</h2><br>
+									<div class="gbtns">
+										 <button onclick="BlackP();" class="gbtn">Ver Ahora</button>
+									</div>
+									</div>
+									</div>
+									<div class="gallery--item" category="Aventura">
+										<img src="imagenes/avatar2.jpg" alt="" class="gallery--img">
+										<div class="gallery--center">
+										<h2 class="g1title">Avatar: The Way of Water</h2>
+										<h2 class="g2title">3hr 12min  2022</h2>
+										<h2 class="g3title">Genero: C.ficción, Aventura, Estrenos</h2><br>
+										<div class="gbtns">
+											<button class="gbtn" onclick="avatar();">Ver Ahora</button>
+											
+										</div>
+										</div>
+										</div>
+										<div class="gallery--item" category="Aventura">
+											<img src="imagenes/Titanesdelp.jpg" alt="" class="gallery--img">
+											<div class="gallery--center">
+											<h2 class="g1title">Titanes del Pacifco 2</h2>
+											<h2 class="g2title">1hr 50min  2018</h2>
+											<h2 class="g3title">Genero: Acción, Fantasía, Ciencia ficción</h2><br>
+											<div class="gbtns">
+												<button class="gbtn" onclick="TitanesP();">Ver Ahora</button>
+											</div>
+											</div>
+											</div>
+											<div class="gallery--item" category="Animadas">
+												<img src="imagenes/elem.jpg" alt="" class="gallery--img">
+												<div class="gallery--center">
+												<h2 class="g1title">La elefanta del Mago</h2>
+												<h2 class="g2title">1hr 47min  2023</h2>
+												<h2 class="g3title">Genero: Animación, Aventura, Familia</h2><br>
+												<div class="gbtns">
+													<button class="gbtn" onclick="ElefantaM();">Ver Ahora</button>
+												</div>
+												</div>
+												</div>
+					
+					
+					
+					
+					
+					
+					
+					
+										</div>	
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>  
+		</div> 
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade" >
+<div class="modal-dialog modal-confirm" >
+	<div class="modal-content">
+		<div class="modal-header flex-column">						
+			<h4 class="modal-title w-100">Search Content</h4>	
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		</div>
+		<div class="modal-body">
+			<ul id="directory">
+				<li class="gallery">
+					<div class="gallery--item" category="Drama/Suspenso">
+						<img src="imagenes/LF.jpeg" alt="" class="gallery--img">
+						<div class="gallery--center">
+							<p class="name mt-3">Lobo Feroz</p><!--ID Unico que sea distinto-->
+							<h2 class="g2title">1hr 45min  2023</h2>
+							<div class="gbtns">
+							<button onclick="LF();" class="gbtn">Ver Ahora</button>
+							</div>
+						</div>
+					</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Acción">
+					<img src="imagenes/black.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Black Adam</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 24min  2023</h2>
+					<div class="gbtns">
+						<button onclick="Black();" class="gbtn">Ver Ahora!</button>
+					</div>
+					</div>
+			</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Acción">
+					<img src="imagenes/65.jpeg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">65</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 33min  2023</h2>
+					<div class="gbtns">
+						<button onclick="S5();" class="gbtn">Ver Ahora!</button>
+					</div>
+					</div> 
+			</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Acción">
+					<img src="imagenes/AT.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Attack on titan</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 33min  2023</h2>
+					<div class="gbtns">
+						<button onclick="Titan();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Comedia">
+					<img src="imagenes/NP.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Noche de paz</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 41min  2022</h2>
+					<div class="gbtns">
+						<button onclick="NP();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+			</div>
+			<li class="gallery">
+				<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/shazam.jpeg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">¡Shazam!</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">2hr 10min  2023</h2>
+					<div class="gbtns">
+						<button onclick="Zam();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/jhon.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">John Wick 4</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">2hr 49min  2023</h2>
+					<div class="gbtns">
+						<button onclick="JW();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/OP.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Operación Fortuna</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 54min  2023</h2>
+					<div class="gbtns">
+						<button onclick="OP();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/CN.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Luther: Cae la noche</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">2hr 10min  2023</h2>
+					<div class="gbtns">
+						<button onclick="LC();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/SC.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Marlove Sombras de un crimen</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 49min  2023</h2>
+					<div class="gbtns">
+						<button onclick="Marlove();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+				<li class="gallery">
+					<div class="gallery--item" category="Drama/Suspenso">
+						<img src="imagenes/scre.jpeg" alt="" class="gallery--img">
+						<div class="gallery--center">
+							<p class="name mt-3">Scream Vl</p><!--ID Unico que sea distinto-->
+						<h2 class="g2title">2hr 03min  2023</h2>
+						<div class="gbtns">
+							<button onclick="S6();" class="gbtn">Ver Ahora</button>
+						</div>
+						</div>
+					</div>
+			</li>
+			<li class="gallery">
+				<div class="gallery--item" category="Drama/Suspenso">
+					<img src="imagenes/credlll.jpg" alt="" class="gallery--img">
+					<div class="gallery--center">
+						<p class="name mt-3">Creed lll</p><!--ID Unico que sea distinto-->
+					<h2 class="g2title">1hr 46min  2022</h2>
+					<div class="gbtns">
+						<button onclick="Credlll();" class="gbtn">Ver Ahora</button>
+					</div>
+					</div>
+				</div>
+		</li>
+		<li class="gallery">
+			<div class="gallery--item" category="Drama/Suspenso">
+				<img src="imagenes/peorv.jpg" alt="" class="gallery--img">
+				<div class="gallery--center">
+					<p class="name mt-3">El peor vecino del mundo</p><!--ID Unico que sea distinto-->
+				<h2 class="g2title">2hr 06min  2023</h2>
+				<div class="gbtns">
+					<button onclick="PeorV();" class="gbtn">Ver Ahora</button>
+				</div>
+				</div>
+			</div>
+	</li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/ll.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Llaman a la Puerta</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 40min  2023</h2>
+			<div class="gbtns">
+				<button onclick="LLamana();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/antmen.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Ant-man Quantumania</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 38min  2023</h2>
+			<div class="gbtns">
+				<button onclick="Antman();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/gtb.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Gatos con botas: El ultimo deseo</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 44min 2023</h2>
+			<div class="gbtns">
+				<button onclick="GatoB();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/pilo.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">El Piloto</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 47min 2023</h2>
+			<div class="gbtns">
+				<button onclick="Piloto();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/domini.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Jurassic World Dominion</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 17min 2022</h2>
+			<div class="gbtns">
+				<button onclick="JurassicD();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/tlv.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Thor Love And Thunder</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 59min 2022</h2>
+			<div class="gbtns">
+				<button onclick="Loveand();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/tg.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Top Gun Maverick</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 11min 2022</h2>
+			<div class="gbtns">
+				<button onclick="TopG();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/waka.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Black Panther: Wakanda Forever</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 42min 2022</h2>
+			<div class="gbtns">
+				<button onclick="BlackP();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Drama/Suspenso">
+			<img src="imagenes/avatar2.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Avatar 2</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">3hr 12min 2022</h2>
+			<div class="gbtns">
+				<button onclick="avatar();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/Titanesdelp.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Titanes del Pacifico 2</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 50min 2018</h2>
+			<div class="gbtns">
+				<button onclick="TitanesP();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/elem.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">La elefanta del Mago</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 47min 2023</h2>
+			<div class="gbtns">
+				<button onclick="ElefantaM();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/Baby.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Babylon</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">3hr 02min 2022</h2>
+			<div class="gbtns">
+				<button onclick="Babylon();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/batmant.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Batman La perdición</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 26min 2023</h2>
+			<div class="gbtns">
+				<button onclick="BatP();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/thesy.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">The System</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 37min 2023</h2>
+			<div class="gbtns">
+				<button onclick="Tsystem();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/Inspect.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Inspector Araña</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 30min 2023</h2>
+			<div class="gbtns">
+				<button onclick="InspectorA();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/chang.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Puedes hacerlo Chang</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 48min 2023</h2>
+			<div class="gbtns">
+				<button onclick="Pchang();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/wick3.jpg.crdownload" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">John Wick 3: Parabellum</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 11min 2019</h2>
+			<div class="gbtns">
+				<button onclick="wick3();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/geminis.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Geminis: El planeta Oscuro</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 38min 2022</h2>
+			<div class="gbtns">
+				<button onclick="Geminis();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/wick2.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">John Wick 2</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 02min 2017</h2>
+			<div class="gbtns">
+				<button onclick="wick2();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="imagenes/wick0.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">John Wick: Otro Día Para Matar</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 41min 2014</h2>
+			<div class="gbtns">
+				<button onclick="wick1();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://pics.filmaffinity.com/Transformers-365863398-large.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Transformers 1</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 23min 2007</h2>
+			<div class="gbtns">
+				<button onclick="TFormers1();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://www.themoviedb.org/t/p/original/hDdTUHlxq6AVOsLG6RVeKP6wGM8.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Transformers 2</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 29min 2009</h2>
+			<div class="gbtns">
+				<button onclick="TFormers2();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://www.themoviedb.org/t/p/original/fMqXNNgzTaxalU1ve9KevpELiGe.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Transformers 3</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 34min 2011</h2>
+			<div class="gbtns">
+				<button onclick="TFormers3();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://pelisplus.love/wp-content/uploads/2020/05/transformers-la-era-de-la-extincion-1972-poster-scaled.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Transformers 4</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 45min 2014</h2>
+			<div class="gbtns">
+				<button onclick="TFormers4();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/A8d76iKmHvNyjzbTGpTqtHelnyy.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Transformers 5</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 49min 2017</h2>
+			<div class="gbtns">
+				<button onclick="TFormers5();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://images.squarespace-cdn.com/content/v1/615bfcf8e37bd223285f0bc0/058880ac-e27b-4fd1-a7ac-c94d425a5323/a4-1+%281%29.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Calabozos & Dragones: Honor entre ladrones</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">2hr 14min 2023</h2>
+			<div class="gbtns">
+				<button onclick="DG23();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://pbs.twimg.com/media/FrNKuphXgAAbtg2?format=jpg&name=4096x4096" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">The Lake</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 48min 2023</h2>
+			<div class="gbtns">
+				<button onclick="Thelake();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Acción">
+			<img src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-12638194696.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Assassin</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 27min 2023</h2>
+			<div class="gbtns">
+				<button onclick="Asasins();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--SECCION DE BUSQUEDA SOLO PARA SERIES,,,,,,,,,,,,,,,,,,,,,,,,,-->
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="imagenes/SyL.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Superman y Lois</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">1hr 01min 2023</h2>
+			<div class="gbtns">
+				<button onclick="SuperL();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="imagenes/TF.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">The Flash</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">45min 2023</h2>
+			<div class="gbtns">
+				<button onclick="Flash();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="imagenes/TL.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">True Lies</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">42min 2023</h2>
+			<div class="gbtns">
+				<button onclick="TrueL();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://assets.cdn.moviepilot.de/files/d261c367d04d53887ef52bdbcf783ec6c019b9b364383018e3f7e3e893fb/copyright/gkts1-8x12.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Gotham Knights</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title">41min 2023</h2>
+			<div class="gbtns">
+				<button onclick="GoK();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://images.justwatch.com/poster/302745653/s332/los-ultimos-de-nosotros" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">The Last of Us</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title"> 1hr 20min 2023</h2>
+			<div class="gbtns">
+				<button onclick="TheLOF();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://seriesdecine.com/wp-content/uploads/2023/02/seriesdecine__2023-02-04_18-13-37_007767-scaled.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">La Escalada</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title"> 50min 2023</h2>
+			<div class="gbtns">
+				<button onclick="LaEsca();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://pbs.twimg.com/media/FhpfBXtXkAAWOeS?format=jpg&name=large" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">El Tesoro Perdido</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title"> 46min 2022</h2>
+			<div class="gbtns">
+				<button onclick="LLTP();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://www.themoviedb.org/t/p/original/7pPmaSMKk1VVQH0oS7tceROYcZa.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Tulsa King</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title"> 41min 2022</h2>
+			<div class="gbtns">
+				<button onclick="TulsaK();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://mx.web.img3.acsta.net/pictures/19/07/11/10/58/5157807.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Star Trek Picard</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title"> 41min 2022</h2>
+			<div class="gbtns">
+				<button onclick="StartrekP();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+	<li class="gallery">
+		<div class="gallery--item" category="Series">
+			<img src="https://showland.tv/wp-content/uploads/2021/04/Sombra-y-hueso-Poster-scaled.jpg" alt="" class="gallery--img">
+			<div class="gallery--center">
+				<p class="name mt-3">Shadow and Bone</p><!--ID Unico que sea distinto-->
+			<h2 class="g2title"> 52min 2021</h2>
+			<div class="gbtns">
+				<button onclick="ShadowP();" class="gbtn">Ver Ahora</button>
+			</div>
+			</div>
+		</div>
+  </li>
+
+
+		</ul>
+		</div>
+		<div class="modal-footer justify-content-center">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+		</div>
+	</div>
+</div>
+</div>
+		<div id="p-center1" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="avatar();" class="btn">LATINO</button>
+					<button onclick="avatar();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2YJZciWB1llaEtebps7vk1BCO1gXyACfNJfyM8wQab5kEuHnSFdutW5jJDOl1GhspMxoXYD_9ltAn5R52nK3uaHZolmraL5RWl.GUhzMVcWq" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Avatar: The Way of Water (Avatar: El camino del agua)</div>
+						<div class="genero">2022 3hr 12min</div>
+						<div class="descrip">Ver Avatar: The Way of Water (Avatar: El camino del agua) Online: Ambientada más de una década después de los acontecimientos de la primera película, 'Avatar: The Way of Water' empieza contando la historia de la familia Sully (Jake, Neytiri y sus hijos), los problemas que los persiguen, lo que tienen que hacer para mantenerse a salvo, las batallas que libran para seguir con vida y las tragedias que sufren.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Avatar: The Way of Water (Avatar: El camino del agua). Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Director: Vince Gilligan</h5>
+							<h5>Género: Acción,Aventura,C. Ficción,Estrenos</h5>
+							<h5>Actores: Sam Worthington,Zoe Saldaña,Sigourney Weaver,Stephen Lang,Kate Winslet</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center2" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="LF();" class="btn">LATINO</button>
+					<button onclick="LF();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfYvc72ktwkTFS2qjLMp5xgSvi7gIGhFCSdiOGcQ61sK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Lobo Feroz</div>
+						<div class="genero">2022 1hr 45min</div>
+						<div class="descrip">Un policía al borde de la ley y una mujer en busca de venganza, cruzan sus caminos obsesionados con descubrir al asesino que se esconde tras los brutales crímenes de varias niñas. Ambos están dispuestos a hacer lo que sea necesario para lograr su confesión, aunque para ello tengan que tomarse la justicia por su mano. Una modélica detective luchará contra el reloj evitar que se cometan errores irreparables y que esa desesperada búsqueda de la verdad se convierta en el más feroz de los lobos.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Lobo Feroz Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Drama, Suspenso</h5>
+							<h5>Actores: Adriana Ugarte, Javier Gutiérrez, Rubén Ochandiano, Juana Acosta, Manuel Vega, Antonio Dechent, Luna Fulgencio, Fernando Tejero, María Alfonsa Rosso, José Chaves, Elena Martínez, Ignacio Herráez</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center3" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="S5();" class="btn">LATINO</button>
+					<button onclick="S5();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2b_KfdsaKVOKUo1Pxmp.qRzqzILRSshxzevp2Dc.kG0e8jnoAy11BfW1ITa9futkv0pbPMwTLTCargJIj5KMNNTU7hMpLjnLzwgc3CInJIrd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">65: Al borde de la extinción</div>
+						<div class="genero">2023 1hr 30min</div>
+						<div class="descrip">Después de un catastrófico accidente en un planeta desconocido, el piloto Mills descubre rápidamente que realmente está varado en la Tierra… hace 65 millones de años. Ahora, con solo una oportunidad de rescate, Mills y la otra única superviviente, Koa, deberán abrirse camino a través del desconocido territorio plagado con peligrosas criaturas prehistóricas en una épica lucha por sobrevivir.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula 65: Al borde de la extinción. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Suspenso, Ciencia ficción, Acción</h5>
+							<h5>Actores:  Adam Driver, Ariana Greenblatt, Chloe Coleman, Nika King, Brian Dare, Brad Quintana, Ted Barba, Ben Rezendes, Rissa Rose Kilar, Joe Timko, Jordan Coombes, Andreanna L. Jenson, Shanna Vincent, Brandon Smith, Sean Coleman</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center4" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Black();" class="btn">LATINO</button>
+					<button onclick="Black();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2cWcG_Wmz9h4p0r37uLmE_UjvXzKHpuud08iux0ti39c0.z.63S2amd14WjG._a3X_KD5vrBDG55cwIkO8GsDK27Pvh_Dzju2bpgP6gcEsyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Black Adam</div>
+						<div class="genero">2023 1hr 30min</div>
+						<div class="descrip">Unos arqueólogos liberan de su tumba a Black Adam, quien llevaba 5000 años preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despertó.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Black Adam. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Suspenso, Ciencia ficción, Acción</h3>
+							<h5>Actores:  Adam Driver, Ariana Greenblatt, Chloe Coleman, Nika King, Brian Dare, Brad Quintana, Ted Barba, Ben Rezendes, Rissa Rose Kilar, Joe Timko, Jordan Coombes, Andreanna L. Jenson, Shanna Vincent, Brandon Smith, Sean Coleman</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center5" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Titan();" class="btn">LATINO</button>
+					<button onclick="Titan();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrSPQ8d6vuWO1pZGJshSwS2CYkudmhrqlu1cLx7cDN.eA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Attack on Titan</div>
+						<div class="genero">2023 1hr 30min</div>
+						<div class="descrip">A medida que se agota el agua viable en la Tierra, se envía una misión a la luna Titán de Saturno para recuperar reservas sostenibles de H2O de sus habitantes alienígenas. Pero justo cuando los humanos adquieren el preciado recurso, son atacados por los titanes rebeldes.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Attack on Titan. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Ciencia ficción, Suspenso</h5>
+							<h5>Actores: Sam Worthington, Taylor Schilling, Tom Wilkinson, Agyness Deyn, Nathalie Emmanuel, Corey Johnson, Aleksandar Jovanović, Steven Cree, Diego Boneta, Noah Jupe, Naomi Battrick, Aaron Heffernan, Alex Lanipekun, Nathalie Poza, Francesc Garrido</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center6" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="NP();" class="btn">LATINO</button>
+					<button onclick="NP();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2VWp7ZQ24hsqqBrlMm2emvVIY1Km.ui0GuIgQL3YLNKo1aa8crxeIoJXzyYxcgjFlJ0C1doIKN9xyEO8SAd61K.sG6m_qaCATBuRk0Eqk.2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Noche de paz</div>
+						<div class="genero">2022 1hr 52min</div>
+						<div class="descrip">Cuando un equipo de mercenarios irrumpe en Nochebuena dentro de un complejo familiar adinerado y toma como rehenes a todos los que están dentro, no estaban preparados para un defensor sorpresa: Santa Claus (David Harbour) está en el edificio y a punto de demostrar por qué este Santa Claus, no es ningún santo.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Noche de paz. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Comedia, Crimen, Suspenso</h5>
+							<h5>Actores: Sam Worthington, Taylor Schilling, Tom Wilkinson, Agyness Deyn, Nathalie Emmanuel, Corey Johnson, Aleksandar Jovanović, Steven Cree, Diego Boneta, Noah Jupe, Naomi Battrick, Aaron Heffernan, Alex Lanipekun, Nathalie Poza, Francesc Garrido</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center7" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Zam();" class="btn">LATINO</button>
+					<button onclick="Zam();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrdzVBnlXQRSfxCnU3NyHpt_zT1XL95sNKX0gMW8m7U6v" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">¡Shazam! La furia de los dioses</div>
+						<div class="genero">2023 2hr 10min</div>
+						<div class="descrip">Billy Batson y sus hermanos adoptivos, que se transforman en superhéroes al decir "¡Shazam!", se ven obligados a volver a la acción y luchar contra las Hijas de Atlas, a quienes deben evitar que use un arma que podría destruir el mundo.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula shazam. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Comedia, Fantasía</h2>
+							<h5>Actores: Zachary Levi, Asher Angel, Jack Dylan Grazer, Adam Brody, Grace Caroline Currey, Helen Mirren, Lucy Liu, Rachel Zegler, Meagan Good, Faithe Herman, Ross Butler, Ian Chen, D.J. Cotrona, Jovan Armand, Djimon Hounsou</h3>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center8" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="JW();" class="btn">LATINO</button>
+					<button onclick="JW();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe  src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2V42Y1hSdJevVTcM_kGLglR__MyRNuePxcho1Xk9jy_0CgkEEGpU2I1kF2qrath30kzk_StjDKB1YdORbbuUNnwjPLgoH9RulxUQR_Caftek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">John Wick 4</div>
+						<div class="genero">2023 2hr 49min</div>
+						<div class="descrip">John Wick descubre un camino para derrotar a La Mesa. Pero antes de poder ganar su libertad, Wick deberá enfrentarse a un nuevo enemigo con poderosas alianzas en todo el mundo; y contra las fuerzas que convierten a viejos amigos en enemigos.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Noche de paz. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Suspenso, Crimen</h5>
+							<h5>Actores: Keanu Reeves, Donnie Yen, Bill Skarsgård, Ian McShane, Laurence Fishburne, Lance Reddick, Clancy Brown, Hiroyuki Sanada, Shamier Anderson, Rina Sawayama, Scott Adkins, Kamel El-Torky, Aimée Kwan, Marko Zaror, Natalia Tena</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center9" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="OP();" class="btn">LATINO</button>
+					<button onclick="OP();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPracz2EX4aLLC75Fkez4tQlVOn4G3PrYwa3wypu75hFAn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Agente Fortune: El gran engaño</div>
+						<div class="genero">2023 1hr 53min</div>
+						<div class="descrip">El superespía Orson Fortune debe rastrear y detener la venta de una mortífera tecnología moderna que maneja el multimillonario corredor de armas Greg Simmonds. Para lograrlo, forma equipo con algunos de los mejores operativos del mundo y recluta a la mayor estrella de cine de Hollywood, Danny Francesco para que lo ayuden en su misión encubierta para salvar el mundo.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Agente Fortune. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Suspenso, Comedia</h2>
+							<h5>Actores: Jason Statham, Aubrey Plaza, Josh Hartnett, Hugh Grant, Cary Elwes, Bugzy Malone, Peter Ferdinando, Eddie Marsan, Lourdes Faberes, Max Beesley, Sam Douglas, Aksel Üstün, Oliver Maltman, Ergun Kuyucu, Eugenia Kuzmina</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center10" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="LC();" class="btn">LATINO</button>
+					<button onclick="LC();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2XNMCAljwTG6AxtWLqIdc4Dft4yiNlR6v3BBFmiHTPMzuMGkCeWgy8d_Wy5K4030cmdZR9ATREGPklIPfBStjrMwE_jaNxwJeonaisff1nMN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Luther: Cae la noche</div>
+						<div class="genero">2023 2hr 10min</div>
+						<div class="descrip">Atormentado por un caso no resuelto, el brillante pero deshonrado detective de la Policía londinense John Luther escapa de prisión para cazar a un despiadado asesino en serie.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Luther: Cae la noche. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Suspenso, Crimen, Acción, Drama</h2>
+							<h5>Actores: Idris Elba, Cynthia Erivo, Andy Serkis, Dermot Crowley, Thomas Coombes, Hattie Morahan, Lauryn Ajufo, Vincent Regan, Ross Waiton, Dan Li, Edward Hogg, Einar Kuusk, Tom McCall, Carl Spencer, Amy Trigg</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center11" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Marlove();" class="btn">LATINO</button>
+					<button onclick="Marlove();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2RouydsGwMutMqXPQVgZWbqAZsWTXHyDYbQ5a1U3cje6eKeXuxqAh.NBfGzd8L4loKzGYaF0IwgloLAGeLKd3ssmhQd7FotM9JsSKw5TssBQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">  Marlove Sombras de un crimen</div>
+						<div class="genero">2023 1hr 50min</div>
+						<div class="descrip">A finales de los años 30, en los bajos fondos de Los Ángeles, una rica y bella heredera encarga a Marlowe que busque a su antiguo amante, que ha desaparecido. Pronto descubre que tras la desaparición de ese hombre hay una red corrupta que le pone en el punto de mira de algunos de los mandatarios más acomodados y peligrosos de la ciudad.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Sombras de un crimen. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Misterio, Suspenso, Crimen</h2>
+							<h5>Actores: Liam Neeson, Diane Kruger, Jessica Lange, Danny Huston, Alan Cumming, Ian Hart, Adewale Akinnuoye-Agbaje, Daniela Melchior, Patrick Muldoon, Colm Meaney, François Arnaud, Kim DeLonghi, Julius Cotter, Mark Schardan, Gary Anthony Stennette</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center12" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="S6();" class="btn">LATINO</button>
+					<button onclick="S6();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2YkBYrYd_7an8mOP7LqELrje0XAuEHAsB_xKw4BYeVQxQaLsVOqaksfc6vbBlEtQbIDY2k5HO4OTUugP4BOnGNsiMNOlDt15pycYdTBvSTkw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Scream 6</div>
+						<div class="genero">2023 2hr 03min</div>
+						<div class="descrip">Sam, Tara, Mindy y Chad quieren tener una vida completamente normal, por ello, después de la masacre final de Ghostface en Woodsboro, deciden mudarse a Nueva York. Todos ellos quieren abandonar esas horribles vivencias que sufrieron en su pequeño pueblo. Sin embargo, no pueden escapar tan fácilmente de sus problemas y les volverá a perseguir, el ya conocido, asesino con una máscara de fantasma. Lo comienzan a ver en el metro, en el supermercado, en medio de la gran ciudad. Sam, Tara, Mindy y Chad no están dispuestos a rendirse y se preparan para acabar con él y volver a vivir en tranquilidad.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Scream 6. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Terror, Misterio, Suspenso</h2>
+							<h5>Actores: Melissa Barrera, Jenna Ortega, Jasmin Savoy Brown, Mason Gooding, Roger Jackson, Courteney Cox, Dermot Mulroney, Jack Champion, Josh Segarra, Liana Liberato, Devyn Nekoda, Hayden Panettiere, Skeet Ulrich, Tony Revolori, Samara Weaving</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center13" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Credlll();" class="btn">LATINO</button>
+					<button onclick="Credlll();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2fzq29UUbBW7ohz7rfEfbvQDo7IoZcuPZTDUkwkcPwlmcVqfsIdkjL_jVeGi1xF_0l89MorKG7zFdXXD0wtlqjQ6mZH5E6VyNdudOtHdKSIW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Creed III</div>
+						<div class="genero">2023 1hr 56min</div>
+						<div class="descrip">Adonis Creed ya ha llegado a la cima de su carrera y no tiene nada más que demostrar en el mundo del boxeo. Convertido en un ídolo de este boxeo pasa sus días rodeado de su familia y seres queridos. Sin embargo, todo cambiará cuando regrese un fantasma de su infancia. Su amigo de juventud, Damián, acaba de salir de la cárcel y desea demostrar todo lo que ha aprendido de boxeo estos años. Por ello, querrá enfrentarse en el cuadrilátero con su antiguo amigo. Adonis Creed tendrá que enfrentarse a este adversario, que no solo quiere quitarle su título de boxeador, sino que desea acabar con él.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Creed III. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Drama</h2>
+							<h5>Actores: Michael B. Jordan, Tessa Thompson, Jonathan Majors, Wood Harris, Phylicia Rashād, Mila Davis-Kent, José Benavidez Jr., Selenis Leyva, Florian Munteanu, Thaddeus J. Mixson, Spence Moore II, Tony Bellew, Ann Najjar, Patrice Harris, Jacob 'Stitch' Duran</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center14" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="PeorV();" class="btn">LATINO</button>
+					<button onclick="PeorV();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2RxqAzfm7niiCd5pq098XeSMxmKECwPdnuNTF.19oWco7sFsyLRgJOs0MgU81ujZ5cehYgy6r__ND3gyxdBd8kqcDC5bSODM9Acb6E9tNiwV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Un vecino gruñón</div>
+						<div class="genero">2022 2hr 06min</div>
+						<div class="descrip">Otto es un gruñón que ha renunciado a la vida tras la pérdida de su esposa y quiere acabar con todo. Cuando una familia joven se muda cerca, conoce a su pareja en la ingeniosa Marisol, lo que lleva a una amistad que cambiará su mundo.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Un vecino gruñón. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Comedia, Drama</h2>
+							<h5>Actores: Tom Hanks, Mariana Treviño, Rachel Keller, Manuel Garcia-Rulfo, Cameron Britton, Kailey Hyman, Mike Birbiglia, Elle Chapman, Joe Fishel, Truman Hanks, Juanita Jennings, Kelly Lamor Wilson, John Higgins, Tony Bingham, Lily Kozub</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center15" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="LLamana();" class="btn">LATINO</button>
+					<button onclick="LLamana();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2QrfhZxFY3sz.m81IgS6Bmo4QaYhnq.S.jiVuGDYGkSdC9.BoCuPULH31tgAa4EEpKg35kqHrTfZ2e9JLk.llAkBmP5BzmQ9lGYOLhds.RyR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Llaman a la puerta</div>
+						<div class="genero">2023 1hr 43min</div>
+						<div class="descrip">Mientras está de vacaciones en una cabaña remota, una niña y sus padres son tomados como rehenes por cuatro extraños armados que exigen que la familia tome una decisión impensable para evitar el apocalipsis. Con acceso limitado al mundo exterior, la familia debe decidir en qué cree antes de que todo se pierda.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Llaman a la puerta. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Terror, Misterio, Suspenso</h2>
+							<h5>Actores: Dave Bautista, Jonathan Groff, Ben Aldridge, Kristen Cui, Nikki Amuka-Bird, Rupert Grint, Abby Quinn, Clare Louise Frost, McKenna Kerrigan, Odera Adimorah, Ian Merrill Peakes, Denise Nakano, Rose Luardo, Billy Vargus, Satomi Hofmann</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center16" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Antman();" class="btn">LATINO</button>
+					<button onclick="Antman();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrafME26nEF3gN7biQFwLljYHgLdMcbCwIKCCu3Oey5B_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Ant-Man and the Wasp: Quantumania</div>
+						<div class="genero">2023 2hr 05min</div>
+						<div class="descrip">Los superhéroes Scott Lang y Hope van Dyne regresan para continuar sus aventuras como Ant-Man y Wasp. Con los padres de Hope, Hank Pym y Janet van Dyne, y con la hija de Scott, Cassie Lang, la familia explora el Reino Quántico, interactúa con extrañas criaturas y se embarca en una aventura que los hará ir más allá de lo que creían posible.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Ant-Man and the Wasp: Quantumania. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Ciencia ficción, Comedia</h2>
+							<h5>Actores: Paul Rudd, Evangeline Lilly, Jonathan Majors, Kathryn Newton, Michelle Pfeiffer, Michael Douglas, Corey Stoll, Bill Murray, William Jackson Harper, David Dastmalchian, Jamie Andrew Cutler, Katy O'Brian, Mark Weinman, Randall Park, Ross Mullan</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center17" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="GatoB();" class="btn">LATINO</button>
+					<button onclick="GatoB();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2ZMAcibiy.x7QJRfzdBI3KEsTkwbAI9gxFZuBd3caoru1t8Goo7MiYkcTMxLDetvKXNVF2iEDS0mpolyQXWLuuBVTajuIWdT9u1.4G1e6LKZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Gato con Botas: El último deseo</div>
+						<div class="genero">2022 1hr 40min</div>
+						<div class="descrip">El audaz forajido Gato con Botas descubre que su pasión por el peligro y su desprecio por la seguridad le han pasado factura. El Gato ha quemado ocho de sus nueve vidas, aunque ha perdido la cuenta por el camino. Recuperar esas vidas hará que el Gato con Botas emprenda su mayor búsqueda hasta ahora; la mítica Estrella de los Deseos.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Gato con Botas: El último deseo. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Animación, Aventura, Comedia, Familia</h2>
+							<h5>Actores: Antonio Banderas, Salma Hayek, Harvey Guillén, Wagner Moura, Florence Pugh, Olivia Colman, Ray Winstone, Samson Kayo, John Mulaney, Da'Vine Joy Randolph, Anthony Mendez, Kevin McCann, Bernardo de Paula, Betsy Sodaro, Artemis Pebdani</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center18" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Piloto();" class="btn">LATINO</button>
+					<button onclick="Piloto();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2Y_cuTSyIJj_tnQOYKy4CuwkzlOQcVkyX3r6Ly9VxeAxPXDe0ydzzZ3g1Dk5Imnm3jU85eVsUwRJwpOrAqnpjDUa0YHx9IZb9.nVACYbnjXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Piloto Alerta extrema</div>
+						<div class="genero">2022 1hr 47min</div>
+						<div class="descrip">En la noche de fin de año, el piloto experto Brodie Torrance (Gerard Butler) realiza un arriesgado aterrizaje cuando su avión, repleto de pasajeros, es alcanzado por un rayo. Perdidos en medio de una isla devastada por la guerra, Torrance se dará cuenta que sobrevivir al vuelo sólo ha sido el principio de una terrible aventura llena de peligros. El piloto deberá usar todo su ingenio para intentar llevar a los pasajeros a sus destinos sanos y salvos.</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Piloto Alerta extrema. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Aventura, Suspenso</h2>
+							<h5>Actores: Gerard Butler, Mike Colter, Yoson An, Tony Goldwyn, Daniella Pineda, Paul Ben-Victor, Remi Adeleke, Joey Slotnick, Evan Dane Taylor, Claro de los Reyes, Kelly Gale, Haleigh Hekking, Lilly Krug, Oliver Trevena, Tara Westwood</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center19" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="JurassicD();" class="btn">LATINO</button>
+					<button onclick="JurassicD();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2e0Mn7M7ZM8uKyhSJkIxXrwsyhvyTbOP6C8LTEdyHEEsQ4zmVPEeLcQNDKhL8bM8nhbrtVV0VPMBJcujM14zc74JKN5eiz8_f_LJpnxMLXV2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Jurassic World Dominion</div>
+						<div class="genero">2022 2hr 27min</div>
+						<div class="descrip">
+							Cuatro años después de la destrucción de Isla Nublar, los dinosaurios ahora viven y cazan junto a los humanos en todo el mundo. Este frágil equilibrio cambiará el futuro y determinará, de una vez por todas, si los seres humanos deben seguir siendo los depredadores máximos en un planeta que ahora comparten con las criaturas más temibles de la historia.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Jurassic World Dominion. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Acción, Ciencia ficción</h2>
+							<h5>Actores: Chris Pratt, Bryce Dallas Howard, Laura Dern, Jeff Goldblum, Sam Neill, DeWanda Wise, Mamoudou Athie, Isabella Sermon, Campbell Scott, BD Wong, Omar Sy, Justice Smith, Daniella Pineda, Scott Haze, Dichen Lachman</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center20" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Loveand();" class="btn">LATINO</button>
+					<button onclick="Loveand();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2c.3x0Gpn5eHSJ.3JJZnPlY6S1uzM7.T1LUGDjphfKduPqY2ck0Dcc3v_gcKPSd022Vxx85cZ4Igu_L2qMiySM34fa21c7SKtohufiu1xyy9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Thor: Amor y Trueno</div>
+						<div class="genero">2022 1hr 59min</div>
+						<div class="descrip">
+							Mucho tiempo después de los eventos sucedidos en Avengers: Endgame, los Guardianes de la Galaxia deben convencer a Thor para que regrese al campo de batalla y se enfrente a un villano empeñado en matar a todas las criaturas divinas en todo el cosmos. Para luchar contra esta amenaza, Thor debe reclutar a sus amigos Valkyrie, Korg y su ex novia Jane Foster, quien misteriosamente puede empuñar el martillo de Thor y por ende poseer su gran poder.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Thor: Amor y Trueno. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Fantasía, Acción, Comedia</h2>
+							<h5>Actores: Chris Hemsworth, Natalie Portman, Christian Bale, Tessa Thompson, Jaimie Alexander, Russell Crowe, Chris Pratt, Karen Gillan, Dave Bautista, Pom Klementieff, Sean Gunn, Vin Diesel, Bradley Cooper, Idris Elba, Carly Rees.</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center21" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TopG();" class="btn">LATINO</button>
+					<button onclick="TopG();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2Yc8e4gKnriyYMJ2JIzASqh6qHZVxLRz5rHol3.fEXVM3kHhT8iSw9rvIFmxLgceQql2sHjBB2uNVO9KVHa2_DkpiujLKwlD3bTrdG1u.C9v" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Top Gun: Maverick</div>
+						<div class="genero">2022 2hr 11min</div>
+						<div class="descrip">
+							Después de más de treinta años de servicio como uno de los mejores aviadores de la Armada, Pete "Maverick" Mitchell está en donde pertenece, sobresaliendo como un valiente piloto de pruebas y evitando subir de rango en la armada, que evitaría que pudiera seguir volando. Cuando se encuentra entrenando a un destacamento de graduados de Top Gun para una misión especial que ningún piloto vivo ha visto antes, Maverick se encuentra con el teniente Bradley Bradshaw, señal de llamada: "Rooster", el hijo del difunto amigo de Maverick y el oficial de intercepción de radar, el teniente Nick Bradshaw, también conocido como "Goose".
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Top Gun: Maverick. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Drama</h2>
+							<h5>Actores: Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Ed Harris, Val Kilmer, Lewis Pullman, Charles Parnell, Bashir Salahuddin, Monica Barbaro, Jay Ellis, Danny Ramirez, Jack Schumacher, Manny Jacinto</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center22" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="BlackP();" class="btn">LATINO</button>
+					<button onclick="BlackP();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2UUUSa4DihFHi2JhQ3.3vBv.pQKeRQgvPTKiBpUJx9feXZtx2InNnejzEFPIhqYQLPrVCRmD7UyISazOUij7XZuFRk9cSnrLvyLqTmOYXwv." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Pantera Negra: Wakanda por siempre</div>
+						<div class="genero">2022 2hr 42min</div>
+						<div class="descrip">
+							La reina Ramonda, Shuri, M'Baku, Okoye y las Dora Milaje luchan por proteger a su nación de las potencias mundiales que intervienen tras la muerte del Rey T'Challa. Mientras los habitantes de Wakanda se esfuerzan por embarcarse en un nuevo capítulo, los héroes deben unirse con la ayuda de Nakia y Everett Ross y forjar un nuevo camino para el reino de Wakanda.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Pantera Negra: Wakanda por siempre. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Aventura, Ciencia ficción</h2>
+							<h5>Actores: Letitia Wright, Lupita Nyong'o, Danai Gurira, Winston Duke, Dominique Thorne, Tenoch Huerta Mejía, Angela Bassett, Florence Kasumba, Michaela Coel, Mabel Cadena, Lake Bell, Alex Livinalli, Robert John Burke, Danny Sapani, Isaach De Bankolé</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center23" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TitanesP();" class="btn">LATINO</button>
+					<button onclick="TitanesP();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrbC9P_pLF5mKt6dDjrq.s3uGWqDiagoHsoEucnwmz7Ea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Titanes del Pacífico: La insurrección</div>
+						<div class="genero">2022 2hr 42min</div>
+						<div class="descrip">
+							Un futuro cercano. Han pasado 10 años tras la primera invasión que sufrió la humanidad, pero la lucha aún no ha terminado. El planeta vuelve a ser asediado por los Kaiju, una raza de alienígenas colosales, que emergen desde un portal interdimensional con el objetivo de destruir a la raza humana. Ante esta nueva amenaza, los Jaegers, robots gigantes de guerra pilotados por dos personas para sobrellevar la inmensa carga neuronal que conlleva manipularlos, ya no están a la altura de lo que se les viene encima. 
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Titanes del Pacífico: La insurrección. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Fantasía, Ciencia ficción, Aventura</h2>
+							<h5>Actores: John Boyega, Scott Eastwood, Cailee Spaeny, Jing Tian, Rinko Kikuchi, Burn Gorman, Adria Arjona, Zhang Jin, Charlie Day, Madeleine McGraw, Karan Brar, Ivanna Sakhno, Mackenyu, Wesley Wong, Levi Meaden</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center24" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="ElefantaM();" class="btn">LATINO</button>
+					<button onclick="ElefantaM();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2Y5jqdC1hi0GZyhEnVdwpxUepeRCoC2TKCxxLnL2cmXrr.2R_iwKGbU9ZjO3nTL72fklFnElBqburMIg2_pBiPI8_0Qao2Fghj2yCgdUE3sb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">La elefanta del Mago</div>
+						<div class="genero">2023 1hr 43min</div>
+						<div class="descrip">
+							Peter busca a su hermana, desaparecida mucho tiempo atrás. Por eso, cuando se topa con una vidente, solo se le ocurre preguntarle si ella sigue con vida. La respuesta es que debe encontrar a una misteriosa elefanta y al mago capaz de conjurarla. Así, Peter emprende un viaje sobrecogedor para completar tres tareas aparentemente imposibles que cambiarán para siempre su pueblo y lo sumergirán en la aventura de su vida.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula La elefanta del Mago. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Animación, Aventura, Familia, Fantasía</h2>
+							<h5>Actores: Noah Jupe, Mandy Patinkin, Brian Tyree Henry, Natasia Demetriou, Sian Clifford, Benedict Wong, Miranda Richardson, Kirby Howell-Baptiste, Aasif Mandvi, Pixie Davies, Dawn French, Cherise Boothe, Katy Cavanagh, Stephen Kearin, Tom Kenny</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center25" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Babylon();" class="btn">LATINO</button>
+					<button onclick="Babylon();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2UW6DoVY6xs.d1n2rqrZHnAScLOLZ0kdb84Fcx2mStE9vSOD0AdYfefRZBeL7Ro0imFFLMXqEtnfh4eoxDqqY9ywzLpYT1ZSwCqq_CMAohi4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Babylon</div>
+						<div class="genero">2023 3hr 09min</div>
+						<div class="descrip">
+							Una historia de ambición descomunal y exceso escandaloso, que rastrea el ascenso y la caída de múltiples personajes en una era de decadencia y depravación desenfrenada durante la transición de Hollywood del cine mudo al cine sonoro a fines de la década de 1920.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Babylon. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Drama, Comedia</h2>
+							<h5>Actores: Brad Pitt, Margot Robbie, Diego Calva, Jean Smart, Flea, Jovan Adepo, J.C. Currais, Jimmy Ortega, Hansford Prince, Telvin Griffin, Olivia Wilde, Circus-Szalewski, Lukas Haas, Li Jun Li, Kaia Gerber</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado   Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center26" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Tsystem();" class="btn">LATINO</button>
+					<button onclick="Tsystem();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2fGKUc1itDTOsta.olFo4zYuovcI07ZOeWEGuhFibzpGuAUXzyrh61Brz4iMH0QFGQPZat2o20Sq4agMM5TNRyr0EDExs_qmiqgK_JRnBV3d" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">The system</div>
+						<div class="genero">2023 1hr 37min</div>
+						<div class="descrip">
+							Cuando un joven soldado, recién regresado de la guerra, queda atrapado en una redada de drogas, las autoridades lo reclutan para que se infiltre en una prisión notoriamente peligrosa para descubrir qué está pasando realmente.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula The system. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Crimen, Suspenso</h2>
+							<h5>Actores: Tyrese Gibson, Terrence Howard, Jeremy Piven, Lil Yachty, Ric Reitz, Laura Aleman, Caleb Spillyards, Marrese Crump, Nick Gore, Ronnie Yelverton, Jeremy Sande, Scott Green, Arielle Prepetit, Eric Walton, David Joseph Martinez</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center27" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="BatP();" class="btn">LATINO</button>
+					<button onclick="BatP();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2e.5BlglMPq2HPQmvKZFbyJKGQ47VXNY8Yq20m.wFTAM8TXpgK1VoWXGwL9yulT3eC3Zsfgjbc759ek7WkucmbbkkCz5kr_MuLHS6361GDvS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Batman: La Perdición</div>
+						<div class="genero">2023 1hr 26min</div>
+						<div class="descrip">
+							El explorador Bruce Wayne desata accidentalmente un antiguo mal y regresa a Ciudad Gótica después de estar fuera durante dos décadas. Allí, Batman lucha contra las fuerzas sobrenaturales de Lovecraft y se encuentra con aliados y enemigos como Green Arrow, Ra's al Ghul, Mr. Freeze, Killer Croc, Two-Face y James Gordon.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Batman la perdición. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Animación, Fantasía, Terror</h2>
+							<h5>Actores: David Giuntoli, Patrick Fabian, John DiMaggio, Karan Brar, Navid Negahban, Darin De Paul, Emily O'Brien, Christopher Gorham, David Dastmalchian, Tim Russ, Matthew Waterson, Jeffrey Combs, William Salyers, Gideon Adlon, Tati Gabrielle</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center28" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="InspectorA();" class="btn">LATINO</button>
+					<button onclick="InspectorA();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYyWj56iMhyKVDSmqCGeRt8M5t2CN.UaTpyi2W1Csp5e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Inspector araña</div>
+						<div class="genero">2022 1hr 30min</div>
+						<div class="descrip">
+							El explorador Bruce Wayne desata accidentalmente un antiguo mal y regresa a Ciudad Gótica después de estar fuera durante dos décadas. Allí, Batman lucha contra las fuerzas sobrenaturales de Lovecraft y se encuentra con aliados y enemigos como Green Arrow, Ra's al Ghul, Mr. Freeze, Killer Croc, Two-Face y James Gordon.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Inspector araña. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Animación, Familia</h2>
+							<h5>Actores: Fernando Cabrera, Catherina Martínez, Ana Jiménez, Txema Moscoso, Vicente Gil, Jesús Barreda, Pedro Tena Ramos, María Luisa Marciel, Isabel Donate, Juan Rueda, Rocco Pucillo</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center29" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Pchang();" class="btn">LATINO</button>
+					<button onclick="Pchang();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2exI5GWvOPBYWOScbIge_idAFDUZK4Xp6xqiuKTkpa7AR_W.0UtYX_xMHmU9nnTVnSjBpoYoKyjPISRMG_IQkqLsUo2RVMKQJMqDdZAxccfe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Puedes hacerlo Chang</div>
+						<div class="genero">2023 1hr 48min</div>
+						<div class="descrip">
+							Chang, un estadounidense de ascendencia asiática de 16 años que mide 1.70 m, le apuesta a la estrella del básquet de su escuela que hará una volcada antes del partido de bienvenida. Chang se embarca en una aventura para lograr la proeza, no solo para impresionar a la chica que le gusta, Kristy, sino también para ganarse el respeto de sus compañeros de colegio. Pero antes de dar el salto a la gloria, tendrá que replantearse todo lo que conoce de sí mismo, de sus amigos y de su familia.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Piedes hacerlo chang. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Familia, Comedia, Drama</h2>
+							<h5>Actores: Bloom Li, Dexter Darden, Ben Wang, Zoe Renee, Chase Liefeld, Mardy Ma, Alexandre Chen, Nile Bullock, Cathy Salvodon, Ka-Ling Cheung, Heather Lee, Elizabeth Inghram, Aaron Vargas, Angela Du, Eric Anthony Lopez</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center30" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Geminis();" class="btn">LATINO</button>
+					<button onclick="Geminis();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2WG3JUAwtKzXKsqEogUglrzdHRVEpqQZK7mos6k59d9YV4OfX.wzu78k0fZD1Q9xkhpl2fJzjYbF9eGccOPWbcoFmJSsABaLjQajHhVAhEkm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Géminis: El planeta oscuro</div>
+						<div class="genero">2022 1hr 38min</div>
+						<div class="descrip">
+							Una misión espacial es enviada para terraformar un planeta distante. Sin embargo, la misión se encuentra con algo desconocido que tiene su propio plan para el planeta.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Geminis. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Ciencia ficción, Terror</h2>
+							<h5>Actores: Egor Koreshkov, Alena Konstantinova, Konstantin Samoukov, Pyotr Romanov, Nikita Dyuvbanov, Liza Martines, Viktor Potapeshkin, Dmitry Frid, Katerina Shpitsa, Nikita Volkov, Alexander Kuznetsov, Mikhail Bashkatov, Ekaterina Kabak, Sergey Kempo, Nikolay Serdtsev</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center31" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="wick3();" class="btn">LATINO</button>
+					<button onclick="wick3();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrf5nnpJVbNe91mrkk.zglft0D6O3Mrc0T0Q175TBecpK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">John Wick 3: Parabellum</div>
+						<div class="genero">2019 2hr 11min</div>
+						<div class="descrip">
+							Después de matar a un miembro del misterioso gremio internacional de asesinos, la Mesa Alta, John Wick está excomulgado, pero los hombres y mujeres más despiadados del mundo esperan cada uno su turno.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula John Wick 3: Parabellum. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Suspenso, Crimen</h2>
+							<h5>Actores: Keanu Reeves, Halle Berry, Ian McShane, Laurence Fishburne, Mark Dacascos, Asia Kate Dillon, Lance Reddick, Anjelica Huston, Tobias Segal, Saïd Taghmaoui, Jerome Flynn, Randall Duk Kim, Margaret Daly, Robin Lord Taylor, Susan Blommaert</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado  Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center32" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="wick2();" class="btn">LATINO</button>
+					<button onclick="wick2();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYjxBD8mCkOhEbulg2qzb1mUBtrMsmjkP4fW.TQ.8rR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">John Wick 2: Un Nuevo Día Para Matar</div>
+						<div class="genero">2017 2hr 02min</div>
+						<div class="descrip">
+							En esta secuela del éxito de 2014, el legendario asesino John Wick (Keanu Reeves) se ve obligado a salir del retiro por un ex-asociado que planea obtener el control de un misterioso grupo internacional de asesinos. Obligado a ayudarlo por un juramento de sangre, John emprende un viaje a Roma lleno de adrenalina estremecedora para pelear contra los asesinos más peligrosos del mundo.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula John Wick 2: Un nuevo dia para matar. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Suspenso, Crimen</h2>
+							<h5>Actores: Keanu Reeves, Common, Ian McShane, Laurence Fishburne, Riccardo Scamarcio, Ruby Rose, Lance Reddick, Peter Stormare, Bridget Moynahan, Franco Nero, John Leguizamo, Claudia Gerini, Wass Stevens, Peter Serafinowicz, Tobias Segal</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center33" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="wick1();" class="btn">LATINO</button>
+					<button onclick="wick1();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrUamiumeo5yipePZcOrSyYFt5WJ17gS2VpC3U6Zj3VLZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">John Wick: Otro Día Para Matar</div>
+						<div class="genero">2014 1hr 41min</div>
+						<div class="descrip">
+							La ciudad de Nueva York se convierte en el patio acribillado a balazos de un ex-asesino mientras él elimina a los gánsteres que destruyeron todo lo que él quería.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula John Wick 2: Un nuevo dia para matar. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Suspenso</h2>
+							<h5>Actores: Keanu Reeves, Michael Nyqvist, Ian McShane, John Leguizamo, Willem Dafoe, Alfie Allen, Dean Winters, Adrianne Palicki, Lance Reddick, Bridget Moynahan, David Patrick Kelly, Randall Duk Kim, Munro M. Bonnell, Omer Barnea, Toby Leonard Moore</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center34" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TFormers1();" class="btn">LATINO</button>
+					<button onclick="TFormers1();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrTIKtBVsBozT8s0_8y2wGDIgsSCG9v35E9qkKIaG39by" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Transformers 1</div>
+						<div class="genero">2007 2hr 23min</div>
+						<div class="descrip">
+							Optimus Prime, líder de los Autobots, narra el colapso del planeta natal de los Transformers, Cybertron. Quedó inhabitable por una guerra entre los Autobots y los Decepticons. Liderados por Megatron, los Decepticons buscan la Chispa Suprema para poder usarla para apoderarse del universo. Los Autobots quieren encontrar la Chispa Suprema para usarla para reconstruir Cybertron y finalizar la guerra. Megatron logró localizar la Chispa Suprema en la Tierra, pero se estrelló en el círculo ártico y se congeló en el hielo. Después de toparse con su cuerpo congelado en 1897, el explorador Capitán Archibaldo Witwicky accidentalmente activó el sistema de navegación de Megatron y en sus anteojos quedaron grabadas las coordenadas de la localización de la Chispa Suprema, un incidente que lo dejó ciego y mentalmente inestable.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Transformers 1. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Ciencia ficción, Acción</h5>
+							<h5>Actores: Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson, Rachael Taylor, Anthony Anderson, Jon Voight, John Turturro, Michael O'Neill, Kevin Dunn, Julie White, Amaury Nolasco, Zack Ward, Patrick Mulderrig, Luis Echagarruga</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center35" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TFormers2();" class="btn">LATINO</button>
+					<button onclick="TFormers2();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrWTG5I8l6LaVSS3uVFwZ2vaoq1b6wAYfZffxlX2q4byX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Transformers 2: La Venganza de los Caídos</div>
+						<div class="genero">2007 2hr 23min</div>
+						<div class="descrip">
+							Dos años después de derrotar a los Decepticons, las vidas de Sam y los Autobots han cambiado mucho. Mientras Sam se prepara para ir a la universidad, sus amigos robots se han integrado en una fuerza de élite que captura a enemigos renegados. Pero todo cambia con la llegada de un malvado enemigo que, con un enrevesado plan, planea un nuevo alzamiento de los Decepticons. La humanidad vuelve a estar en peligro, y Sam y los Autobots tendrán que formar una vez más equipo para salvarla.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Transformers 2: La Venganza de los Caídos. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Ciencia ficción, Acción</h5>
+							<h5>Actores: Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson, Rachael Taylor, Anthony Anderson, Jon Voight, John Turturro, Michael O'Neill, Kevin Dunn, Julie White, Amaury Nolasco, Zack Ward, Patrick Mulderrig, Luis Echagarruga</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center36" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TFormers3();" class="btn">LATINO</button>
+					<button onclick="TFormers3();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYj4kXUu94H.8mdTzdwdsaSAheagTkrvA1y4GGMXCB3J" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Transformers 3: El Lado Oscuro de la Luna</div>
+						<div class="genero">2011 2hr 34min</div>
+						<div class="descrip">
+							En esta tercera entrega de la saga Transformers, los Autobots y los Decepticons se ven envueltos en una peligrosa carrera espacial en la Tierra entre los EE.UU. y Rusia, donde un acontecimiento amenaza con provocar una guerra tan grande que ni los propios transformers puede que sean capaces de salvar nuestro planeta. Y una vez más, como casi siempre, Sam Witwicky se encuentra involuntariamente en medio del conflicto.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Transformers 3: El Lado Oscuro de la Luna. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Ciencia ficción, Acción</h5>
+							<h5>Actores: Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson, Rachael Taylor, Anthony Anderson, Jon Voight, John Turturro, Michael O'Neill, Kevin Dunn, Julie White, Amaury Nolasco, Zack Ward, Patrick Mulderrig, Luis Echagarruga</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center37" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TFormers4();" class="btn">LATINO</button>
+					<button onclick="TFormers4();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrUSULL89eFmW8KBDMqa3rRKIj4DiT7sKvad6DuU4aDZp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Transformers 4: La Era de la Extinción</div>
+						<div class="genero">2011 2hr 34min</div>
+						<div class="descrip">
+							Han pasado 4 años desde la tragedia de Chicago y la humanidad sigue reparando los destrozos, pero tanto los Autobots como los Decepticons han desaparecido de la faz de la Tierra. Ahora el Gobierno de los Estados Unidos está utilizando la tecnología rescatada en el asedio de Chicago para desarrollar sus propios Transformers. Al frente del proyecto está Joshua Joyce, un arrogante diseñador que piensa que los Autobots son “basura tecnológica” y se cree capaz de fabricar unos robots infinitamente más avanzados. Mientras tanto, Cade Yeager, un mécánico inventor, encuentra un Marmon semi-trailer. Al intentar repararlo, descubre que el camión no solo era un Transformer, sino también el mismísimo Optimus Prime, líder de los Autobots. Lo que Cade ignora son las consecuencias que pueden derivarse de este hallazgo.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Transformers 4: La Era de la Extinción. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Ciencia ficción, Acción</h5>
+							<h5>Actores: Mark Wahlberg, Stanley Tucci, Nicola Peltz Beckham, Jack Reynor, Titus Welliver, Kelsey Grammer, Sophia Myles, Li Bingbing, T.J. Miller, James Bachman, Thomas Lennon, Charles Parnell, Erika Fong, Michael Collins, Han Geng</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center38" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="TFormers5();" class="btn">LATINO</button>
+					<button onclick="TFormers5();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrSAgJlx0HhBQrNz0rfJnHdFjc2zdUvZJqVkjAp.SzT7f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Transformers 5: El Ultimo Caballero</div>
+						<div class="genero">2014 2hr 29min</div>
+						<div class="descrip">
+							Dos especies en guerra: una de carne y hueso, la otra de metal. El Último Caballero rompe con el mito original de la franquicia de Transformers y redefine lo que significa ser un héroe. Humanos y Transformers están en guerra y Optimus Prime se ha ido. La llave para salvar nuestro futuro está enterrada en los secretos del pasado, en la historia oculta de los Transformers en la Tierra. Salvar a nuestro mundo está en manos de una alianza única: Cade Yeager (Mark Wahlberg); Bumblebee; un Lord Inglés (Sir Anthony Hopkins); y una profesora de la Universidad de Oxford (Laura Haddock). Hay un momento en la vida de todo ser humano en la que recibimos el llamado para hacer la diferencia. En Transformers: El Último Caballero los perseguidos se convertirán en héroes; los héroes se convertirán en villanos y sólo un mundo sobrevivirá: el de ellos o el nuestro. Quinta película de Transformers dirigida por Michael Bay.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Transformers 5: El ultimo Caballero. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Ciencia ficción, Acción</h5>
+							<h5>Actores: Mark Wahlberg, Stanley Tucci, Nicola Peltz Beckham, Jack Reynor, Titus Welliver, Kelsey Grammer, Sophia Myles, Li Bingbing, T.J. Miller, James Bachman, Thomas Lennon, Charles Parnell, Erika Fong, Michael Collins, Han Geng</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center39" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="DG23();" class="btn">LATINO</button>
+					<button onclick="DG23();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrcKiycf_7zme6zBQZnu2yhLWrIgBNH562EIGyFfXGFwo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Calabozos & Dragones: Honor entre ladrones</div>
+						<div class="genero">2023 2hr 14min</div>
+						<div class="descrip">
+							Un ladrón encantador y una banda de aventureros inverosímiles emprenden un atraco épico para recuperar una reliquia perdida, pero las cosas salen peligrosamente mal cuando se topan con las personas equivocadas.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Calabozos & Dragones: Honor entre ladrones. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Aventura, Fantasía, Comedia</h5>
+							<h5>Actores: Chris Pine, Michelle Rodriguez, Regé-Jean Page, Justice Smith, Sophia Lillis, Hugh Grant, Jason Wong, Chloe Coleman, Daisy Head, Bradley Cooper, Hayley-Marie Axe, Ian Hanmore, Paul Bazely, Kenneth Collard, Philip Brodie</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center40" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Thelake();" class="btn">LATINO</button>
+					<button onclick="Thelake();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrc5vpKYdCaern_YQ8TWP4PDsoGuXACS25ZECdPl896sY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">The Lake</div>
+						<div class="genero">2023 1hr 48min</div>
+						<div class="descrip">
+							Un monstruo gigantesco y sediento de sangre emerge de un lago después de que le roben el huevo y desata su furia sobre los habitantes de un pueblo, dejando un rastro de destrucción y muerte a su paso. La ciudad de Bueng Kan, ahora aislada del mundo exterior, debe movilizar a sus funcionarios y ciudadanos, así como a un grupo de científicos que se encuentran en la ciudad realizando investigaciones, para atrapar a este depredador antes de que sea demasiado tarde.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula The Lake. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Terror</h5>
+							<h5>Actores: Sushar Manaying, Theerapat Sajakul, Thanachat Tullayachat, Vithaya Pansringarm, Wanmai Chatborrirak, Lamyai Haithongkham</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+		<div id="p-center41" class="peliculas">
+			<div class="center-b">
+				<div class="btns">
+					<button  onclick="Asasins();" class="btn">LATINO</button>
+					<button onclick="Asasins();" class="btn2 btn" >CASTELLANO</button>
+				</div>
+					<div class="pelicula">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrdCMbmuweeKgV_A9MUd0qHR9mjIkWs3SB4fIP6nOr.Hu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+					<div class="btnss">
+						<form action="categorias.html"><button class="btn">VOLVER</button></form>
+					</div>
+					<div class="setion">
+						<div class="title">Assassin</div>
+						<div class="genero">2023 1hr 27min</div>
+						<div class="descrip">
+							Un hombre muere como parte de un programa militar experimental. Un ex soldado de operaciones encubiertas toma su lugar para encontrar quién lo mató.
+						</div>
+						<div class="ayuda">¡Hola! Actualmente estás viendo la pelicula Assasins. Recuerda que si tienes algún problema con la pelicula, no dudes en informarlo en nuestra página de Facebook. En cineflix.com puedes ver peliculas online de forma gratuita y sin ningún tipo de restricción.</div>
+						<div class="generos">
+							<h5>Genero: Acción, Ciencia ficción</h5>
+							<h5>Actores: Andy Allo, Nomzamo Mbatha, Bruce Willis, Mustafa Shakir, Dominic Purcell, Fernanda Andrade, Barry Jay Minoff, Eugenia Kuzmina, Hannah Quinlivan, Vanessa Vander Pluym, Christian Rodrigo, Dustin Quick, Chris Mullinax, Andrea Lareo, Adam Huel Potter</h5>
+						</div>
+						<div class="copy">
+							Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+						</div>
+					</div>
+			</div>
+		</div>
+
+
+
+
+
+     <!--Maqueta de secciones de series....................................-->
+			<div id="serie1" class="series">
+				<div class="serie-center">
+					<div class="img">
+						<img src="https://static.lostfilm.top/Images/561/Posters/shmoster_s3.jpg" alt="">
+						<div class="volver">
+							<form action="categorias.html"><button>volver</button></form>
+						</div>
+					</div>
+					<div class="series-header">
+						<div class="title">Superman y Lois</div>
+						<div class="subtitle"> Superman & Lois 2021</div>
+						<div class="seriesdescrip">Tras años de enfrentarse a supervillanos megalómanos, a monstruos que causan estragos en Metrópolis y a invasores alienígenas que pretenden acabar con la raza humana, el Hombre de Acero alias Clark Kent y Lois Lane se enfrentan a uno de sus mayores retos: lidiar con todo el estrés, las presiones y las complejidades que conlleva ser padres trabajadores en la sociedad actual.</div>
+						<div class="footer">
+							<h6>Genero: Ciencia ficción, Fantasía, Drama</h6>
+							<h6>Actores: Tyler Hoechlin, Elizabeth Tulloch, Alex Garfin, Michael Bishop, Emmanuelle Chriqui, Dylan Walsh, Wolé Parks, Tayler Buck, Inde Navarrette, Erik Valdez, Sofia Hasmik, Chad L. Coleman</h6>
+						</div>
+						<div class="temporadas">
+							<div class="butonS"><button>Seleccionar Temporada</button></div>
+							<div class="tempos">
+								<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+								<button id="Temporada2" onclick="Temporada2();">temporada 2</button>
+								<button id="Temporada3" onclick="Temporada3();">temporada 3</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				
+				<div class="temporada1 temporadass" id="temp2">
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/wYlbxUiD6Eo6I94NcAblBxymkojIW3ay0y1qXdce0?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x1 Lo que hay debajo</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/GAaiaKLj3jz3h03jz3P8GkXSxYbLGuu3KlELI2Je297FPGDt0?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x2 Lazos que unen</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/29NieOskpJ8PVhVw6iExTOzSNWTqH2MKPX7kz7EXmdUuZo?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x3 La cosa en las minas</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/phIx8N4I9xZNebhJ6PMnoeTwstJqCG3jz3H8gHzSlZc0G0?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x4 El método inverso</h6>
+					</div>
+					<div class="cap1">
+						<img src="imagenes/" alt="">
+						<iframe src="https://nuuuppp.pics/watch/xCjlqscGevYjTK1kBBM3d6FtRM92YaggksjiU7kz79PUcE?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x5 Chica... Pronto serás una mujer</h6>
+					</div>
+					<div class="cap1">
+			      <iframe src="https://nuuuppp.pics/watch/pETZ2rIDRgFDQafdciX62bvNvIedI78S7ESkGccbM?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x6 Demostrado</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/NhDpXXKsxJ5kbp4WuLK8mxwc2T8VUS9KWy05E83FdUw?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x7 Anti-Héroe</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/XgTQK3OXFo67o4PUoHZcFOM0PrZfNpR80j8F6ayJbOg?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x8 En el olvido</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/AUum7Q3bqaimBtECrfZz3jz3c7WKUCKwLuxu7kz7Q4kO6S8Mk?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x9 30 días y 30 noches</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/kBh79ywFeKoZvqfmz5NjKhHHt9otoV7kz7YH4LUHgU0Y?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x10 Bizarros en un mundo bizarro</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/Tt7C7glc9to5Jp27kz7xSqFQq5yfNQSvYaAj13V0LCkOy4?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x11 Verdad y consecuencias</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/bYXnG0aj2tAknAE7CHdc8vrcKX9SVYkv6kEYxsa3lT4?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x12 Mentiras que atan</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/Nu1D723jz3orWZyIX4V03POCahTmqIh2frMIF1RTyvQ1Zg?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x13 Todo está perdido</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/YXyQpRbHKhnrnxc7kz7gIx20duseiB3uSkI5BjH2UqRVic?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x14 Guerra mundial bizarra</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/3q0rk5cqWQzdPUeVMADN3nWKXIeDl7kz73jz37SqaTa2PYxcY?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>2x15 Esperando a Superman</h6>
+					</div>
+				</div>
+				<div class="temporada1 temporadass" id="temp3">
+					<div class="cap1">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrQxlv4isGamE2dM4ziExQIeweolWAGNMM24yIKm9pg0H" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>3x1</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrUuSE5N5aVXQV_PEvRxk_kZtQP_os1TtXHe3TlroQtud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>3x2</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2UVoaMiG07CPOpNCaWF_X5SZxeH2M_OTcduKmNNafHVVcO7tiWN4JzhFoZTbCZwWlL__bsx4Ag5.zHBtpSQczwSoMOHxV0S2JaITWKv.BETK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>3x3</h6>
+					</div>
+				</div>
+				<div class="temporada1 temporadass" id="temp1">
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/up0ms11GqpEePE1bPucunNHR609PtAMyYhsTYIVbuW8?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x1 Piloto</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/hn9L0UFOv3jz3WXYXyp3jz3wdUnImUUgv8tlROXV6pN3US3V8?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x2 Herencia</h6>
+					</div>
+					<div class="cap1">
+				    <iframe src="https://nuuuppp.pics/watch/IQUiL8W83dgSdEzhWnayyLeVVPqHX0MSBoU1KFwXOLg?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x3 Las ventajas de no ser un marginado</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/Z8VhGRYCcrG90xIpD04Ol2YlGDja7PG90DPRoMlqA?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x4 Loco</h6>
+					</div>
+					<div class="cap1">
+						<img src="imagenes/" alt="">
+						<iframe src="https://nuuuppp.pics/watch/mLubL0MVrpWe7kz7PvbOBao79N60N7UXA3jz3JCMuETh99oVk?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x5 Lo mejor de Smallville</h6>
+					</div>
+					<div class="cap1">
+			      <iframe src="https://nuuuppp.pics/watch/Mt3QaBe9ccnc3jz39C2Y3jz3K4RBkKa1ixefOMWPfqRodytkM?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x6 Huele a espíritu adolescente</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/HTwVBTlUUnfD2i9kopr4wznW637atJlnbLfEQnMuULk?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x7 Hombre de Acero</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/99vU6X34sRr8PMoVsaf55V4IO7kz7jxi1MZhy3XtAz36Ro?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x8 Verdad y consecuencias</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/NDcNtodUeeNkBUoSXiMuZcORsr4WdH07dG3c7Pukm2A?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x9 Sujetos leales</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/5Z0I96m7kz78cOkhIIfHlCng5gAfuxZimelhVy09VUoY7kz7A?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x10 Oh Madre, ¿dónde estás?</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/dklmsTEUFzcRpBldEv51Bf4wHdYRbHAYf3ceb7bcXoo?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x11 	Una breve reminiscencia entre eventos cataclísmicos</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/hd7B7kz7BKschXZGhai3jz3rorhH5Gjm04xps1rHddd4bGfOM?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x12 Por el valle de la muerte</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/Gav5gl3gMNEHGzLu7kz7ali6FQejE34BBCB07kz7vu9sm3yrY?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x13 A prueba de errores</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/1cRHAbGWN5yMKkYS6Nu5tDUt4Nk4VsFt5qVX3jz317AS7w?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x14 El erradicador</h6>
+					</div>
+					<div class="cap1">
+						<iframe src="https://nuuuppp.pics/watch/ug8rlCNq6K73DP8mvvfYfatdq0Yk2Q7kz7gdaN9l71h4?h=" scrolling="no" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+						<h6>1x15 Los últimos hijos de Krypton</h6>
+					</div>
+				</div>
+				<div class="copy">
+					Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+				</div>
+
+				
+
+
+			</div>
+
+		<!--series 2222 prueba-->
+		<div id="serie2" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://cuevana.cloud/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7ci4qqkBJorLxSBwTj28vwh0bU.jpg&w=256&q=75" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">The flash</div>
+					<div class="subtitle"> The flash & 2023</div>
+					<div class="seriesdescrip"> Sigue las veloces aventuras de Barry Allen, un joven común y corriente con el deseo latente de ayudar a los demás. Cuando una inesperada partícula aceleradora golpea por accidente a Barry, de pronto se encuentra cargado de un increíble poder para moverse a increíbles velocidades. Mientras Barry siempre ha tenido el alma de un héroe, sus nuevos poderes le han dado la capacidad de actuar como tal.</div>
+					<div class="footer">
+						<h6>Genero: Drama, Ciencia ficción, Fantasía</h6>
+						<h6>Actores: Grant Gustin, Candice Patton, Danielle Panabaker, Danielle Nicolet, Kayla Compton, Brandon McKnight, Jon Cor, Christopher Gordon, Corrie Alexander</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 9</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrXbWvsvhrQ0nfSG0.DE.7OOUDopKWdsYrqQeFLhucocS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrQWF7QnpHDR1DIriNuoK2Hv3_33hqUozTt_3GAAnRHqk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrZ7gso2.os1qI3xln0vAZDCuExjXYiFYes7ye3vgRMs6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x3</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrQMKtZShcHY6_j4nkzGEaUWHqbcWrPdTxrSXo7UL7rDD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x4</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfxDI.jAKefrMrMTgIUK4CurePvIxtqy0CGHDzslbxiK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x5</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2dwgeu.owZl36kfI8RABF0nhSp43lZlRRpLfPIZkuMP6sAg88FZ2GW8eWJjGtRIUQXU7j.eRuATKK4IEVE1K3wphI23KVinS3OD.zJ3aaC_S" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x6</h6>
+				</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2QgfYFEsgsPLMg2tQrNFGlw5OOnersibx62T5Nwr3TtWy4apLDiS4.DiQpNXLJXl.EkhCzsKTZvcYmQfuBzou7HyfFIz5b4Ozg6y5GHmqkab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Flash 9x7</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+
+
+			<!--series 2222 prueba-->
+		<div id="serie3" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://image.tmdb.org/t/p/w780/3r2mlFb4Kg2d7epkEmLFyJq9oGQ.jpg" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">TueLies Mentiras Arriesgadas</div>
+					<div class="subtitle"> True Lies & 2023</div>
+					<div class="seriesdescrip"> Inspirada en la exitosa película del mismo nombre de James Cameron, "Mentiras verdaderas" sigue a Harry Tasker, un espía internacional de primera clase de la agencia de inteligencia estadounidense Omega Sector, y su esposa, Helen, una profesora de idiomas aburrida de su rutina diaria, que hace el impactante descubrimiento de que su aparentemente ordinario esposo lleva una extraordinaria doble vida..</div>
+					<div class="footer">
+						<h6>Genero: Acción, Aventura</h6>
+						<h6>Actores: Steve Howey, Ginger Gonzaga, Erica Hernandez, Omar Benson Miller, Mike O'Gorman, Annabella Didion, Lucas Jaye, Whitney Davis, Sean Hoagland</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2aeurqW.VcVnKUZJ_0SYexg7FhOToAhswLBoDmDTGs7Lg_KNxL4hr9sR_xnRYFLhnIZ1K8rgpXZxMKPWVfbmc2TIaRtsyp2YiX4EZ.ckfF.4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>True lies 1x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2bRk.n.QfpfYEszU3O38_CpOywI3fFPsAJU.KaVWsJEDXoEvfNfsL1RUghMAHWJVElA0fsapVdv6EemgZSJvs.yG6jQxiuRj8Q14giVupmvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>True lies 1x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2RckqgqdC46s6E2MPEFjqtAEulARlHo6JjEpr.3gblgbe_M7pRDPQmqYtC.7QyoVzH7XV2yy9eNeUo_8bNPKvWHEKz7qUbmi9WiSCUnnLd4b" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>True lies 1x3</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2dG4cuWDKRNf3SYtwzdQvWTp1Ei0oItqFiVQoU20SFyfJGay7vCca9O2y22oVv_HxzqSHSdokYXWmQ174ZTMLcsCxFt7vME0rvq1zZ3M47OE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>True lies 1x4</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2cnDXRX0DQK4UEhmCFKKVo15_682ngbZA.zgcw9FFJ3obnNvqszJx6_BXogWGu2.l0GYoe1wTaoOyUy11gXCJ7tayLH7AgQ4oGm0hBGqIPXG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>True lies 1x5</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+				<!--series 2222 prueba-->
+		<div id="serie4" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://assets.cdn.moviepilot.de/files/d261c367d04d53887ef52bdbcf783ec6c019b9b364383018e3f7e3e893fb/copyright/gkts1-8x12.jpg" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">Gotham Knights</div>
+					<div class="subtitle">Knights & 2023</div>
+					<div class="seriesdescrip"> A raíz del asesinato de Bruce Wayne, su rebelde hijo adoptivo forja una alianza improbable con los hijos de los enemigos de Batman cuando todos son incriminados por matar al Caped Crusader.</div>
+					<div class="footer">
+						<h6>Genero: Acción, Aventura, Drama</h6>
+						<h6>Actores: Oscar Morgan, Fallon Smythe, Tyler DiChiara, Olivia Rose Keegan, Navia Robinson, Misha Collins, Anna Lore, Rahart Adams</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2f14T4.MPkDebBbLBfhUuky1Ap4wcObcwZEfymxxlBX1mYbseK7zVKyH567jLsDLR2P1OmNnZmGWX00ISgf_yaNKntZKRmlWdlJqt5InFnY9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Gotham Knights 1x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2VrjIl5_CU3uPVZtHJYOiho3K7atvSjtk7VCP1TVMR_XZbucwoYwFTmxkBu5wAsjltslqTA4FfEC_fgxOiEzL7gqMKDX8JQ7wGAuCX36I9l3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Gotham Knights 1x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2SblyGXxGvn9pc1wer8KWm80ygsYWm3YRJ9PiDX8jLPKGQ_E.J9cIQ38Ny6IOO2OLFz1rKwv6BDxk0PACZ_zpR.jlH6vDQi8HtR99ERvhm.u" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Gotham Knights 1x3</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+				<!--series 2222 prueba-->
+		<div id="serie5" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://images.justwatch.com/poster/302745653/s332/los-ultimos-de-nosotros" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">The Last of Us</div>
+					<div class="subtitle">The Last of Us & 2023</div>
+					<div class="seriesdescrip"> Joel, uno de los pocos sobrevivientes, es contratado para sacar de contrabando a Ellie, una niña de 14 años, fuera de una opresiva zona de cuarentena. Lo que pareciera ser un pequeño trabajo, se convierte en un viaje brutal y desgarrador.</div>
+					<div class="footer">
+						<h6>Genero: Drama</h6>
+						<h6>Actores: Pedro Pascal, Bella Ramsey, Terry Notary, Bryan Eng, David Belenky</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2ep45I0EyhPertWKVIH5WPD4ObD5V1QebGqs3iZbFpTlTffl4Xa02cT_cG2b45phPUOWfnS7LvhfhrXmb7K9fFuOjo8y0mkD7uQJiXWbk5W2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2Z5Z1sWSR1mB5JF7LHOw8IaQL0g7ATOaiXeamil86Z8f8cDbuxH4tSU0jUyJ9oHo8V3hRouHjbG44vF_UgfwOhhyQkmUyT6Q1rCGn8fCQIkQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2byuUZAdvigPcIOOVsa5LoWrbX3OoxyaNz0oofvrZCWfG0R_zu02pNVgjS3PTIVwi1fpKI8f.3tAk5SL8r2eyOGVbjBUwb4sSFjihETRaby9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x3</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2V1z6gu7PahijFssRiGiPOf3ID6kU2NDtDAIbk4xqpbrcjP6XxMwTUjNgeHJ4dQsU.7mVi9klnkJpkbLvW_Mzzp0qp8Zy_gu1Am5POY.8.A9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x4</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2aNSyHqqL0IrD.72_hbaaC3GaEKpSx8vPI19IfpbcvtNSrixm8wRJxIqDSZWrt_aX84nHWuSR_EdeU73h_eJdvuLphJKgLUUVIDvYtuWIKhz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x5</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2R38vPwVEK0QImFpNljkPxWGPQ2gUadD9U9dFydAVsu6E0VQcvMtumuFh_8rbX0ajWfTCbYWg0OK8R9mbVuwVz3N9CeE56nJKL.MYvatIvUU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x6</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2bG84T0jBHDP34JmxZ_f4Yj1kox_zsA4r40NPfWL7JYYvGpTcDCWo33BcUuyHOjLI7nOVFFfAFnCbIu8IeaUJ8IgrQ0313_iHj_du3Iuu05D" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x7</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2R7YzVt0QPNqfca0R9eBTTDKy4KGQjLiQxu0AzVGXmZ9vhefZ_4alnSfYR1OPs.kmNBonP1feueKJGF_9fgjtkUt2yOC4YaIQCOA_VJRhitk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x8</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2ZnpTZfMLThtKKCrR6M2d8ZgCZ7Jlcy_kiwyHFHaC1AK8GcyWciCP.Jj5a8fvnRghaiB.OUPYXV.5cqqnckqn55RXsXwG_y42aJubhiuP5T4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>The Last of Us 1x9</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+					<!--series 2222 prueba-->
+		<div id="serie6" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://seriesdecine.com/wp-content/uploads/2023/02/seriesdecine__2023-02-04_18-13-37_007767-scaled.jpg" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">La Escalada</div>
+					<div class="subtitle">La Escalada & 2023</div>
+					<div class="seriesdescrip"> Joel, uno de los pocos sobrevivientes, es contratado para sacar de contrabando a Ellie, una niña de 14 años, fuera de una opresiva zona de cuarentena. Lo que pareciera ser un pequeño trabajo, se convierte en un viaje brutal y desgarrador.</div>
+					<div class="footer">
+						<h6>Genero: Drama</h6>
+						<h6>Actores: Pedro Pascal, Bella Ramsey, Terry Notary, Bryan Eng, David Belenky</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrTQZb204YvE_VaTukSOCju_.dvR40Fhnm.2jPfIZ5eU0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrcvqEKPNpDKN_9HhW60RvW9wloGGk7Fy56ZrByGTiCsU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrcSY9GXn8NDZKA40sybb8ZcWzSjGTgyUovXnwNpt3tdf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x3</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrStTqQE9y1LSVq2U7fKWIQM0pmDI5QWXWkW3D2AWio8R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x4</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrSg5xsKj7p.iGOHG7waizLE6WniO8NkveaYQn91tw9Sv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x5</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPreK2ZVsPjvxtjiFaRaci1.Ndqm0KQmH46BpR8kqbjGsq" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x6</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYhvVe9U7bmyRi_p1u66umCE0.jBOjwqA9A0J_GOP2_H" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x7</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfoeA_A5IMZN5vDlgPYV1gvL6Ht5cs6BsDO04bXphRpU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>La Escalada 1x8</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+				<!--series 2222 prueba-->
+		<div id="serie7" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://pbs.twimg.com/media/FhpfBXtXkAAWOeS?format=jpg&name=large" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">La Leyenda del Tesoro Perdido: al Filo de la Historia</div>
+					<div class="subtitle">El tesoro perdido & 2022</div>
+					<div class="seriesdescrip"> Mientras busca el mayor tesoro de la historia, Jess Valenzuela descubre el pasado secreto de su familia.</div>
+					<div class="footer">
+						<h6>Genero: Acción, Aventura</h6>
+						<h6>Actores: Lisette Olivera, Catherine Zeta-Jones, Zuri Reed, Antonio Cipriano, Jordan Rodrigues, Jake Austin Walker, Lyndon Smith</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2ROBnsf5N0tkhlTcoP3pntHswaar.xutnqNhPCRiIAvutiOl4e81DHaUwIDM5LNb43y8I0zg8WPPNwCfoeX_wqUzpkWiWyXNS8HMoPCPzogE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2eooMc7NacucT2ajpO9owUKCojZs5YKDLuRZ29gKyFXZJdOKxo9AHyCrBYUuQ8Me7hsnWJdDKnDkbjRRDbd6zDQnZdFx3q1dyCSJpDb9XyQ2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrZ6J6Uwy1iy7tsdcnUfdXt81PtrLI2Z5Ft0GalZ.ubMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x3</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrQ7HsuSLX8FVkNiZbavPKBUGMl4.Y891uCy5tyEnOvDR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x4</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfaEPu5jJhM04ZGpZBQVF6naFLH9EDCssjmNwByFjKu7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x5</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2ZDzxxiW3SdxiOfnPtcARAv2kIe7IiDkrkR1rwYga0LJ0JrD.MYI_taAe052VfggucMS22FnamDRhbNCfHaRAmanSx_nBBaceEB2uNet.xog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x6</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrdNKABHjp6R5NH3j7CXiYGpuNG4XFsqSEVcDWORo5ALA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoror perdido 1x7</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2U4bTWIBWCugptF.sfCkc4kLR6Acdm1RsajWrThNEKzg2TwNpTHLBuX1IAGwTnoYDNFcvdk066_H8nc1Ui3G0x8LR07zep77yPEi0YjcGlnX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x8</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2WJxaxlSmo9UT8JNJ.q_RZt1wjtEOqULSONyv1BsnazqX3A7M7tbrEcRttgeDjy9yklRi8Zw076WBBDQnPBe8q3_ho4UOGOLJhukYAGOdcNK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x9</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2U0t43zK8W5ZVQ1mgrCP2TkCWPJ0aCy8vF2w380NUvRR5dFEctWFqSZdDxqU8H_pLzZGRwljVQkYt4Jvpn0qpIiALXTBRE7goeFym5XIp3cP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>El tesoro perdido 1x10</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+				<!--series 2222 prueba-->
+		<div id="serie8" class="series">
+			<div class="serie-center">
+				<div class="img">
+					<img src="https://www.themoviedb.org/t/p/original/7pPmaSMKk1VVQH0oS7tceROYcZa.jpg" alt="">
+					<div class="volver">
+						<form action="categorias.html"><button>volver</button></form>
+					</div>
+				</div>
+				<div class="series-header">
+					<div class="title">Tulsa King</div>
+					<div class="subtitle">Tulsa King & 2022</div>
+					<div class="seriesdescrip"> Justo después de ser liberado de prisión después de 25 años, el capo de la mafia de Nueva York, Dwight "El General" Manfredi, es exiliado sin contemplaciones por su jefe para instalarse en Tulsa, Oklahoma. Al darse cuenta de que su familia de la mafia puede no tener sus mejores intereses en mente, Dwight construye lentamente una "tripulación" a partir de un grupo de personajes inverosímiles, para ayudarlo a establecer un nuevo imperio criminal en un lugar que para él bien podría ser otro planeta.</div>
+					<div class="footer">
+						<h6>Genero: Crimen, Drama</h6>
+						<h6>Actores: Sylvester Stallone, Andrea Savage, Max Casella, Martin Starr, Domenick Lombardozzi, Vincent Piazza, Jay Will, Alan C. Peterson, Garrett Hedlund, Dana Delany, Sylvester Stallone</h6>
+					</div>
+					<div class="temporadas">
+						<div class="butonS"><button>Seleccionar Temporada</button></div>
+						<div class="tempos">
+							<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="temporada1 temporadass" id="temp1">
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrVr2dLBd5AukSaDg0XdLdFRh6VJfxvaShi86sQLtXqjP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x1</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrVF3tBbY5KxnbLGUzlVgknXSMgg5AV69CqMf_86higfd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x2</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfSq026jz7eXMATiNvlrGkFAj2_ExNRJvyQPcrw6PRB1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x3</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrXiMTq2Dyu0DN3DBQ_cix0ysaTqSS.2J9ISWz4VQCW3w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x4</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPraf_mwre0nVGDLfRqSDaiLc.gRlUHu1l4hHFC7t2Bs0G" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x5</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYJ5cZ25umo3henh1B_R98MItAaB99r8Lj7u8Rw.1nj3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x6</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrbdXSdW2oGi88t3.kAUPXHiDoYuR9Ib.iCXrQakrpgE4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x7</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPraa6bFyp2vk_GzOosKiK0eUXiLsG6_D1PvKHfo9KNP9F" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x8</h6>
+				</div>
+				<div class="cap1">
+					<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrc6QpJ01LJ0H6sIyzgDDowmli92n4LF4H0iNrShEs4B4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					<h6>Tulsa King 1x9</h6>
+				</div>
+			</div>
+			<div class="copy">
+				Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+			</div>
+		</div>
+			<!--series 2222 prueba-->
+			<div id="serie9" class="series">
+				<div class="serie-center">
+					<div class="img">
+						<img src="https://comic-watch.com/wp-content/uploads/2019/09/picardallaccess.jpg" alt="">
+						<div class="volver">
+							<form action="categorias.html"><button>volver</button></form>
+						</div>
+					</div>
+					<div class="series-header">
+						<div class="title">Star Trek: Picard</div>
+						<div class="subtitle">Picard & 2020</div>
+						<div class="seriesdescrip"> Serie se ambientada 18 años después de la última aparición de Jean-Luc Picard en "Star Trek: Nemesis", y encuentra al personaje profundamente afectado por la destrucción de Romulus como se muestra en la película "Star Trek"</div>
+						<div class="footer">
+							<h6>Genero: Ciencia ficción, Fantasía, Acción, Aventura</h6>
+							<h6>Actores: Patrick Stewart, Michelle Hurd, Jeri Ryan, Ed Speleers, Patrick Stewart, Rod Roddenberry</h6>
+						</div>
+						<div class="temporadas">
+							<div class="butonS"><button>Seleccionar Temporada</button></div>
+							<div class="tempos">
+								<button id="Temporada1" onclick="Temporada1();">temporada 1</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="temporada1 temporadass" id="temp1">
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrTpkBeyuYFoOyW6W92ofq3.AhtIiIrAxyyDumgyybK9L" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x1</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPra9tCjlWqE8VVCIQSAVw5ng5LLFO_QdTi.vvFBP.t.AD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x2</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrUF9mvrIyI6Pt4vI_Yjyb3zMXFw.UNxLVRkGm.CYLKi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x3</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrflecwYXL5TLlfkMNqJx2YOZybRmJuFa8VfG1TSIIPz1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x4</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrWUfx3QCuTe4oZW2tjxVPpVeegTwQAqITnf0KjiiyNpy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x5</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfk5TwlgHczaWiiG37qmKNBYvb8cHi3n6HHmWEzM7jBo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x6</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPreA1w0L8p8_2X9KS.3Bg71zOobfM3NiTW2nVtf0uPioS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x7</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrX8csRPde6LYvvMsSeal9EgPwqLkSqyZ0HaLI_UPw03A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x8</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrZLpBctK.2Uu3AljGzIh6nkralE.t6ja_59Lau3ZHXoe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x9</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYPFaO4DoizkQXIgmkJ5JNPtHovGCRFs9Kg3owWinsxv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Star Trek: Picard 1x10</h6>
+					</div>
+				</div>
+				<div class="copy">
+					Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+				</div>
+			</div>
+			<!--Series 10 shadow and bone-->
+			<div id="serie10" class="series">
+				<div class="serie-center">
+					<div class="img">
+						<img src="https://showland.tv/wp-content/uploads/2021/04/Sombra-y-hueso-Poster-scaled.jpg" alt="">
+						<div class="volver">
+							<form action="categorias.html"><button>volver</button></form>
+						</div>
+					</div>
+					<div class="series-header">
+						<div class="title">Shadow and Bone</div>
+						<div class="subtitle"> Shadow and Bone & 2021</div>
+						<div class="seriesdescrip">Fuerzas oscuras conspiran contra Alina Starkov, una cartógrafa huérfana con un poder extraordinario que podría cambiar el destino de su devastado mundo.</div>
+						<div class="footer">
+							<h6>Genero: Drama, Ciencia ficción, Fantasía</h6>
+							<h6>Actores: Jessie Mei Li, Archie Renaux, Freddy Carter, Amita Suman, Kit Young, Ben Barnes, Patrick Gibson, Daisy Head, Danielle Galligan, Calahan Skogman, Lewis Tan, Jack Wolfe, Anna Leong Brophy, Zoë Wanamaker</h6>
+						</div>
+						<div class="temporadas">
+							<div class="butonS"><button>Seleccionar Temporada</button></div>
+							<div class="tempos">
+								<button id="Temporada1" onclick="Tempo1();">temporada 1</button>
+								<button id="Temporada2" onclick="Tempo2();">temporada 2</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="temporada1 temporadass" id="tempo1">
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrbzeG2xZJNCmhv7GGQP6Buw0H28VtGkNySMiX0uC8_3n" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x1</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrfbCxTqxoJly1Ikv8KHdlnkCa8h6Tdqox6li1MzscL_G" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x2</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrYOK_1Cn3AiqDrnwbp44dOewFCpiAiiJKRczeeyeY2P0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x3</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrWlbnKdEB4CeNHBmgU0D_7V_3x3feBa8.ykJb.ydVINA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x4</h6>
+					</div>
+					<div class="cap1">
+						<img src="imagenes/" alt="">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrSKYwaxDp_N1ikugMwmyvzkHm1doEnnJLNiVbEVbfblS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x5</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrY_gfovw3sp47YOQhxv9xdCbDRlWpq.QSUIwo8_ELSM7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x6</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrURH0KBIViYVGZ5Q..L4PQ8jEkA3U0qU.OuDR2L4Svkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x7</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=h3kgJKgp7rirl22CybxPrWMPW.wDVRiwLkVCQWX1ucM48D6t.N35NTAraPPb0DCg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 1x8</h6>
+					</div>
+				</div>
+					
+				<div class="temporada1 temporadass" id="tempo2">
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2SWH93En53LK0PufbnqTf9n2hm_I5zChFECuNSwpelJLZ10EnRbphdsEm45qP1qoh87kYNuNJ.Ed9DUlV08CWYK.zeTET5aAY2h.sKgSA15h" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x1</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2f45J8RzY_jBR727KN4bNCJsuwEAD5H9bgtlbuhMWhRK5mt0Ji5vCvuvz.ZbNgbiG9xx2l0Jm_wkKg3p3OtIqk58IGqenTwBp8ppBIKuD8Df" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x2</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2SVvT38ZVIY8zQjA_qYEhvz5eMnr9Qth7ytiQ2vu5rGi81P_769jJ_MwtqAqsamGHiYFIKKxeH4A4k5CmKkTdDAWaNpZbBNxu3J9ehKE5JA." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x3</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2Y8F5yy.DV9rVb35tv_fsJ71_.Oex7SUGl6c7VQSoQSrj28jD3p3E6k8gryw4I9MGh_cPC5HFOIX27H2pifXnOp_.NyqiAHxwPm0YVU23yJb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x4</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2bCN.Ru3e1mpFOzgEgqYYMFzqoC4TkEBMphzhnnDACOs1ZjjWfXfdsB5WwlNllCjCClXbrZD0IF2Che0L3N216TA555IOBiHSFyRwCFKLpJb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x5</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2S4IKDWFg.fUOsagW40douh4wV7ggJZ.YZtDpnBHH9sk2N8jk31gmMznaKw6imjT53mHAVC7SCsC_eUhwEPbOK_sC635juF.70kAxMlTGuar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x6</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2Z1utQcFZZEXGsHL0CZyM7F.lPDFah0eiQMj_KrvAuogCiGvaVrhPPzklBtVbUKs2PUfK92klOJD4YOtGWNzJNmD8uuj3k9RrBRyWigT7dF8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6> Shadow and Bone 2x7</h6>
+					</div>
+					<div class="cap1">
+						<iframe width="2032" height="879" src="https://player.cuevana.cloud/player.php?h=Y6sEmQFvn74GwDabJO0L2R8NWLQB13tgFxNDRPkXaTwAD12M4R7lVmhs074lpjCZcbElHMlwebNXVGGIRqXMtUqMjYL2RAhpGUZRcOY3vege3xNh5o9sa0jacgG9zELJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						<h6>Shadow and Bone 2x8</h6>
+					</div>
+				</div>
+				<div class="copy">
+					Copyright © 2022 Cineflix.com Algunos Derechos Reservados | Cineflix no almacena ningún archivo en sus servidores. Todos estos han sido encontrados en sitios de terceros.| Creado Por Andres Rojas
+				</div>
+	
+
+
+			
+
+			
+		</div>
+<!--Termina seriess-->
+
+
+
+
+<!--termina pcenter-->
+	</div>
+	
+	<script type="text/javascript">
+		$('#directory').liveFilter('#search-box', 'li', { filterChildSelector: '.name'});
+	</script>
+	<!--Seccion de peliculas por filtros con javascript-->
+</body>
+</html>
