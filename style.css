@@ -210,7 +210,7 @@ nav .menu{
   color: black;
   font-size: 15px;
   font-weight: 500;
-  margin: 20px;
+  margin: 10px;
   width: 130px;
   height: 50px;
   background: var(--very-dark-blue-alpha);
@@ -236,7 +236,7 @@ nav .menu{
   height: 200px;
 }
 .section-feature .img img::after{
-  
+
 }
 
 
