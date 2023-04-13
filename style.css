@@ -1,7 +1,9 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 *{
   margin: 0;
   padding: 0;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 :root{
   --soft-blue: hsl(231, 69%, 60%);
@@ -106,6 +108,7 @@ nav .menu{
 /*pesonalización del centro de la pagina peicipal*/
 .center{
   width: 100%;
+  height: 90vh;
   display: grid;
   grid-template-columns: 5% 1fr 5%;
   padding: 40px 0 60px;
@@ -121,6 +124,7 @@ nav .menu{
   max-width: 450px;
   background: var(--very-dark-blue);
   width: 50%;
+  height: 60%;
   position: absolute;
   bottom: 30px;
   top: 30%;
@@ -171,8 +175,74 @@ nav .menu{
 .text-center .btns-center button:hover{
   transform: scale(110%);
 }
+/*Features section*/
+.features{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.features-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.features-title{
+  color: var(--very-dark-blue);
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.features-parrafo{
+  color: rgba(0, 0, 0, 0.521);
+  font-size: 15px;
+  max-width: 400px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.selector-feature{
+  display: flex;
+  flex-direction: row;
+}
+.selector-feature .slayer{
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px;
+  width: 130px;
+  height: 50px;
+  background: var(--very-dark-blue-alpha);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.selector-feature .slayer:hover{
+  color: white;
+  background: var(--grayish-blue);
+}
+.section-feature{
+  display: flex;
+  flex-direction: column;
+}
+.section-feature .section-one{
+  display: flex;
+  flex-direction: column;
+}
+.section-feature .img img{
+  max-width: 400px;
+  height: 200px;
+}
+.section-feature .img img::after{
+  
+}
 
 
+
+
+/*Seccion para telefono*/
 @media screen and (min-width: 768px){
   nav{
     display: flex;
@@ -277,6 +347,7 @@ nav .menu{
   /*pesonalización del centro de la pagina peicipal*/
   .center{
     width: 100%;
+    height: 90vh;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 5%;
     padding: 110px 0 0 0;
@@ -291,6 +362,7 @@ nav .menu{
     bottom: 0;
     left: 100px;
     width: 80%;
+    height: 50%;
     position: absolute;
     max-width: 450px;
   }
