@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+:root{
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --very-dark-blue: hsl(229, 31%, 21%);
+
+  --grayish-blue-alpha: hsl(229, 8%, 60%, .5);
+  --very-dark-blue-alpha: hsl(229, 31%, 21%, .8);
+
+  --padding-container: 60px 0;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  background: white;
+  position: fixed;
+}
+nav .logo{
+  padding: 0 0 0 20px ;
+}
+nav .menu{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 92vh;
+  top: 8vh;
+  justify-content: center;
+  background: var(--very-dark-blue-alpha);
+  transition: .3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 10;
+}
+.nav__input:checked + .menu{
+  transform: translateX(0);
+}
+.menu .menu-i{
+  list-style: none;
+  line-height: 100px;
+}
+.menu .menu-i a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.menu .menu-i a::after{
+  content: '';
+  background: white;
+  width: 430px;
+  height: 1px;
+  position: absolute;
+  top: 30px;
+  left: -190px;
+}
+.menu .menu-i .menu-btn{
+  background: transparent;
+  display: flex;
+  width: 400px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  
+}
+.menu .menu-i .menu-btn:hover{
+  background: white;
+  color: black;
+  border-radius: 10px;
+}
+ .menu .menu-social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.menu .menu-social i{
+  color: white;
+  font-size: 50px;
+  margin: 15px;
+}
+#nav_hamburguer{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.nav__input{
+  display: none;
+}
+.menu-btn i{
+  font-size: 25px;
+}
+/*pesonalización del centro de la pagina peicipal*/
+.center{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  padding: 40px 0 60px;
+}
+.img_center{
+  grid-column: 1/4;
+  position: relative;
+  padding: 2rem 0;
+  z-index: -1;
+}
+.img_center::before{
+  content: '';
+  max-width: 450px;
+  background: var(--very-dark-blue);
+  width: 50%;
+  position: absolute;
+  bottom: 30px;
+  top: 30%;
+  right: 0;
+  border-radius: 100px 0 0 100px;
+  z-index: -1;
+}
+.img_center img{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 450px;
+}
+.text-center{
+  grid-column: 2/3;
+  text-align: center;
+}
+.text-center .title{
+  color: var(--very-dark-blue);
+  font-size: 30px;
+  font-weight: 900;
+}
+.text-center .subtitle{
+  color: rgba(0, 0, 0, 0.603);
+  font-weight: 700;
+}
+.text-center .btns-center{
+  display: flex;
+  justify-content: center;
+}
+.text-center .btns-center button{
+  width: 145px;
+  margin: 10px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -4px 0px 5px ;
+  background: var(--soft-blue);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+.text-center .btns-center .vt{
+  background: white;
+  color: black;
+  border: .1px solid black;
+}
+.text-center .btns-center button:hover{
+  transform: scale(110%);
+}
