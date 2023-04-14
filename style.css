@@ -268,7 +268,7 @@ nav .menu{
   border: none;
 }
 .section-feature .text-section .butt{
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 .section-feature #section-one{
   display: block;
@@ -313,8 +313,8 @@ nav .menu{
 .down-sections .down-section{
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 280px;
+  width: 380px;
+  height: 300px;
   justify-content: center;
   align-items: center;
   background: white;
@@ -322,6 +322,31 @@ nav .menu{
 -webkit-box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.47);
 -moz-box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.47);
 
+}
+.down-sections .down-section .down-png img{
+  padding-bottom: 20px;
+}
+.down-sections .down-section .down-add{
+  color: var(--very-dark-blue);
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.down-section .down-section .down-min{
+  color: var(--grayish-blue-alpha);
+  padding-bottom: 10px;
+}
+.down-sections .down-section .down-btn{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.down-sections .down-section .down-btn button{
+  
+  height: 45px;
+  background: var(--soft-blue);
+  color: white;
+  
 }
 
 
