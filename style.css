@@ -492,6 +492,52 @@ input::-webkit-input-placeholder{
   border: none;
   color: black;
 }
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--very-dark-blue);
+  height: 300px;
+}
+.title img{
+  margin-right: -120px;
+}
+.footer .title {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer .title a{
+  color: white;
+  text-decoration: none;
+}
+.footer .title a:hover{
+  color: var(--grayish-blue);
+}
+.footer .subtitles{
+  margin-bottom: 10px;
+}
+.footer .h1 a{
+  color: white;
+  line-height: 50px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer .h1 a:hover{
+  color: var(--grayish-blue);
+}
+.logos_final i{
+  color: white;
+  margin: 5px;
+  font-size: 25px;
+}
+.logos_final i:hover{
+  color: var(--grayish-blue);
+}
 
 
 /*Seccion para telefono*/
