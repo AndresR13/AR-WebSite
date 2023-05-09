@@ -24,6 +24,7 @@ nav{
   height: 8vh;
   background: white;
   position: fixed;
+  z-index: 10;
 }
 nav .logo{
   padding: 0 0 0 20px ;
@@ -284,6 +285,7 @@ nav .menu{
 .download{
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 .download .download-principal{
   display: flex;
@@ -354,8 +356,82 @@ nav .menu{
 .down-sections .down-section:hover{
   transform: scale(101%);
 }
+/*Seccion de preguntas*/
+.questions{
+  display: flex;
+  flex-direction: column;
+}
+.question_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+}
+.question_main .title{
+  color: var(--very-dark-blue);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.question_main .subtitle{
+  color: var(--grayish-blue);
+  width: 300px;
+}
+.question_query{
+  display: flex;
+  flex-direction: column;
+}
+.question_query .question_principal{
+ width: 95%;
+ margin: 10px;
+}
+.question_query .question_principal .question_prin{
+  color: black;
+  font-size: 25px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+.question_query .question_prin i{
+  font-size: 20px;
+}
+.question_prin::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: blue;
+  left: 0px;
+  top: 30px;
+}
+.question_principal .paragraft{
+  color: var(--grayish-blue);
+  width: 100%;
+  display: none;
+  z-index: 1;
+}
+.Question_final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Question_final button{
+  color: black;
+  background: white;
+  box-shadow: 4px 3px 3px 3px;
+  width: 145px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.Question_final button:hover{
+  transform: scale(103%);
 
-
+}
 /*Seccion para telefono*/
 @media screen and (min-width: 768px){
   nav{
@@ -458,6 +534,7 @@ nav .menu{
     display: none;
   }
 
+
   /*pesonalización del centro de la pagina peicipal*/
   .center{
     width: 100%;
@@ -543,16 +620,15 @@ nav .menu{
 }
 .features-title{
   color: var(--very-dark-blue);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 800;
   padding-bottom: 10px;
 }
 .features-parrafo{
   color: rgba(0, 0, 0, 0.521);
-  font-size: 15px;
+  font-size: 18px;
   max-width: 400px;
   line-height: 25px;
-  font-weight: 700;
   padding-bottom: 10px;
 }
 .selector-feature{
@@ -673,7 +749,7 @@ nav .menu{
 }
 .download .download-principal .down-title{
   color: var(--very-dark-blue);
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -692,11 +768,13 @@ nav .menu{
 }
 .down-sections .down-section{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 380px;
   height: 300px;
   justify-content: center;
   align-items: center;
+  margin: 40px;
   background: white;
   border-radius: 20px;
   box-shadow: -1px 2px 5px 3px rgba(0,0,0,0.47);
@@ -734,5 +812,80 @@ nav .menu{
 .down-sections .down-section:hover{
   transform: scale(101%);
 }
-
+.questions{
+  display: flex;
+  flex-direction: column;
+}
+.question_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+}
+.question_main .title{
+  color: var(--very-dark-blue);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.question_main .subtitle{
+  color: var(--grayish-blue);
+  width: 300px;
+}
+.question_query{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.question_query .question_principal{
+ width: 40%;
+ margin: 10px;
+}
+.question_query .question_principal .question_prin{
+  color: black;
+  font-size: 25px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+.question_query .question_prin i{
+  font-size: 20px;
+}
+.question_prin::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: blue;
+  left: 0px;
+  top: 30px;
+}
+.question_principal .paragraft{
+  color: var(--grayish-blue);
+  width: 100%;
+  display: none;
+  font-size: 15px;
+}
+.Question_final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Question_final button{
+  color: black;
+  background: white;
+  box-shadow: 4px 3px 3px 3px;
+  width: 145px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.Question_final button:hover{
+  transform: scale(103%);
+}
 }
