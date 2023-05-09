@@ -924,7 +924,7 @@ input::-webkit-input-placeholder{
 .questions{
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: auto;
 }
 .question_main{
   display: flex;
