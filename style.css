@@ -360,7 +360,7 @@ nav .menu{
 .questions{
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: auto;
 }
 .question_main{
   display: flex;
@@ -428,6 +428,7 @@ nav .menu{
   border-radius: 10px;
   border: none;
   outline: none;
+  margin-bottom: 20px;
 }
 .Question_final button:hover{
   transform: scale(103%);
