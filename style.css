@@ -360,7 +360,7 @@ nav .menu{
 .questions{
   display: flex;
   flex-direction: column;
-  height: 98vh;
+  height: 90vh;
 }
 .question_main{
   display: flex;
@@ -436,6 +436,7 @@ nav .menu{
 /*Seccion formulario*/
 .formulario{
   background: var(--soft-blue);
+  width: 100%;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -463,6 +464,7 @@ nav .menu{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .form_valid .form_email{
   height: 50px;
