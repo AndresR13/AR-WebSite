@@ -466,14 +466,14 @@ nav .menu{
 }
 .form_valid .form_email{
   height: 50px;
-  width: 410px;
+  width: 380px;
   border: none;
   border-radius: 5px;
   padding: 0 0 0 10px;
   margin-bottom: 20px;
 }
 .form_valid .form_submit{
-  width: 410px;
+  width: 350px;
   height: 50px;
   background: red;
   color: white;
