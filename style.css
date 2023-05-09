@@ -482,6 +482,15 @@ nav .menu{
   border: none;
   border-radius: 3px;
 }
+.form_valid .form_submit:hover{
+  background:rgb(126, 16, 16);
+  transform: scale(102%);
+}
+input::-webkit-input-placeholder{
+  outline: none;
+  border: none;
+  color: black;
+}
 
 
 /*Seccion para telefono*/
