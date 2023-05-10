@@ -205,7 +205,7 @@
   width: 560px;
   height: 540px;
  }
- 
+
  /*adaptar a telefonos pequeños*/
 @media screen and (max-width: 600px){
  /*seccion principal*/
@@ -228,11 +228,15 @@
  }
  .date_container .title{
   color: black;
-  font-size: 40px;
+  margin-top: 45px;
+  font-size: 30px;
+  margin-bottom: 20px;
  }
  .date_container .subtitle{
   color: rgba(0, 0, 0, 0.678);
   margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
  }
  .date_container .btn_principal button{
   color: rgba(255, 0, 0, 0.733);
@@ -255,6 +259,8 @@
   grid-column: 1/3;
  }
  .imagen_principal img{
+  width: 200px;
+  height: 180px;
  }
 }
 
@@ -281,8 +287,8 @@
     position: fixed;
     top: 8vh;
     width: 100%;
-    line-height: 20px;
-    background: rgba(245, 245, 245, 0.89);
+    line-height: 15px;
+    background: whitesmoke;
     transition: .3s ease-in-out;
     transform: translateX(-100%);
   }
