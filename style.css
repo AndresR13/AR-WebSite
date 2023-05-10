@@ -218,6 +218,21 @@
   }
  }
 
+ /*seccion menu   special dishes*/
+ .special_dishes{
+  display: flex;
+  flex-direction: column;
+ }
+ .special_dishes .title_dish{
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+ }
+ .special_dishes .title_dish span{
+  color: red;
+ }
+
  /*adaptar a telefonos pequeños*/
 @media screen and (max-width: 600px){
  /*seccion principal*/
