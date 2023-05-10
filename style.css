@@ -556,5 +556,82 @@
   height: 270px;
  }
  /*seccion de special dishes*/
+ /*seccion soecial dishes*/
+ .special_dishes{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+ }
+ .special_dishes .title_dish{
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+ }
+ .special_dishes .title_dish span{
+  color: red;
+ }
+ .dishes_food{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  gap: 20px;
+ }
+ .dishes_fooding{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  height: 250px;
+  position: relative;
+  -webkit-box-shadow: -1px -1px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 35px 0px rgba(0,0,0,0.75);
+   box-shadow: -1px -1px 35px 0px rgba(0,0,0,0.75);
+ }
+ .img_dishes{
+  max-width: 380px;
+  height: 250px;
+  opacity: 1;
+ }
+ .img_dishes img{
+  max-width: 380px;
+  height: 250px;
+ }
+ .dishes_center:hover{
+  opacity: 0 ;
+ }
+ .dishes_center{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 380px;
+  height: 250px;
+  top: 0px;
+  position: absolute;
+  z-index: 1;
+  transition: .8s ease-in-out;
+ }
+ .log img{
+  width: 60px;
+ }
+ .dishes_center .title{
+  color: black;
+  font-size: 25px;
+ }
+ .dishes_center .subtitle{
+  color: rgba(0, 0, 0, 0.733);
+  font-size: 11px;
+  
+ }
+
 
 }
