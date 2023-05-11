@@ -813,6 +813,7 @@ border: 10px solid white;
   width: 50%;
   height: auto;
   gap: 20px;
+  margin-bottom: 20px;
  }
  .dishes_fooding{
   display: flex;
@@ -879,11 +880,11 @@ border: 10px solid white;
     gap: 13px;
    }
    .popular_sect{
-     width: 380px;
+     width: 360px;
      height: 340px;
    }
    .popular_sect .img_food img{
-    width: 380px ;
+    width: 360px ;
     height: 190px;
    }
    .popular_sect1 button{
