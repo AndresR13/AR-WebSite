@@ -657,6 +657,9 @@ border: 10px solid white;
 ::-webkit-input-placeholder{
   color: rgba(0, 0, 0, 0.527);
 }
+.order_dates2 .order_submit{
+  margin-bottom: 10px;
+}
 .order_dates2 .order_submit button{
   color: red;
   border: 1px solid red;
@@ -665,9 +668,46 @@ border: 10px solid white;
   height: 45px;
   font-weight: bold;
   border-radius: 10px;
+  transition: .3s ease-in-out;
 }
-
-
+.order_dates2 .order_submit button:hover{
+  color: white;
+  background: red;
+}
+/*secciom final*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 150px;
+}
+.btn_redes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn_redes button{
+  color: red;
+  width: 145px;
+  height: 45px;
+  border: 2px solid red;
+  background: black;
+  margin: 10px;
+  transition: .3s ease-in-out;
+  border-radius: 5px;
+}
+.btn_redes button:hover{
+  color: white;
+  background: red;
+}
+.title_final{
+  color: white;
+}
+.title_final span{
+  color: red;
+}
 
 
 
@@ -1018,6 +1058,19 @@ border: 10px solid white;
     justify-content: center;
     align-items: center;
   }
+  /*secciom final*/
+.btn_redes button{
+  color: red;
+  width: 100px;
+  height: 40px;
+  border: 2px solid red;
+  background: black;
+  margin: 5px;
+  transition: .3s ease-in-out;
+}
+
+
+
  }
 
 
@@ -1250,5 +1303,16 @@ border: 10px solid white;
 .section_order .order_img img{
   width: 320px;
   height: 350px;
+}
+ /*secciom final*/
+ .btn_redes button{
+  color: red;
+  width: 80px;
+  height: 40px;
+  border: 2px solid red;
+  background: black;
+  margin: 5px;
+  transition: .3s ease-in-out;
+  font-size: 12px;
 }
 }
