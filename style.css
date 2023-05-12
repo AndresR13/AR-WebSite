@@ -590,7 +590,82 @@ border: 10px solid white;
   color: red;
 }
 
-
+/*Seccion de las ordenes*/
+.order_container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: whitesmoke;
+}
+.order_container .order_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_container .order_title .title span{
+  color: red;
+}
+.order_container .order_title .title{
+  color: black;
+  font-size: 30px;
+}
+.section_order{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section_order .order_img img{
+  width: 320px;
+  height: 350px;
+}
+.section_order .order{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section_order .order .order_date{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.order .order_dates .order_input{
+  width: 250px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 0 0 0 10px;
+  margin: 5px;
+}
+.order_date2{
+  display: flex;
+  flex-direction: column;
+}
+.order_dates2 .order_addres{
+  width: 505px;
+  height: 150px;
+  padding: 0 0 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.719);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0.527);
+}
+.order_dates2 .order_submit button{
+  color: red;
+  border: 1px solid red;
+  background: white;
+  width: 120px;
+  height: 45px;
+  font-weight: bold;
+  border-radius: 10px;
+}
 
 
 
@@ -937,6 +1012,12 @@ border: 10px solid white;
     width: 270px;
     height: 236px;
   }
+  /*seccion de ordemes*/
+  .order_dates2 .order_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
  }
 
 
@@ -1133,4 +1214,41 @@ border: 10px solid white;
     height: 236px;
   }
 
+  /*seccion de ordenes*/
+  .order .order_dates{}
+.section_order .order .order_date{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.order .order_dates .order_input{
+  width: 305px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 0 0 0 10px;
+  margin: 5px;
+}
+.order_date2{
+  display: flex;
+  flex-direction: column;
+}
+.order_dates2 .order_addres{
+  width: 305px;
+  height: 150px;
+  padding: 0 0 0 10px;
+  border: 1px solid rgba(0, 0, 0, 0.719);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0.527);
+}
+.section_order .order_img img{
+  width: 320px;
+  height: 350px;
+}
 }
