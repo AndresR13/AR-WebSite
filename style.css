@@ -614,6 +614,7 @@ border: 10px solid white;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .section_order .order_img img{
   width: 320px;
@@ -688,19 +689,14 @@ border: 10px solid white;
   display: flex;
   flex-wrap: wrap;
 }
-.btn_redes button{
+.btn_redes i{
   color: red;
-  width: 145px;
-  height: 45px;
-  border: 2px solid red;
-  background: black;
-  margin: 10px;
+  font-size: 35px;
+  margin: 5px;
   transition: .3s ease-in-out;
-  border-radius: 5px;
 }
-.btn_redes button:hover{
-  color: white;
-  background: red;
+.btn_redes i:hover{
+  color: rgba(255, 0, 0, 0.5);
 }
 .title_final{
   color: white;
@@ -1059,15 +1055,6 @@ border: 10px solid white;
     align-items: center;
   }
   /*secciom final*/
-.btn_redes button{
-  color: red;
-  width: 100px;
-  height: 40px;
-  border: 2px solid red;
-  background: black;
-  margin: 5px;
-  transition: .3s ease-in-out;
-}
 
 
 
@@ -1304,15 +1291,12 @@ border: 10px solid white;
   width: 320px;
   height: 350px;
 }
- /*secciom final*/
- .btn_redes button{
-  color: red;
-  width: 70px;
-  height: 40px;
-  border: 2px solid red;
-  background: black;
-  margin: 5px;
-  transition: .3s ease-in-out;
-  font-size: 10px;
+/*secciom final*/
+.footer{
+  height: 120px;
 }
+.btn_redes i{
+  font-size: 30px;
+}
+
 }
