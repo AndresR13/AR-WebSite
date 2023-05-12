@@ -1307,12 +1307,12 @@ border: 10px solid white;
  /*secciom final*/
  .btn_redes button{
   color: red;
-  width: 80px;
+  width: 70px;
   height: 40px;
   border: 2px solid red;
   background: black;
   margin: 5px;
   transition: .3s ease-in-out;
-  font-size: 12px;
+  font-size: 10px;
 }
 }
