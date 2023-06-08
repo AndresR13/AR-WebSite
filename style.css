@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -182,16 +183,11 @@
 }
 
 /*MENU HAMBURGUESA*/
-.menu-btn {
+.close_bars{
   display: none;
-  color: black;
-  cursor: pointer;
 }
-
-.nav_input {
+.open_bars{
   display: none;
-  cursor: pointer;
-  color: black;
 }
 
 /*seccion principal*/
@@ -1006,10 +1002,23 @@
 
 /*Adaptar a tablet*/
 @media screen and (max-width: 850px) {
-  .menu-btn {
-    display: block;
+  .open_bars{
+    display: flex;
     font-size: 25px;
-    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .open_bars.ocultar{
+    display: none;
+  }
+  .close_bars{
+    display: none;
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .close_bars.mostrar{
+    display: flex;
   }
 
   .main .logo {
@@ -1032,6 +1041,13 @@
     background: whitesmoke;
     transition: .3s ease-in-out;
     transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu.visible{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .menu .menu-i a {
@@ -1042,11 +1058,6 @@
     width: 250px;
     height: 270px;
   }
-
-  .nav_input:checked+.menu {
-    transform: translateX(0);
-  }
-
   /*seccion principal*/
   .imagen_principal img {
     width: 300px;
